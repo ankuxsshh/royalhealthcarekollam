@@ -28,3 +28,4 @@ def facilities(request):
 
 def managements(request):
     return render(request, 'managements.html')
+

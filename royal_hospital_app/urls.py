@@ -9,5 +9,5 @@ urlpatterns = [
     path('contactus',views.contactus,name="contactus"),
     path('gallery',views.gallery,name="gallery"),
     path('services',views.services,name="services"),
-    path('findadoctor',views.findadoctor,name="findadoctor")
+    path('findadoctor',views.findadoctor,name="findadoctor"),
 ]
