@@ -309,6 +309,7 @@ h6 {
 
 .header .logo img {
   max-height: 60px;
+  margin-left: -10px;
 }
 
 .header .logo h1 {
@@ -343,10 +344,10 @@ h6 {
     order: 1;
   }
 
-.cta-btn {
+  .cta-btn {
     order: 2;
     margin: 0 15px 0 0;
-    padding: 6px 15px;
+    padding: 12px 15px;
     text-align: center;
   }
 
@@ -767,18 +768,20 @@ h6 {
 }
 
 .preloader-logo {
-  width: 220px;  /* Adjust the logo size */
+  width: 250px;
+  /* Adjust the logo size */
   height: 70px;
-  margin-bottom: 150px;  /* Space between the logo and spinner */
+  margin-bottom: 150px;
+  /* Space between the logo and spinner */
 }
 
 .spinner {
   content: "";
   position: fixed;
-  top: calc(50% - 30px);
+  top: calc(53% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #ffffff;
-  border-color: var(--accent-color) transparent var(--accent-color) transparent;
+  border-color: var(--accent-color) black var(--accent-color) black;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -991,67 +994,6 @@ section,
   margin-top: 40px;
 }
 
-.hero .content .why-box {
-  color: var(--contrast-color);
-  background: var(--accent-color);
-  padding: 30px;
-  border-radius: 4px;
-}
-
-.hero .content .why-box h3 {
-  color: var(--contrast-color);
-  font-weight: 700;
-  font-size: 34px;
-  margin-bottom: 30px;
-}
-
-.hero .content .why-box p {
-  margin-bottom: 30px;
-}
-
-.hero .content .why-box .more-btn {
-  color: var(--contrast-color);
-  background: color-mix(in srgb, var(--contrast-color), transparent 80%);
-  display: inline-block;
-  padding: 6px 30px 8px 30px;
-  border-radius: 50px;
-  transition: all ease-in-out 0.4s;
-}
-
-.hero .content .why-box .more-btn i {
-  font-size: 14px;
-}
-
-.hero .content .why-box .more-btn:hover {
-  background: var(--surface-color);
-  color: var(--accent-color);
-}
-
-.hero .content .icon-box {
-  text-align: center;
-  border-radius: 10px;
-  background: color-mix(in srgb, var(--surface-color), transparent 20%);
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  padding: 40px 30px;
-  width: 100%;
-}
-
-.hero .content .icon-box i {
-  font-size: 40px;
-  color: var(--accent-color);
-}
-
-.hero .content .icon-box h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 10px 0 20px 0;
-}
-
-.hero .content .icon-box p {
-  font-size: 15px;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-}
-
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
@@ -1060,9 +1002,16 @@ section,
   font-weight: 700;
 }
 
+.about .content {
+  text-align: justify;
+  /* Ensures text is justified */
+}
+
 .about .content ul {
   list-style: none;
   padding: 0;
+  justify-content: center;
+  /* Centers the content */
 }
 
 .about .content ul li {
@@ -1096,6 +1045,14 @@ section,
   left: calc(50% - 47px);
   top: calc(30% - 47px);
 }
+
+.about .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Ensures the entire row's content is centered */
+}
+
 
 /*--------------------------------------------------------------
 # Stats Section
@@ -1148,17 +1105,17 @@ section,
 --------------------------------------------------------------*/
 .services .service-item {
   background-color: var(--surface-color);
-  text-align: center;
+  text-align: left;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
-  padding: 50px 20px;
+  padding: 20px 20px;
   transition: all ease-in-out 0.3s;
   height: 100%;
 }
 
 .services .service-item .icon {
   margin: 0 auto;
-  width: 64px;
-  height: 64px;
+  width: 60px;
+  height: 60px;
   background: var(--accent-color);
   border-radius: 4px;
   display: flex;
@@ -1198,6 +1155,7 @@ section,
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  margin: auto;
 }
 
 .services .service-item:hover {
@@ -1316,13 +1274,15 @@ section,
 }
 
 .departments .details h3 {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
 .departments .details p {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
+  font-size: 15px;
+  text-align: justify;
 }
 
 .departments .details p:last-child {
@@ -1769,7 +1729,7 @@ section,
   z-index: 2000;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
 .btn-whatsapp-pulse {
@@ -1783,9 +1743,9 @@ section,
   text-decoration: none;
   border-radius: 50%;
   position: relative;
-  animation: pulse 1.5s ease-out infinite;
+  animation: pulse 1.2s ease-out infinite;
   transition: transform 0.3s ease-in-out;
-  padding: 10px;
+  padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -1809,11 +1769,11 @@ section,
 
 @keyframes pulse {
   0% {
-      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
   }
 
   80% {
-      box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
   }
 }
 
@@ -1867,4 +1827,14 @@ section,
   .management .team-card {
     margin-bottom: 30px;
   }
+}
+
+/* style.css */
+.submit-button {
+  color: white;
+  background-color: red;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
 }

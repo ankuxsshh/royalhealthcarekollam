@@ -1,3 +1,79 @@
-{% extends 'base.html' %}Careers | Royal Health Care{% block content %}
+{% extends 'base.html' %}
+<title>Careers | Royal Health Care</title>
 
+{% block content %}
+  <!-- Background Image Section -->
+  <section id="background-section" class="d-flex align-items-center justify-content-center" style="background-image: url('https://img.freepik.com/free-photo/copy-space-medical-desk-with-stethoscope_23-2148519746.jpg'); background-size: cover; background-position: center center; height: 50vh; max-width: 100%; color: #fff; filter: grayscale(0.5);">
+    <div class="container text-center">
+      <h1 class="lead" style="font-weight: bold; font-size: 34px; color: #fff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Join Our Team</h1>
+    </div>
+  </section>
+  <!-- /Background Image Section -->
+
+  <!-- Careers Section -->
+  <section id="careers" class="careers section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>CAREER OPPORTUNITIES</h2>
+      <p>"Become a Part of Our Healthcare Family – Your Career Starts Here"</p>
+    </div>
+    <!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4">
+        <div class="col-lg-6">
+          <!-- Career Image Section (Left Column) -->
+          <div class="career-image" style="background-image: url('https://media.istockphoto.com/id/1468499951/photo/hands-together-of-doctors-and-nurses-in-healthcare-teamwork-solidarity-and-support-in.jpg?s=612x612&w=0&k=20&c=l4IAQQGb4X8EdAilAbcd6iJT2u49xfUV2PJvckxXBdM='); background-size: cover; background-position: center center; height: 100%; filter: grayscale(0.5);"></div>
+        </div>
+
+        <div class="col-lg-6">
+          <!-- Career Application Form (Right Column) -->
+          <form action="forms/career-application.php" method="post" class="php-email-form bg-light" style="padding: 50px;" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4">
+              <div class="col-md-12">
+                <input type="text" name="full_name" class="form-control" placeholder="Full Name" required="" />
+              </div>
+
+              <div class="col-md-6">
+                <input type="email" class="form-control" name="email" placeholder="Your Email" required="" />
+              </div>
+
+              <div class="col-md-6">
+                <input type="text" name="phone_number" class="form-control" placeholder="Phone Number" required="" />
+              </div>
+
+              <div class="col-md-12">
+                <select class="form-control" name="position" required="">
+                  <option value="">Select Position</option>
+                  <option value="Nurse">Nurse</option>
+                  <option value="Doctor">Doctor</option>
+                  <option value="Administrative">Administrative</option>
+                  <option value="Support">Support Staff</option>
+                </select>
+              </div>
+
+              <div class="col-md-12">
+                <textarea class="form-control" name="cover_letter" rows="6" placeholder="Cover Letter" required=""></textarea>
+              </div>
+
+              <div class="col-md-12">
+                <label for="resume">Upload Resume (PDF only):</label>
+                <input type="file" class="form-control" name="resume" accept=".pdf" required="" />
+              </div>
+
+              <div class="col-md-12 text-center">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your application has been submitted. Thank you for applying!</div>
+
+                <!-- Updated Button with class for style.css -->
+                <button class="submit-button" type="submit">Submit Application</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Careers Section -->
 {% endblock %}
