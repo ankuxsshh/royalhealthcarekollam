@@ -781,7 +781,7 @@ h6 {
   top: calc(53% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #ffffff;
-  border-color: var(--accent-color) black var(--accent-color) black;
+  border-color: var(--accent-color) var(--accent-color) var(--accent-color) black;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -1759,12 +1759,12 @@ section,
 
 .whatsapp-button {
   background: #25d366;
-  border: 2px solid white;
+  border: 1px solid white;
 }
 
 .call-button {
   background: #000000;
-  border: 2px solid white;
+  border: 1px solid white;
 }
 
 @keyframes pulse {
@@ -1787,7 +1787,6 @@ section,
   font-size: 1.2rem;
   color: #777;
   text-align: center;
-  margin-bottom: 40px;
 }
 
 .management .team-card {
@@ -1804,22 +1803,19 @@ section,
 
 .management .team-card img {
   width: 100%;
-  height: 200px;
+  height: 150px;
   object-fit: contain;
 }
 
-.management .team-card .card-body {
-  padding: 20px;
-}
 
 .management .team-card .card-title {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .management .team-card .card-text {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   color: #555;
 }
 
@@ -1838,3 +1834,4 @@ section,
   border-radius: 20px;
   cursor: pointer;
 }
+
