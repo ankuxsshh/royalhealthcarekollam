@@ -1829,3 +1829,23 @@ section,
   cursor: pointer;
 }
 
+.mission-vision-item {
+  background-color: #ececec57; /* Bootstrap bg-light */
+  border-radius: 0px;
+  padding: 40px 20px;
+  position: relative;
+  color: rgb(229, 9, 19);
+  text-align: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mission-vision-item:hover {
+  background-color: rgb(229, 9, 19);
+  color: white;
+}
+
