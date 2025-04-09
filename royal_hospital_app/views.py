@@ -2,6 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 
+
 def index(request):
     return render(request, 'index.html')
 
@@ -31,4 +32,10 @@ def managements(request):
 
 def careers(request):
     return render(request, 'careers.html')
+
+def intpatient(request):
+    return render(request, 'intpatient.html')
+
+def events(request):
+    return render(request, 'events.html')
 
