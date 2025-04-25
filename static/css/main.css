@@ -256,13 +256,14 @@ h6 {
   padding-left: 5px;
   color: var(--contrast-color);
   text-decoration: none;
+  font-size: 14px;
 }
 
 @media (max-width: 575px) {
 
   .header .topbar .contact-info i a,
   .header .topbar .contact-info i span {
-    font-size: 11px;
+    font-size: 10px;
     text-decoration: none;
   }
 }
@@ -292,7 +293,7 @@ h6 {
 
 .header .branding {
   min-height: 60px;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 .header .logo img {
@@ -1128,7 +1129,7 @@ section,
   background-color: var(--surface-color);
   text-align: left;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
-  padding: 20px 20px;
+  padding: 20px 10px;
   transition: all ease-in-out 0.3s;
   height: 100%;
 }
@@ -1824,7 +1825,7 @@ section,
 .management .team-card .card-title {
   font-size: 1rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .management .team-card .card-text {
@@ -1871,5 +1872,39 @@ section,
 .mission-vision-item:hover {
   background-color: rgb(229, 9, 19);
   color: white;
+}
+
+.floating-widget {
+  position: absolute;
+  right: 0px;
+  top: 40%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1;
+}
+
+.floating-widget .action-btn {
+  display: flex;
+  align-items: center;
+  background-color: #d60000;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 20px 0 0 20px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.floating-widget .action-btn i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.floating-widget .action-btn:hover {
+  background-color: #b80000;
 }
 
