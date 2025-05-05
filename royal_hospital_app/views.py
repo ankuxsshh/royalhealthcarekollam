@@ -1,10 +1,12 @@
 from django.shortcuts import render
+from .models import Testimonial
 
 # Create your views here.
 
 
 def index(request):
-    return render(request, 'index.html')
+    testimonials = Testimonial.objects.order_by('-created_at')
+    return render(request, 'index.html', {'testimonials': testimonials})
 
 def about(request):
     return render(request, 'about.html')
