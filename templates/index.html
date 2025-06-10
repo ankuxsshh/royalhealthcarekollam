@@ -245,7 +245,7 @@
                     <p class="fst-italic">General Medicine is a medical specialty that focuses on the diagnosis, treatment, and prevention of a wide range of diseases affecting adults. It covers various conditions related to the heart, lungs, digestive system, nervous system, and other vital organs.</p>
                     <p>General physicians are trained to manage chronic illnesses like diabetes and hypertension, as well as acute infections and common health issues. They provide comprehensive healthcare, emphasizing patient education, lifestyle modifications, and preventive care. General Medicine serves as the foundation of medical practice, ensuring early detection and appropriate treatment of diseases while coordinating specialized care when needed.</p>
                     <p>
-                      <strong style="color: red;">Dr. Tuman Krishnan - General Physician and Diabetologist</strong>
+                      <strong style="color: red;">Dr. Tuman Krishnan - Consultant Physician and Diabetologist</strong>
                     </p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -698,7 +698,7 @@
               </div>
               <div class="member-info">
                 <h4>Dr. Tuman Krishnnan</h4>
-                <span>General Medicine and Diabetologist</span>
+                <span>Consultant Medicine and Diabetologist</span>
                 <p>MBBS, MD, FCCM, CCEBDM</p>
                 <br />
                 <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
@@ -850,7 +850,16 @@
       <!-- End Section Title -->
 
       <div class="container">
-        <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
+        <!-- Django Form Submission URL -->
+        <form action="{% url 'make_appointment' %}" method="post" role="form" class="php-email-form">
+          {% csrf_token %}
+
+          {% if messages %}
+            {% for message in messages %}
+              <div class="alert alert-{{ message.tags }} mt-3">{{ message }}</div>
+            {% endfor %}
+          {% endif %}
+
           <div class="row justify-content-center">
             <div class="col-md-12">
               <div class="row">
@@ -892,7 +901,16 @@
                   <div class="form-group mb-3">
                     <input type="date" name="date" id="date" class="form-control" required />
                   </div>
+
+                  <!-- Submit Button -->
+                  <div class="form-group mt-4 text-center">
+                    <button type="submit" class="btn btn-danger w-100">Submit Appointment</button>
+                  </div>
                 </div>
+
+                <div class="loading" style="display: none;">Loading...</div>
+                <div class="error-message" style="display: none;">An error occurred. Please try again.</div>
+                <div class="sent-message" style="display: none;">Your appointment request has been sent successfully!</div>
 
                 <!-- Contact Information -->
                 <div class="col-md-4 text-center">

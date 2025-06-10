@@ -13,4 +13,5 @@ urlpatterns = [
     path('findadoctor',views.findadoctor,name="findadoctor"),
     path('intpatient',views.intpatient,name="intpatient"),
     path('events',views.events,name="events"),
+    path('make-appointment/', views.make_appointment, name='make_appointment'),
 ]
