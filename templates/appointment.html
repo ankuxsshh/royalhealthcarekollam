@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+<title>Book Your Appointment | Royal Health Care</title>
+
+{% block content %}
+<!-- Background Image Section -->
+<section id="background-section" class="d-flex align-items-center justify-content-center"
+    style="background-image: url('static/img/careers.jpg'); background-size: cover; background-position: center center; height: 50vh; max-width: 100%; color: #fff; filter: grayscale(0.5);">
+    <div class="container text-center">
+        <h1 class="lead fw-bold" style="font-size: 38px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+            Book Your Appointment
+        </h1>
+        <p class="lead fw-bold" style="font-size: 14px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+            Home <i class="fa-solid fa-angles-right"></i> Book Your Appointment
+        </p>
+    </div>
+</section>
+
+<!-- Appointment Form Section -->
+<section id="appointment" class="appointment section bg-light py-5">
+    <div class="container text-center section-title" data-aos="fade-up">
+        <h2>Book Your Appointment</h2>
+        <p class="text-danger fw-bold" data-aos="fade-right">
+            "Secure your visit with us – Fill out the form below to schedule a consultation with our specialists."
+        </p>
+    </div>
+
+    <div class="container">
+        <form action="{% url 'make_appointment' %}" method="post" class="php-email-form">
+            {% csrf_token %}
+
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }} mt-3">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+
+            <div class="row justify-content-center">
+                <!-- Personal Info -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-center fw-bold mb-3">Patient Information</h5>
+                    <div class="form-group mb-3">
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Full Name *" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone Number *" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Email Address *" required>
+                    </div>
+                </div>
+
+                <!-- Appointment Info -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-center fw-bold mb-3">Appointment Details</h5>
+                    <div class="form-group mb-3">
+                        <select name="department" id="department" class="form-select" required>
+                            <option value="">Choose Department *</option>
+                            <option value="24H CASUALTY AND TRAUMA CARE">24H CASUALTY AND TRAUMA CARE</option>
+                            <option value="GENERAL MEDICINE">GENERAL MEDICINE</option>
+                            <option value="GENERAL SURGERY">GENERAL SURGERY</option>
+                            <option value="ORTHOPAEDICS">ORTHOPAEDICS</option>
+                            <option value="GYNAECOLOGY">GYNAECOLOGY</option>
+                            <option value="ENT">ENT</option>
+                            <option value="PEDIATRIC">PEDIATRIC</option>
+                            <option value="RADIOLOGY">RADIOLOGY</option>
+                            <option value="ANASTHESIA">ANASTHESIA</option>
+                            <option value="CARDIOLOGY">CARDIOLOGY</option>
+                            <option value="NEURO MEDICINE">NEURO MEDICINE</option>
+                            <option value="NEURO SURGERY">NEURO SURGERY</option>
+                            <option value="OMF">OMF</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="date" name="date" id="date" class="form-control" required>
+                    </div>
+                    <div class="form-group mt-4">
+                        <button type="submit" class="btn btn-danger w-100">Book Appointment</button>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-4 mb-4 text-center">
+                    <h5 class="fw-bold mb-3">Contact Us</h5>
+                    <div class="d-flex justify-content-center align-items-center mb-3">
+                        <div class="icon me-3 rounded-circle bg-danger text-white d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                            <i class="bi bi-telephone-fill"></i>
+                        </div>
+                        <div class="text-start">
+                            <strong class="text-danger">Call Us:</strong>
+                            <p class="mb-0">0487-2593555</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center mb-3">
+                        <div class="icon me-3 rounded-circle bg-danger text-white d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                            <i class="bi bi-telephone-fill"></i>
+                        </div>
+                        <div class="text-start">
+                            <strong class="text-danger">Call Us:</strong>
+                            <p class="mb-0">0474-2592888</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center mb-3">
+                        <div class="icon me-3 rounded-circle bg-danger text-white d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                            <i class="bi bi-whatsapp"></i>
+                        </div>
+                        <div class="text-start">
+                            <strong class="text-danger">WhatsApp:</strong>
+                            <p class="mb-0">+91 9072530302</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Optional Messages -->
+            <div class="loading" style="display: none;">Processing your request...</div>
+            <div class="error-message" style="display: none;">An error occurred. Please try again.</div>
+            <div class="sent-message" style="display: none;">Your appointment has been successfully scheduled!</div>
+        </form>
+    </div>
+</section>
+{% endblock %}

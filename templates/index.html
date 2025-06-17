@@ -1,1019 +1,1346 @@
 {% extends 'base.html' %}Home | Royal Health Care{% block content %}
-  <main class="main">
-    <section id="hero" class="hero section light-background">
-      <div class="hero-slider">
-        <video class="slide" autoplay muted loop playsinline>
-          <source src="static/img/ENTRENCE.mp4" type="video/mp4" />
-        </video>
-        <video class="slide" autoplay muted loop playsinline>
-          <source src="static/img/Reception.mp4" type="video/mp4" />
-        </video>
-        <video class="slide" autoplay muted loop playsinline>
-          <source src="static/img/Waiting area.mp4" type="video/mp4" />
-        </video>
-      </div>
+<main class="main">
+  <section id="hero" class="hero section light-background">
+    <div class="hero-slider">
+      <video class="slide" autoplay muted loop playsinline>
+        <source src="static/img/Waiting area.mp4" type="video/mp4" />
+      </video>
+      <video class="slide" autoplay muted loop playsinline>
+        <source src="static/img/Reception.mp4" type="video/mp4" />
+      </video>
+      <video class="slide" autoplay muted loop playsinline>
+        <source src="static/img/Waiting area.mp4" type="video/mp4" />
+      </video>
+    </div>
 
-      <div class="container position-relative">
-        <div class="welcome position-relative">
-          <h2 data-aos="fade-right">
-            WELCOME TO
-            <br />Royal <span style="color: black;" data-aos="fade-right">Healthcare</span>
-          </h2>
-          <p data-aos="fade-right">"Healing with Heart, Caring with Excellence”</p>
+    <div class="container position-relative">
+      <div class="welcome position-relative">
+        <h2 data-aos="fade-right">
+          WELCOME TO
+          <br />Royal <span style="color: black;" data-aos="fade-right">Healthcare</span>
+        </h2>
+        <p data-aos="fade-right">"Healing with Heart, Caring with Excellence”</p>
+        <br />
+      </div>
+    </div>
+
+    <!-- Floating Widget -->
+    <div class="floating-widget">
+      <a href="#find-doctor" class="action-btn">
+        <i class="fa-solid fa-user-doctor"></i>
+        <span>Find a Doctor</span>
+      </a>
+      <a href="#appointment" class="action-btn">
+        <i class="bi bi-calendar-check"></i>
+        <span>Book an Appointment</span>
+      </a>
+      <a href="#health-checkup" class="action-btn">
+        <i class="fa-solid fa-stethoscope"></i>
+        <span>Book a Health Checkup</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="row gy-4 gx-5">
+        <div class="col-lg-6 position-relative align-self-start justify-content-center justify-text">
+          <img src="static/img/cover.jpeg" class="img-fluid" alt="" data-aos="fade-right" />
+          <a href="https://www.youtube.com/watch?v=pTMp1CERnq8" class="glightbox pulsating-play-btn"
+            data-aos="fade-right"></a>
           <br />
+          <br />
+          <p class="justify-content-center justify-text" data-aos="fade-right">Royal Healthcare is excited to announce
+            its full reopening in 2025, featuring upgraded facilities, advanced medical equipment, and expanded
+            services. We remain committed to delivering high-quality healthcare in a modern and safe environment. Our
+            team of dedicated doctors, nurses, and staff offer care, comfort, and support, whether for routine
+            check-ups, specialized treatments, or emergencies. We are proud to continue serving the Chathannoor
+            community and beyond, and we thank you for trusting us with your health.</p>
+        </div>
+
+        <div class="col-lg-6 content justify-content-center justify-text">
+          <h3 data-aos="fade-right">ABOUT US</h3>
+          <p class="justify-content-center justify-text" data-aos="fade-right">Royal Healthcare, located in Chathannoor,
+            Kollam, Kerala, has been a trusted healthcare provider since 2005. Our mission is simple: to deliver
+            exceptional medical care and improve the health of our community. Over the years, we have earned a
+            reputation for compassionate care, modern facilities, and a dedicated team committed to enhancing the
+            well-being of those we serve.
+
+            In 2016, we temporarily closed for a comprehensive renovation to upgrade our facilities and expand our
+            services. However, the completion of our plans was delayed, especially due to the challenges posed by the
+            COVID-19 pandemic. In response, we offered our facility to the government as a dedicated COVID-19 care
+            center to support local efforts.</p>
+          <ul>
+            <li>
+              <i class="fa-solid fa-pump-medical" data-aos="fade-right"></i>
+              <div>
+                <h5 data-aos="fade-right">Our Commitment to Excellence</h5>
+                <p data-aos="fade-right">Royal Healthcare is dedicated to offering quality services.</p>
+              </div>
+            </li>
+            <br />
+            <li>
+              <i class="fa-solid fa-heart-circle-xmark" data-aos="fade-right"></i>
+              <div>
+                <h5 data-aos="fade-right">A Strong Foundation of Care</h5>
+                <p data-aos="fade-right">Our team delivers compassionate care with expertise daily.</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
+    </div>
+  </section>
+  <!-- /About Section -->
 
-      <!-- Floating Widget -->
-      <div class="floating-widget">
-        <a href="#find-doctor" class="action-btn">
+  <!-- Chairman's Statement Section -->
+  <section id="chairman" class="chairman section py-5">
+    <div class="container">
+      <div class="row gy-4 gx-5 align-items-center">
+        <div class="col-lg-8 content">
+          <h3 data-aos="fade-right">CHAIRMAN'S STATEMENT</h3>
+          <p class="fst-italic" data-aos="fade-right">
+            <i class="fa-solid fa-quote-left" style="color: rgb(229, 9, 19)"></i>
+            At Royal Healthcare, we see healthcare not just as a service, but as a deep commitment to the well-being of
+            our community. Our vision is to build a healthcare ecosystem where quality, compassion, and affordability go
+            hand in hand. We strive to ensure that no one in Kerala feels the need to look beyond our borders for
+            world-class medical treatment.
+          </p>
+          <p class="fst-italic" data-aos="fade-right">Our mission is twofold: first, to deliver top-tier healthcare to
+            every individual, regardless of their economic status; and second, to empower our skilled medical
+            professionals with the tools, training, and support they need to flourish right here in Kerala. By investing
+            in our people, we hope to reduce the outflow of talent and build a strong, self-sustaining healthcare
+            system.</p>
+          <p class="fst-italic" data-aos="fade-right">
+            We are equally devoted to working with local charitable organizations to ensure the underserved and
+            vulnerable are never left behind. Healthcare should not be a privilege but a fundamental right. With a focus
+            on innovation, integrity, and compassion, Royal Healthcare is more than a hospital—it’s a vision for a
+            healthier Kerala. <i class="fa-solid fa-quote-right" style="color: rgb(229, 9, 19)"></i>
+          </p>
+          <p style="color: rgb(229, 9, 19);" data-aos="fade-right">
+            - <b>N. Radhakrishnan</b>
+          </p>
+          <P style="color: rgb(229, 9, 19);" data-aos="fade-right">
+            <b>Chairman, Royal Healthcare</b>
+          </P>
+        </div>
+        <div class="col-lg-4 text-center" data-aos="fade-right">
+          <img src="static/img/chairman.jpeg" class="img-fluid" alt="Chairman" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Chairman's Statement Section -->
+
+  <!-- Stats Section -->
+  <section id="stats" class="stats section light-background">
+    <div class="container" data-aos="fade-right">
+      <div class="row gy-4">
+        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+          <i class="fas fa-flask"></i>
+          <div class="stats-item">
+            <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"
+              data-aos="fade-right"></span>
+            <p data-aos="fade-right">Research Labs</p>
+          </div>
+        </div>
+        <!-- End Stats Item -->
+
+        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+          <i class="fas fa-award"></i>
+          <div class="stats-item">
+            <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"
+              data-aos="fade-right"></span>
+            <p data-aos="fade-right">Awards</p>
+          </div>
+        </div>
+        <!-- End Stats Item -->
+
+        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+          <i class="fa-regular fa-hospital"></i>
+          <div class="stats-item">
+            <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"
+              data-aos="fade-right"></span>
+            <p data-aos="fade-right">Departments</p>
+          </div>
+        </div>
+        <!-- End Stats Item -->
+
+        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
           <i class="fa-solid fa-user-doctor"></i>
-          <span>Find a Doctor</span>
-        </a>
-        <a href="#appointment" class="action-btn">
-          <i class="bi bi-calendar-check"></i>
-          <span>Book an Appointment</span>
-        </a>
-        <a href="#health-checkup" class="action-btn">
-          <i class="fa-solid fa-stethoscope"></i>
-          <span>Book a Health Checkup</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-      <div class="container">
-        <div class="row gy-4 gx-5">
-          <div class="col-lg-6 position-relative align-self-start justify-content-center justify-text">
-            <img src="static/img/cover.jpeg" class="img-fluid" alt="" data-aos="fade-right" />
-            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn" data-aos="fade-right"></a>
-            <br />
-            <br />
-            <p class="justify-content-center justify-text" data-aos="fade-right">Royal Healthcare is excited to announce its full reopening in 2025, featuring upgraded facilities, advanced medical equipment, and expanded services. We remain committed to delivering high-quality healthcare in a modern and safe environment. Our team of dedicated doctors, nurses, and staff offer care, comfort, and support, whether for routine check-ups, specialized treatments, or emergencies. We are proud to continue serving the Chathannoor community and beyond, and we thank you for trusting us with your health.</p>
-          </div>
-
-          <div class="col-lg-6 content justify-content-center justify-text">
-            <h3 data-aos="fade-right">ABOUT US</h3>
-            <p class="justify-content-center justify-text" data-aos="fade-right">Royal Healthcare, located in Chathannoor, Kollam, Kerala, has been a trusted healthcare provider since 2005. Our mission is simple: to deliver exceptional medical care and improve the health of our community. Over the years, we have earned a reputation for compassionate care, modern facilities, and a dedicated team committed to enhancing the well-being of those we serve.
-
-              In 2016, we temporarily closed for a comprehensive renovation to upgrade our facilities and expand our services. However, the completion of our plans was delayed, especially due to the challenges posed by the COVID-19 pandemic. In response, we offered our facility to the government as a dedicated COVID-19 care center to support local efforts.</p>
-            <ul>
-              <li>
-                <i class="fa-solid fa-pump-medical" data-aos="fade-right"></i>
-                <div>
-                  <h5 data-aos="fade-right">Our Commitment to Excellence</h5>
-                  <p data-aos="fade-right">Royal Healthcare is dedicated to offering quality services.</p>
-                </div>
-              </li>
-              <br />
-              <li>
-                <i class="fa-solid fa-heart-circle-xmark" data-aos="fade-right"></i>
-                <div>
-                  <h5 data-aos="fade-right">A Strong Foundation of Care</h5>
-                  <p data-aos="fade-right">Our team delivers compassionate care with expertise daily.</p>
-                </div>
-              </li>
-            </ul>
+          <div class="stats-item">
+            <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"
+              data-aos="fade-right"></span>
+            <p data-aos="fade-right">Doctors</p>
           </div>
         </div>
+        <!-- End Stats Item -->
       </div>
-    </section>
-    <!-- /About Section -->
+    </div>
+  </section>
+  <!-- /Stats Section -->
 
-    <!-- Chairman's Statement Section -->
-    <section id="chairman" class="chairman section py-5">
-      <div class="container">
-        <div class="row gy-4 gx-5 align-items-center">
-          <div class="col-lg-8 content">
-            <h3 data-aos="fade-right">CHAIRMAN'S STATEMENT</h3>
-            <p class="fst-italic" data-aos="fade-right">
-              <i class="fa-solid fa-quote-left" style="color: rgb(229, 9, 19)"></i>
-              At Royal Healthcare, we see healthcare not just as a service, but as a deep commitment to the well-being of our community. Our vision is to build a healthcare ecosystem where quality, compassion, and affordability go hand in hand. We strive to ensure that no one in Kerala feels the need to look beyond our borders for world-class medical treatment.
-            </p>
-            <p class="fst-italic" data-aos="fade-right">Our mission is twofold: first, to deliver top-tier healthcare to every individual, regardless of their economic status; and second, to empower our skilled medical professionals with the tools, training, and support they need to flourish right here in Kerala. By investing in our people, we hope to reduce the outflow of talent and build a strong, self-sustaining healthcare system.</p>
-            <p class="fst-italic" data-aos="fade-right">
-              We are equally devoted to working with local charitable organizations to ensure the underserved and vulnerable are never left behind. Healthcare should not be a privilege but a fundamental right. With a focus on innovation, integrity, and compassion, Royal Healthcare is more than a hospital—it’s a vision for a healthier Kerala. <i class="fa-solid fa-quote-right" style="color: rgb(229, 9, 19)"></i>
-            </p>
-            <p style="color: rgb(229, 9, 19);" data-aos="fade-right">
-              - <b>N. Radhakrishnan</b>
-            </p>
-            <P style="color: rgb(229, 9, 19);" data-aos="fade-right">
-              <b>Chairman, Royal Healthcare</b>
-            </P>
-          </div>
-          <div class="col-lg-4 text-center" data-aos="fade-right">
-            <img src="static/img/chairman.jpeg" class="img-fluid" alt="Chairman" />
-          </div>
+  <!-- CEO's Statement Section -->
+  <section id="ceo" class="ceo section py-5">
+    <div class="container">
+      <div class="row gy-4 gx-5 align-items-center">
+        <!-- Image Column (20%) -->
+        <div class="col-lg-3 text-center" data-aos="fade-right">
+          <img src="static/img/ceo1.png" class="img-fluid" alt="CEO" />
+        </div>
+        <!-- Content Column (80%) -->
+        <div class="col-lg-9 content" data-aos="fade-up" data-aos-delay="200">
+          <h3 data-aos="fade-right">CHIEF EXECUTIVE OFFICER'S STATEMENT</h3>
+          <p class="fst-italic" data-aos="fade-right">
+            <i class="fa-solid fa-quote-left" style="color: rgb(229, 9, 19)"></i> At Royal Healthcare, Chattannoor, our
+            mission is clear—to redefine healthcare in Kerala by providing world-class medical services at an affordable
+            cost while fostering a culture of growth, innovation, and community service.
+          </p>
+          <p class="fst-italic" data-aos="fade-right">Beyond patient care, we also recognize our responsibility to
+            empower the medical professionals of tomorrow. Through structured training programs, career development
+            opportunities, and access to modern medical advancements, we aim to equip our employees with everything they
+            need to grow and excel without having to leave the state.</p>
+          <p class="fst-italic" data-aos="fade-right">Another pillar of our vision is giving back to the community. We
+            actively collaborate with local charitable organizations to provide medical aid to the underprivileged,
+            ensuring that quality healthcare is not limited by financial barriers.</p>
+          <p class="fst-italic" data-aos="fade-right">
+            At Royal Healthcare, we are not just building a hospital—we are building a healthier, stronger, and
+            self-sufficient Kerala. Our commitment to excellence, compassion, and integrity drives us forward, and we
+            look forward to making a lasting impact on the lives of our patients and the community. <i
+              class="fa-solid fa-quote-right" style="color: rgb(229, 9, 19)"></i>
+          </p>
+          <p style="color: rgb(229, 9, 19);" data-aos="fade-right">
+            - <b>Rahul Radhakrishnan</b>
+          </p>
+          <p style="color: rgb(229, 9, 19);" data-aos="fade-right">
+            <b>Chief Executive Officer, Royal Healthcare</b>
+          </p>
         </div>
       </div>
-    </section>
-    <!-- /Chairman's Statement Section -->
+    </div>
+  </section>
+  <!-- /CEO's Statement Section -->
 
-    <!-- Stats Section -->
-    <section id="stats" class="stats section light-background">
-      <div class="container" data-aos="fade-right">
-        <div class="row gy-4">
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="fas fa-flask"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter" data-aos="fade-right"></span>
-              <p data-aos="fade-right">Research Labs</p>
-            </div>
-          </div>
-          <!-- End Stats Item -->
+  <!-- Departments Section -->
+  <section id="departments" class="departments section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>DEPARTMENTS</h2>
+    </div>
+    <!-- End Section Title -->
 
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="fas fa-award"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter" data-aos="fade-right"></span>
-              <p data-aos="fade-right">Awards</p>
-            </div>
-          </div>
-          <!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="fa-regular fa-hospital"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter" data-aos="fade-right"></span>
-              <p data-aos="fade-right">Departments</p>
-            </div>
-          </div>
-          <!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="fa-solid fa-user-doctor"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter" data-aos="fade-right"></span>
-              <p data-aos="fade-right">Doctors</p>
-            </div>
-          </div>
-          <!-- End Stats Item -->
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row">
+        <div class="col-lg-3">
+          <ul class="nav nav-tabs flex-column">
+            <li class="nav-item">
+              <a class="nav-link active show" data-bs-toggle="tab" href="#departments-tab-1">24H CASUALTY AND TRAUMA
+                CARE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-2">GENERAL MEDICINE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">GENERAL SURGERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">ORTHOPAEDICS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-5">GYNAECOLOGY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-6">ENT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-14">FAMILY MEDICINE</a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </section>
-    <!-- /Stats Section -->
-
-    <!-- CEO's Statement Section -->
-    <section id="ceo" class="ceo section py-5">
-      <div class="container">
-        <div class="row gy-4 gx-5 align-items-center">
-          <!-- Image Column (20%) -->
-          <div class="col-lg-3 text-center" data-aos="fade-right">
-            <img src="static/img/ceo1.png" class="img-fluid" alt="CEO" />
-          </div>
-          <!-- Content Column (80%) -->
-          <div class="col-lg-9 content" data-aos="fade-up" data-aos-delay="200">
-            <h3 data-aos="fade-right">CHIEF EXECUTIVE OFFICER'S STATEMENT</h3>
-            <p class="fst-italic" data-aos="fade-right">
-              <i class="fa-solid fa-quote-left" style="color: rgb(229, 9, 19)"></i> At Royal Healthcare, Chattannoor, our mission is clear—to redefine healthcare in Kerala by providing world-class medical services at an affordable cost while fostering a culture of growth, innovation, and community service.
-            </p>
-            <p class="fst-italic" data-aos="fade-right">Beyond patient care, we also recognize our responsibility to empower the medical professionals of tomorrow. Through structured training programs, career development opportunities, and access to modern medical advancements, we aim to equip our employees with everything they need to grow and excel without having to leave the state.</p>
-            <p class="fst-italic" data-aos="fade-right">Another pillar of our vision is giving back to the community. We actively collaborate with local charitable organizations to provide medical aid to the underprivileged, ensuring that quality healthcare is not limited by financial barriers.</p>
-            <p class="fst-italic" data-aos="fade-right">
-              At Royal Healthcare, we are not just building a hospital—we are building a healthier, stronger, and self-sufficient Kerala. Our commitment to excellence, compassion, and integrity drives us forward, and we look forward to making a lasting impact on the lives of our patients and the community. <i class="fa-solid fa-quote-right" style="color: rgb(229, 9, 19)"></i>
-            </p>
-            <p style="color: rgb(229, 9, 19);" data-aos="fade-right">
-              - <b>Rahul Radhakrishnan</b>
-            </p>
-            <p style="color: rgb(229, 9, 19);" data-aos="fade-right">
-              <b>Chief Executive Officer, Royal Healthcare</b>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /CEO's Statement Section -->
-
-    <!-- Departments Section -->
-    <section id="departments" class="departments section">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>DEPARTMENTS</h2>
-      </div>
-      <!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
-          <div class="col-lg-3">
-            <ul class="nav nav-tabs flex-column">
-              <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#departments-tab-1">24H CASUALTY AND TRAUMA CARE</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-2">GENERAL MEDICINE</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">GENERAL SURGERY</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">ORTHOPAEDICS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-5">GYNAECOLOGY</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-6">ENT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-14">FAMILY MEDICINE</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-9 mt-4 mt-lg-0">
-            <div class="tab-content">
-              <div class="tab-pane active show" id="departments-tab-1">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>24H CASUALTY AND TRAUMA CARE</h3>
-                    <p class="fst-italic">24-hour Casualty and Trauma Care provides round-the-clock emergency medical services for patients suffering from accidents, critical injuries, and life-threatening conditions. Equipped with state-of-the-art medical technology, a dedicated team of doctors, paramedics, and nurses ensures immediate and effective treatment.</p>
-                    <p class="fst-italic">We also have availability of a specialized ER Physician to respond and provide Trauma Care to the highest quality.</p>
-                    <p>The facility offers rapid response for road accidents, heart attacks, strokes, burns, and other medical emergencies. Advanced trauma units, intensive care support, and surgical intervention are available to stabilize and save lives. With a commitment to prompt and expert care, the center operates 24/7 to handle emergencies efficiently, ensuring the best possible outcomes for patients in critical conditions.</p>
-                    <p>
-                      <strong style="color: red;">Dr.Shehnaz Abdul Rahim - Emergency Medical Specialist</strong>
-                    </p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="https://www.felixhospital.com/sites/default/files/2022-11/best-emergency-trauma-care-hospital-in-noida.jpg" alt="" class="img-fluid" />
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="departments-tab-2">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>GENERAL MEDICINE</h3>
-                    <p class="fst-italic">General Medicine is a medical specialty that focuses on the diagnosis, treatment, and prevention of a wide range of diseases affecting adults. It covers various conditions related to the heart, lungs, digestive system, nervous system, and other vital organs.</p>
-                    <p>General physicians are trained to manage chronic illnesses like diabetes and hypertension, as well as acute infections and common health issues. They provide comprehensive healthcare, emphasizing patient education, lifestyle modifications, and preventive care. General Medicine serves as the foundation of medical practice, ensuring early detection and appropriate treatment of diseases while coordinating specialized care when needed.</p>
-                    <p>
-                      <strong style="color: red;">Dr. Tuman Krishnan - Consultant Physician and Diabetologist</strong>
-                    </p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="https://www.sixsigmahospital.com/wp-content/uploads/2024/02/young-male-psysician-with-patient-measuring-blood-pressure-3-scaled.webp" alt="" class="img-fluid" />
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="departments-tab-3">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>GENERAL SURGERY</h3>
-                    <p class="fst-italic">General surgery is a medical specialty that focuses on surgical procedures involving the abdomen, digestive tract, skin, soft tissues, and other vital organs. General surgeons are trained to perform operations such as appendectomies, hernia repairs, gallbladder removals, and trauma surgeries.</p>
-                    <p>They also handle conditions affecting the endocrine system, breasts, and vascular structures. In addition to performing surgeries, general surgeons play a crucial role in diagnosing conditions, providing preoperative and postoperative care, and managing surgical emergencies. With advancements in minimally invasive techniques, including laparoscopic and robotic-assisted surgeries, general surgery continues to evolve, offering patients safer and more effective treatment options.</p>
-                    <p>
-                      <strong style="color: red;">Dr. Sasidhara Panicker - General Surgeon</strong>
-                      <br />
-                      <strong style="color: red;">Dr. Lekshmipriya R - General Surgeon</strong>
-                      <br />
-                      <strong style="color: red;">Dr. Manikantan D - General Surgeon</strong>
-                    </p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="https://spfort.com/wp-content/uploads/2022/09/general-surgery-1.jpg" alt="" class="img-fluid" />
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="departments-tab-4">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>ORTHOPAEDICS</h3>
-                    <p class="fst-italic">Orthopaedics is a branch of medicine that focuses on diagnosing, treating, preventing, and rehabilitating disorders related to the musculoskeletal system, including bones, joints, muscles, ligaments, and tendons. Orthopaedic specialists, known as orthopaedists, treat conditions such as fractures, arthritis, spinal disorders, sports injuries, and congenital deformities.</p>
-                    <p>Treatments range from medications and physical therapy to surgical procedures like joint replacements and arthroscopy. Advanced technologies, including robotic-assisted surgery and regenerative medicine, have enhanced patient outcomes. Orthopaedics plays a vital role in improving mobility, reducing pain, and enhancing the quality of life for individuals with musculoskeletal issues.</p>
-                    <p>
-                      <strong style="color: red;">Dr.Bijumon K</strong> — <strong style="color: red;">Consultant, Orthopaedic Surgeon</strong>
-                    </p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="https://www.dheehospitals.com/wp-content/uploads/2024/10/orthopaedics-banner.jpg" alt="" class="img-fluid" />
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="departments-tab-5">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>GYNAECOLOGY</h3>
-                    <p class="fst-italic">Gynaecology is a branch of medicine that focuses on the health of the female reproductive system, including the uterus, ovaries, fallopian tubes, and vagina. It deals with a wide range of conditions such as menstrual disorders, pregnancy, fertility issues, hormonal imbalances, and menopause.</p>
-                    <p>Gynaecologists diagnose and treat infections, cancers, and other reproductive health concerns. Regular check-ups, including Pap smears and ultrasounds, help in early detection of potential issues. Gynaecology also overlaps with obstetrics, which focuses on pregnancy and childbirth. With advancements in medical technology, gynaecological treatments and surgeries have become more effective, improving women's overall health and well-being.</p>
-                    <p>
-                      <strong style="color: red;">Dr. Rejina N</strong> — <strong style="color: red;">Consultant, Gynecologist & Laproscopic Surgeon</strong>
-                    </p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="https://www.globexhealthtourism.com/upload/gynecologist-doctor-pregnant-woman-hospital-pregnancy-gynecology-medicine-health-care-people-concept-stethoscope-70948901.jpg" alt="" class="img-fluid" />
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="departments-tab-6">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>ENT</h3>
-                    <p class="fst-italic">ENT (Ear, Nose, and Throat) is a medical specialty focused on diagnosing and treating disorders related to the ear, nose, throat, head, and neck. Also known as Otolaryngology, it covers a wide range of conditions, including hearing loss, sinus infections, tonsillitis, voice disorders, and allergies.</p>
-                    <p>ENT specialists, or otolaryngologists, perform surgeries like tonsillectomies, sinus surgeries, and cochlear implants. They also manage conditions such as vertigo, nasal polyps, and throat cancer. This field integrates both medical and surgical treatments, helping patients with issues affecting breathing, hearing, speech, and balance. ENT specialists play a crucial role in improving overall quality of life.</p>
-                    <p>
-                      <strong style="color: red;">Dr. Lakshmy V Raj</strong> — <strong style="color: red;">ENT Head & Neck Surgeon</strong>
-                    </p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="https://shifaahospital.org/wp-content/uploads/2024/09/ent-surgery-about.jpg" alt="" class="img-fluid" />
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="departments-tab-14">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>FAMILY MEDICINE</h3>
-                    <p class="fst-italic">Family Medicine is a comprehensive medical specialty devoted to providing continuous and holistic healthcare for individuals and families across all ages, genders, and diseases. It emphasizes disease prevention and health promotion while managing acute and chronic illnesses.</p>
-                    <p>Family physicians are trained to diagnose and treat a wide range of medical issues, often serving as the first point of contact in the healthcare system. They coordinate patient care, manage chronic conditions like diabetes and hypertension, and provide routine health screenings and immunizations. Their broad scope ensures personalized and long-term care for all family members.</p>
-                    <p>
-                      <strong style="color: red;">Dr. Afzal K Azad</strong> — <strong style="color: red;">Consultant - Family Medicine</strong>
-                    </p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="https://media.istockphoto.com/id/692381776/photo/doctor-talking-to-a-family-at-the-hospital.jpg?s=612x612&w=0&k=20&c=cDwVx1sgH6JXQcD0N8ljSxU2389-O0NhufDa6FE9YbY=" alt="" class="img-fluid" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <br />
-        <br />
-        <br />
-
-        <div class="row">
-          <div class="col-lg-9 mt-4 mt-lg-0">
-            <div class="tab-content">
-              <div class="tab-pane active show" id="departments-tab-7">
-                <div class="row">
-                  <div class="col-lg-4 text-center order-1 order-lg-1">
-                    <img src="https://media.istockphoto.com/id/1388254153/photo/shot-of-a-baby-sitting-on-her-mothers-lap-while-being-examined-by-a-doctor.jpg?s=612x612&w=0&k=20&c=PBzQWrBVp8pIyYBH_ds8Bu8y4Y4j2jdL3Z2n8L1W0v4=" alt="" class="img-fluid" />
-                  </div>
-                  <div class="col-lg-8 details order-2 order-lg-2">
-                    <h3>PEDIATRIC</h3>
-                    <p class="fst-italic">Pediatrics is a branch of medicine that focuses on the health and well-being of infants, children, and adolescents. Pediatricians diagnose and treat a wide range of illnesses, from minor health issues to serious diseases, ensuring proper growth and development.</p>
-                    <p>They provide preventive care, vaccinations, and guidance on nutrition, behavior, and overall child health. Pediatricians also address congenital conditions, infections, and developmental disorders. Their approach is child-centered, considering both medical and emotional needs. By working closely with parents and caregivers, pediatricians play a crucial role in promoting a healthy childhood and laying the foundation for a strong, disease-free future.</p>
-                    <p>
-                      <strong style="color: red;">Dr.Herosh Thampan</strong> — <strong style="color: red;">Consultant, Pediatrician</strong>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="departments-tab-8">
-                <div class="row">
-                  <div class="col-lg-4 text-center order-1 order-lg-1">
-                    <img src="https://health.osu.edu/-/media/health/images/stories/2023/10/osu-leading-the-way.jpg" alt="" class="img-fluid" />
-                  </div>
-                  <div class="col-lg-8 details order-2 order-lg-2">
-                    <h3>RADIOLOGY</h3>
-                    <p class="fst-italic">Radiology is a medical specialty that uses imaging techniques to diagnose and treat diseases within the body. It involves the use of technologies such as X-rays, CT scans, MRI scans, ultrasound, and nuclear medicine to create visual representations of internal organs, tissues, and structures.</p>
-                    <p>Radiologists analyze these images to detect conditions like fractures, tumors, infections, and cardiovascular diseases. The field also includes interventional radiology, which involves minimally invasive procedures using imaging guidance for treatments like biopsies, stent placements, and vascular repairs. Radiology plays a crucial role in modern healthcare by enabling early diagnosis, guiding treatment decisions, and improving patient outcomes.</p>
-                    <p>
-                      <strong style="color: red;">Dr. Abit Asok - Radiologist</strong>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="departments-tab-9">
-                <div class="row">
-                  <div class="col-lg-4 text-center order-1 order-lg-1">
-                    <img src="https://madeforthismoment.asahq.org/wp-content/uploads/2017/10/iStock-627196908.jpg" alt="" class="img-fluid" />
-                  </div>
-                  <div class="col-lg-8 details order-2 order-lg-2">
-                    <h3>ANASTHESIA</h3>
-                    <p class="fst-italic">Anesthesia is a medical practice that involves administering drugs to prevent pain during surgeries, procedures, or diagnostic tests. It can be classified into three main types: general anesthesia, which induces a state of unconsciousness; regional anesthesia, which numbs a specific part of the body; and local anesthesia, which numbs a small area.</p>
-                    <p>Anesthetics work by blocking nerve signals, allowing patients to undergo procedures without experiencing pain. Anesthesia is carefully managed by anesthesiologists to ensure patient safety and comfort, considering factors such as the type of procedure, the patient's health, and potential side effects.</p>
-                    <p>
-                      <strong style="color: red;">Dr.Rakhi R Pillai</strong> — <strong style="color: red;">Consultant, Anaesthesiologist</strong>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="departments-tab-10">
-                <div class="row">
-                  <div class="col-lg-4 text-center order-1 order-lg-1">
-                    <img src="https://bangalorehospitals.in/wp-content/uploads/2024/08/person-holding-anatomic-heart-model-educational-purpose-1024x683.webp" alt="" class="img-fluid" />
-                  </div>
-                  <div class="col-lg-8 details order-2 order-lg-2">
-                    <h3>CARDIOLOGY</h3>
-                    <p class="fst-italic">Cardiology is a branch of medicine focused on diagnosing, treating, and preventing heart-related conditions and diseases. It involves a wide range of conditions, from congenital heart defects to acquired diseases such as coronary artery disease, heart failure, arrhythmias, and valvular disorders.</p>
-                    <p>Cardiologists use various diagnostic tools like echocardiograms, ECGs, and stress tests to assess heart health. Treatment options can include lifestyle changes, medications, minimally invasive procedures, and surgeries such as coronary artery bypass grafting (CABG). Preventive cardiology aims to reduce risk factors like high blood pressure, high cholesterol, and smoking to maintain heart health and prevent cardiovascular events.</p>
-                    <p>
-                      <strong style="color: red;">COMING SOON</strong>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="departments-tab-11">
-                <div class="row">
-                  <div class="col-lg-4 text-center order-1 order-lg-1">
-                    <img src="https://renaissancepvtltd.com/wp-content/uploads/2021/11/neuro-medicine-img.jpg" alt="" class="img-fluid" />
-                  </div>
-                  <div class="col-lg-8 details order-2 order-lg-2">
-                    <h3>NEURO MEDICINE</h3>
-                    <p class="fst-italic">Neuro medicine, also known as neurology, is a branch of medicine that focuses on the diagnosis, treatment, and management of disorders related to the nervous system. This includes conditions affecting the brain, spinal cord, nerves, and muscles. Neuro medicine encompasses a wide range of neurological diseases such as stroke, epilepsy, Parkinson's disease, Alzheimer's, multiple sclerosis, and peripheral neuropathy.</p>
-                    <p>Neurologists, the specialists in this field, use advanced techniques like imaging, electrophysiological tests, and genetic screenings to understand and treat neurological conditions. Effective neuro medicine can significantly improve patients' quality of life, manage symptoms, and, in some cases, prevent further progression of the disease.</p>
-                    <p>
-                      <strong style="color: red;">COMING SOON</strong>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="departments-tab-12">
-                <div class="row">
-                  <div class="col-lg-4 text-center order-1 order-lg-1">
-                    <img src="https://www.brainandspineni.com/wp-content/uploads/neurosurgery-2205.jpg" alt="" class="img-fluid" />
-                  </div>
-                  <div class="col-lg-8 details order-2 order-lg-2">
-                    <h3>NEURO SURGERY</h3>
-                    <p class="fst-italic">Neurosurgery is a specialized branch of surgery that focuses on the diagnosis, treatment, and surgical intervention of disorders affecting the brain, spinal cord, and peripheral nervous system. It encompasses a wide range of conditions, including brain tumors, traumatic brain injuries, spinal cord injuries, epilepsy, and neurovascular disorders such as stroke.</p>
-                    <p>Neurosurgeons employ advanced techniques such as minimally invasive surgery, stereotactic surgery, and neuroendoscopy to treat these complex conditions. The field requires a deep understanding of the nervous system's intricate anatomy and function, as well as expertise in critical decision-making to optimize patient outcomes and recovery.</p>
-                    <p>
-                      <strong style="color: red;">COMING SOON</strong>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="departments-tab-13">
-                <div class="row">
-                  <div class="col-lg-4 text-center order-1 order-lg-1">
-                    <img src="https://opportunities.omf.org/sap/bc/ui5_ui5/sap/zoppor_search/Reg_images/50418109.JPG?date=Wed_Feb_05_2025" alt="" class="img-fluid" />
-                  </div>
-                  <div class="col-lg-8 details order-2 order-lg-2">
-                    <h3>OMF</h3>
-                    <p class="fst-italic">OMF (Oral and Maxillofacial Surgery) in hospitals focuses on diagnosing and treating conditions affecting the mouth, jaws, face, and neck. It covers a wide range of medical issues, including trauma, tumors, infections, congenital deformities, and cosmetic enhancements.</p>
-                    <p>OMF specialists perform surgeries such as jaw realignment, tooth extractions, and reconstructive procedures for facial injuries. The goal is to restore function, improve aesthetics, and alleviate pain. In hospitals, OMF professionals collaborate with other medical teams, providing comprehensive care, often in emergency or specialized settings. This multidisciplinary approach ensures effective management of complex conditions affecting both health and appearance.</p>
-                    <p>
-                      <strong style="color: red;">Dr.Mithun MS</strong> — <strong style="color: red;">Oral & Maxillofacial Surgeon</strong>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <ul class="nav nav-tabs flex-column">
-              <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#departments-tab-7">PEDIATRIC</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-8">RADIOLOGY</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-9">ANASTHESIA</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-10">CARDIOLOGY</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-11">NEURO MEDICINE</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-12">NEURO SURGERY</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-13">OMF</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <br />
-        <br />
-      </div>
-    </section>
-    <!-- /Departments Section -->
-
-    <!-- Doctors Section -->
-    <section id="doctors" class="doctors section">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>DOCTORS</h2>
-        <p data-aos="fade-right" class="text-danger fw-bold">"Our experienced doctors provide expert care, after care and guidance to all our valuable patients"</p>
-      </div>
-      <!-- End Section Title -->
-      <div class="container">
-        <div class="row gy-4">
-          <!-- Visible Doctors -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic">
-                <img src="static/img/lakshmy.jpg" class="img-fluid" alt="" />
-              </div>
-              <div class="member-info">
-                <h4>Dr.Lakshmy V Raj</h4>
-                <span>ENT Head & Neck Surgeon</span>
-                <p>MBBS, MS, DNB, MNAMS</p>
-                <br />
-                <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic">
-                <img src="static/img/mithun.jpEg" class="img-fluid" alt="" />
-              </div>
-              <div class="member-info">
-                <h4>Dr.Mithun MS</h4>
-                <span>Oral & Maxillofacial Surgeon</span>
-                <p>BDS & MDS</p>
-                <br />
-                <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic">
-                <img src="static/img/rakhi.jpg" class="img-fluid" alt="" />
-              </div>
-              <div class="member-info">
-                <h4>Dr.Rakhi R Pillai</h4>
-                <span>Consultant Anaesthesiologist</span>
-                <p>MBBS, DA, DNB(Anasthesia)</p>
-                <br />
-                <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic">
-                <img src="static/img/bijumon.jpg" class="img-fluid" alt="" />
-              </div>
-              <div class="member-info">
-                <h4>Dr.Bijumon K</h4>
-                <span>Consultant, Orthopaedic Surgeon</span>
-                <p>MBBS, D-ORTHO, DNB(ORTHO)</p>
-                <br />
-                <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br />
-        <!-- Hidden Doctors Section -->
-        <div class="row gy-4 collapse" id="moreDoctors">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic">
-                <img src="static/img/shehnaz.JPG" class="img-fluid" alt="" />
-              </div>
-              <div class="member-info">
-                <h4>Dr.Shehnaz Abdul Rahim</h4>
-                <span>Emergency Medical Specialist</span>
-                <p>MBBS, MRCEM</p>
-                <br />
-                <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="700">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic">
-                <img src="static/img/herosh.jpg" class="img-fluid" alt="" />
-              </div>
-              <div class="member-info">
-                <h4>Dr.Herosh Thampan</h4>
-                <span>Consultant Pediatrician</span>
-                <p>MBBS, DCH</p>
-                <br />
-                <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="800">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic">
-                <img src="static/img/rejina.jpg" class="img-fluid" alt="" />
-              </div>
-              <div class="member-info">
-                <h4>Dr. Rejina N</h4>
-                <span>Consultant & Gynaecologist</span>
-                <p>MBBS, DGO, DNB</p>
-                <br />
-                <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="900">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic">
-                <img src="static/img/sasidharan.jpg" class="img-fluid" alt="" />
-              </div>
-              <div class="member-info">
-                <h4>Dr. Sasidhara Panicker</h4>
-                <span>Sr. Consultant & Surgeon</span>
-                <p>MBBS, MS, (General Surgery)</p>
-                <br />
-                <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="1000">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic">
-                <img src="static/img/ramachandran.jpeg" class="img-fluid" alt="" />
-              </div>
-              <div class="member-info">
-                <h4>Dr. Ramachandran Nair</h4>
-                <span>Medical Advisor</span>
-                <p>BSC, MBBS, DCH</p>
-                <br />
-                <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="1100">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic">
-                <img src="static/img/manikandan.jpeg" class="img-fluid" alt="" />
-              </div>
-              <div class="member-info">
-                <h4>Dr. D Manikantan</h4>
-                <span>Consultant General & Laparoscopic Surgeon</span>
-                <p>MBBS, MS, FIAGES</p>
-                <br />
-                <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="700">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic">
-                <img src="static/img/abita.jpg" class="img-fluid" alt="" />
-              </div>
-              <div class="member-info">
-                <h4>Dr. Abit Asok</h4>
-                <span>Consultant Radiologist</span>
-                <p>MBBS, MD</p>
-                <br />
-                <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="800">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic">
-                <img src="static/img/Dr.Afzal K Azad.jpg" class="img-fluid" alt="" />
-              </div>
-              <div class="member-info">
-                <h4>Dr. Afzal K Azad</h4>
-                <span>Family Physician</span>
-                <p>MBBS, DFM(NBE)</p>
-                <br />
-                <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="900">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic">
-                <img src="static/img/Dr.Lekshmi Priya R.JPG" class="img-fluid" alt="" />
-              </div>
-              <div class="member-info">
-                <h4>Dr. Lekshmipriya R</h4>
-                <span>General Surgeon</span>
-                <p>MBBS, MS(General Surgeon)</p>
-                <br />
-                <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="1000">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic">
-                <img src="static/img/Dr.Tuman Krishnan (2).jpg" class="img-fluid" alt="" />
-              </div>
-              <div class="member-info">
-                <h4>Dr. Tuman Krishnnan</h4>
-                <span>Consultant Medicine and Diabetologist</span>
-                <p>MBBS, MD, FCCM, CCEBDM</p>
-                <br />
-                <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Show More Button -->
-        <div class="text-center mt-4">
-          <a class="" type="button" data-bs-toggle="collapse" data-bs-target="#moreDoctors" aria-expanded="false" aria-controls="moreDoctors"><b>Show More</b> <i class="fa-solid fa-angles-down"></i></a>
-        </div>
-      </div>
-    </section>
-    <!-- /Doctors Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>SERVICES</h2>
-        <p data-aos="fade-right" class="text-danger fw-bold">At Royal Healthcare, located in the heart of Kollam, we are dedicated to providing personalized and compassionate care tailored to the unique needs of each patient. Our state-of-the-art multi-speciality hospital offers a comprehensive range of services designed to promote health and well-being within our community.</p>
-      </div>
-      <!-- End Section Title -->
-
-      <div class="container">
-        <div class="row g-4">
-          <!-- Homecare Treatment -->
-          <div class="col-12 col-md-6 col-lg-2-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fas fa-home"></i>
-              </div>
-              <h3>HOMECARE TREATMENT</h3>
-              <p>Comprehensive medical care provided at home, including nursing, physiotherapy, and doctor visits for patient comfort and convenience.</p>
-            </div>
-          </div>
-
-          <!-- Palliative Care -->
-          <div class="col-12 col-md-6 col-lg-2-4" data-aos="fade-up" data-aos-delay="150">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fas fa-hand-holding-heart"></i>
-              </div>
-              <h3>PALLIATIVE CARE</h3>
-              <p>Holistic support for patients with chronic or life-limiting illnesses, focusing on pain relief, symptom control, and emotional well-being.</p>
-            </div>
-          </div>
-
-          <!-- 24 Hrs. ICU Ambulance Service -->
-          <div class="col-12 col-md-6 col-lg-2-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fas fa-ambulance"></i>
-              </div>
-              <h3>24 HRS. ICU AMBULANCE SERVICE</h3>
-              <p>Advanced life-support ambulances with ICU setup available 24/7 for critical patient transport, staffed by trained professionals.</p>
-            </div>
-          </div>
-
-          <!-- Gym & Fitness -->
-          <div class="col-12 col-md-6 col-lg-2-4" data-aos="fade-up" data-aos-delay="250">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fas fa-dumbbell"></i>
-              </div>
-              <h3>GYM & FITNESS</h3>
-              <p>Well-equipped gym and personalized fitness programs designed to promote wellness, recovery, and overall health improvement.</p>
-            </div>
-          </div>
-
-          <!-- Mortuary -->
-          <div class="col-12 col-md-6 col-lg-2-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fas fa-procedures"></i>
-              </div>
-              <h3>MORTUARY – 8 BODY</h3>
-              <p>Secure mortuary facility with capacity for 8 bodies, maintaining dignity and hygiene with refrigeration and proper care procedures.</p>
-            </div>
-          </div>
-
-          <!-- Mobile Mortuary -->
-          <div class="col-12 col-md-6 col-lg-2-4" data-aos="fade-up" data-aos-delay="350">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fas fa-truck"></i>
-              </div>
-              <h3>MOBILE MORTUARY</h3>
-              <p>Portable mortuary units to preserve deceased bodies hygienically during transportation and emergencies, ensuring respectful handling.</p>
-            </div>
-          </div>
-
-          <!-- Medical Care -->
-          <div class="col-12 col-md-6 col-lg-2-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fas fa-stethoscope"></i>
-              </div>
-              <h3>MEDICAL CARE</h3>
-              <p>Experienced physicians offer individualized services for preventive care, chronic condition management, and overall health improvement with a focus on patient well-being.</p>
-            </div>
-          </div>
-
-          <!-- Emergency Care -->
-          <div class="col-12 col-md-6 col-lg-2-4" data-aos="fade-up" data-aos-delay="450">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fas fa-hospital"></i>
-              </div>
-              <h3>EMERGENCY CARE</h3>
-              <p>24/7 emergency department with skilled personnel and advanced technology for rapid assessment, stabilization, and treatment of urgent health issues and injuries.</p>
-            </div>
-          </div>
-
-          <!-- Fitness and Diet Services -->
-          <div class="col-12 col-md-6 col-lg-2-4" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fas fa-apple-alt"></i>
-              </div>
-              <h3>FITNESS & DIET SERVICE</h3>
-              <p>Customized fitness and nutrition programs crafted by certified trainers and dietitians to promote recovery, wellness, and rehabilitation for both patients and the public.</p>
-            </div>
-          </div>
-
-          <!-- Mental & Physical Well-being -->
-          <div class="col-12 col-md-6 col-lg-2-4" data-aos="fade-up" data-aos-delay="550">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fas fa-heart"></i>
-              </div>
-              <h3>MENTAL & PHYSICAL WELL-BEING</h3>
-              <p>Counseling and holistic care services that address emotional challenges and physical health, empowering individuals to achieve balance and optimal well-being.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /Services Section -->
-
-    <!-- Appointment Section -->
-    <section id="appointment" class="appointment section bg-light py-5">
-      <!-- Section Title -->
-      <div class="container section-title text-center" data-aos="fade-up">
-        <h2>MAKE AN APPOINTMENT</h2>
-        <p data-aos="fade-right" class="text-danger fw-bold">"Book your appointment now for personalized care and prompt medical attention—fill out the form below to schedule your visit."</p>
-      </div>
-      <!-- End Section Title -->
-
-      <div class="container">
-        <!-- Django Form Submission URL -->
-        <form action="{% url 'make_appointment' %}" method="post" role="form" class="php-email-form">
-          {% csrf_token %}
-
-          {% if messages %}
-            {% for message in messages %}
-              <div class="alert alert-{{ message.tags }} mt-3">{{ message }}</div>
-            {% endfor %}
-          {% endif %}
-
-          <div class="row justify-content-center">
-            <div class="col-md-12">
+        <div class="col-lg-9 mt-4 mt-lg-0">
+          <div class="tab-content">
+            <div class="tab-pane active show" id="departments-tab-1">
               <div class="row">
-                <!-- Personal Information -->
-                <div class="col-md-4">
-                  <h5 class="mb-3 fw-bold text-center">Personal Information</h5>
-                  <div class="form-group mb-3">
-                    <input type="text" name="name" id="name" class="form-control" placeholder="Patient / Visitor Name*" required />
-                  </div>
-                  <div class="form-group mb-3">
-                    <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone / Mobile *" required />
-                  </div>
-                  <div class="form-group mb-3">
-                    <input type="email" name="email" id="email" class="form-control" placeholder="Email Address *" required />
-                  </div>
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>24H CASUALTY AND TRAUMA CARE</h3>
+                  <p class="fst-italic">24-hour Casualty and Trauma Care provides round-the-clock emergency medical
+                    services for patients suffering from accidents, critical injuries, and life-threatening conditions.
+                    Equipped with state-of-the-art medical technology, a dedicated team of doctors, paramedics, and
+                    nurses
+                    ensures immediate and effective treatment.</p>
+                  <p class="fst-italic">We also have availability of a specialized ER Physician to respond and provide
+                    Trauma Care to the highest quality.</p>
+                  <p>The facility offers rapid response for road accidents, heart attacks, strokes, burns, and other
+                    medical emergencies. Advanced trauma units, intensive care support, and surgical intervention are
+                    available to stabilize and save lives. With a commitment to prompt and expert care, the center
+                    operates 24/7 to handle emergencies efficiently, ensuring the best possible outcomes for patients in
+                    critical conditions.</p>
+                  <p>
+                    <strong style="color: red;">Dr.Shehnaz Abdul Rahim - Emergency Medical Specialist</strong>
+                  </p>
+                  <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+                  <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
                 </div>
-
-                <!-- Appointment Schedule -->
-                <div class="col-md-4">
-                  <h5 class="mb-3 fw-bold text-center">Appointment Schedule</h5>
-                  <div class="form-group mb-3">
-                    <select name="department" id="department" class="form-select" required>
-                      <option value="">Select a Department</option>
-                      <option value="24H CASUALTY AND TRAUMA CARE">24H CASUALTY AND TRAUMA CARE</option>
-                      <option value="GENERAL MEDICINE">GENERAL MEDICINE</option>
-                      <option value="GENERAL SURGERY">GENERAL SURGERY</option>
-                      <option value="ORTHOPAEDICS">ORTHOPAEDICS</option>
-                      <option value="GYNAECOLOGY">GYNAECOLOGY</option>
-                      <option value="ENT">ENT</option>
-                      <option value="PEDIATRIC">PEDIATRIC</option>
-                      <option value="RADIOLOGY">RADIOLOGY</option>
-                      <option value="ANASTHESIA">ANASTHESIA</option>
-                      <option value="CARDIOLOGY">CARDIOLOGY</option>
-                      <option value="NEURO MEDICINE">NEURO MEDICINE</option>
-                      <option value="NEURO SURGERY">NEURO SURGERY</option>
-                      <option value="OMF">OMF</option>
-                    </select>
-                  </div>
-                  <div class="form-group mb-3">
-                    <input type="date" name="date" id="date" class="form-control" required />
-                  </div>
-
-                  <!-- Submit Button -->
-                  <div class="form-group mt-4 text-center">
-                    <button type="submit" class="btn btn-danger w-100">Submit Appointment</button>
-                  </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img
+                    src="https://www.felixhospital.com/sites/default/files/2022-11/best-emergency-trauma-care-hospital-in-noida.jpg"
+                    alt="" class="img-fluid" />
                 </div>
-
-                <div class="loading" style="display: none;">Loading...</div>
-                <div class="error-message" style="display: none;">An error occurred. Please try again.</div>
-                <div class="sent-message" style="display: none;">Your appointment request has been sent successfully!</div>
-
-                <!-- Contact Information -->
-                <div class="col-md-4 text-center">
-                  <div class="d-flex justify-content-center align-items-center mb-4">
-                    <div class="me-3">
-                      <div class="d-flex align-items-center justify-content-center text-white rounded-circle" style="width: 40px; height: 40px; background-color: red;">
-                        <i class="bi bi-telephone-fill"></i>
-                      </div>
-                    </div>
-                    <div class="text-start">
-                      <h6 class="mb-1 fw-bold text-danger">Call Us</h6>
-                      <p class="mb-0">0487-2593555</p>
-                    </div>
-                  </div>
-
-                  <div class="d-flex justify-content-center align-items-center mb-4">
-                    <div class="me-3">
-                      <div class="d-flex align-items-center justify-content-center text-white rounded-circle" style="width: 40px; height: 40px; background-color: red;">
-                        <i class="bi bi-telephone-fill"></i>
-                      </div>
-                    </div>
-                    <div class="text-start">
-                      <h6 class="mb-1 fw-bold text-danger">Call Us</h6>
-                      <p class="mb-0">0474-2592888</p>
-                    </div>
-                  </div>
-
-                  <div class="d-flex justify-content-center align-items-center mb-4">
-                    <div class="me-3">
-                      <div class="d-flex align-items-center justify-content-center text-white rounded-circle" style="width: 40px; height: 40px; background-color: red;">
-                        <i class="bi bi-whatsapp"></i>
-                      </div>
-                    </div>
-                    <div class="text-start">
-                      <h6 class="mb-1 fw-bold text-danger">WhatsApp Us</h6>
-                      <p class="mb-0">+91 9072530302</p>
-                    </div>
-                  </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="departments-tab-2">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>GENERAL MEDICINE</h3>
+                  <p class="fst-italic">General Medicine is a medical specialty that focuses on the diagnosis,
+                    treatment,
+                    and prevention of a wide range of diseases affecting adults. It covers various conditions related to
+                    the heart, lungs, digestive system, nervous system, and other vital organs.</p>
+                  <p>General physicians are trained to manage chronic illnesses like diabetes and hypertension, as well
+                    as
+                    acute infections and common health issues. They provide comprehensive healthcare, emphasizing
+                    patient
+                    education, lifestyle modifications, and preventive care. General Medicine serves as the foundation
+                    of
+                    medical practice, ensuring early detection and appropriate treatment of diseases while coordinating
+                    specialized care when needed.</p>
+                  <p>
+                    <strong style="color: red;">Dr. Tuman Krishnan - General Physician and Diabetologist</strong>
+                  </p>
+                  <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+                  <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
                 </div>
-                <!-- End Contact Information -->
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img
+                    src="https://www.sixsigmahospital.com/wp-content/uploads/2024/02/young-male-psysician-with-patient-measuring-blood-pressure-3-scaled.webp"
+                    alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="departments-tab-3">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>GENERAL SURGERY</h3>
+                  <p class="fst-italic">General surgery is a medical specialty that focuses on surgical procedures
+                    involving the abdomen, digestive tract, skin, soft tissues, and other vital organs. General surgeons
+                    are trained to perform operations such as appendectomies, hernia repairs, gallbladder removals, and
+                    trauma surgeries.</p>
+                  <p>They also handle conditions affecting the endocrine system, breasts, and vascular structures. In
+                    addition to performing surgeries, general surgeons play a crucial role in diagnosing conditions,
+                    providing preoperative and postoperative care, and managing surgical emergencies. With advancements
+                    in
+                    minimally invasive techniques, including laparoscopic and robotic-assisted surgeries, general
+                    surgery
+                    continues to evolve, offering patients safer and more effective treatment options.</p>
+                  <p>
+                    <strong style="color: red;">Dr. Sasidhara Panicker - General Surgeon</strong>
+                    <br />
+                    <strong style="color: red;">Dr. Lekshmipriya R - General Surgeon</strong>
+                    <br />
+                    <strong style="color: red;">Dr. Manikantan D - General Surgeon</strong>
+                  </p>
+                  <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+                  <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="https://spfort.com/wp-content/uploads/2022/09/general-surgery-1.jpg" alt=""
+                    class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="departments-tab-4">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>ORTHOPAEDICS</h3>
+                  <p class="fst-italic">Orthopaedics is a branch of medicine that focuses on diagnosing, treating,
+                    preventing, and rehabilitating disorders related to the musculoskeletal system, including bones,
+                    joints, muscles, ligaments, and tendons. Orthopaedic specialists, known as orthopaedists, treat
+                    conditions such as fractures, arthritis, spinal disorders, sports injuries, and congenital
+                    deformities.</p>
+                  <p>Treatments range from medications and physical therapy to surgical procedures like joint
+                    replacements
+                    and arthroscopy. Advanced technologies, including robotic-assisted surgery and regenerative
+                    medicine,
+                    have enhanced patient outcomes. Orthopaedics plays a vital role in improving mobility, reducing
+                    pain,
+                    and enhancing the quality of life for individuals with musculoskeletal issues.</p>
+                  <p>
+                    <strong style="color: red;">Dr.Bijumon K</strong> — <strong style="color: red;">Consultant,
+                      Orthopaedic Surgeon</strong>
+                  </p>
+                  <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+                  <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="https://www.dheehospitals.com/wp-content/uploads/2024/10/orthopaedics-banner.jpg" alt=""
+                    class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="departments-tab-5">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>GYNAECOLOGY</h3>
+                  <p class="fst-italic">Gynaecology is a branch of medicine that focuses on the health of the female
+                    reproductive system, including the uterus, ovaries, fallopian tubes, and vagina. It deals with a
+                    wide
+                    range of conditions such as menstrual disorders, pregnancy, fertility issues, hormonal imbalances,
+                    and
+                    menopause.</p>
+                  <p>Gynaecologists diagnose and treat infections, cancers, and other reproductive health concerns.
+                    Regular check-ups, including Pap smears and ultrasounds, help in early detection of potential
+                    issues.
+                    Gynaecology also overlaps with obstetrics, which focuses on pregnancy and childbirth. With
+                    advancements in medical technology, gynaecological treatments and surgeries have become more
+                    effective, improving women's overall health and well-being.</p>
+                  <p>
+                    <strong style="color: red;">Dr. Rejina N</strong> — <strong style="color: red;">Consultant,
+                      Gynecologist & Laproscopic Surgeon</strong>
+                  </p>
+                  <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+                  <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img
+                    src="https://www.globexhealthtourism.com/upload/gynecologist-doctor-pregnant-woman-hospital-pregnancy-gynecology-medicine-health-care-people-concept-stethoscope-70948901.jpg"
+                    alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="departments-tab-6">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>ENT</h3>
+                  <p class="fst-italic">ENT (Ear, Nose, and Throat) is a medical specialty focused on diagnosing and
+                    treating disorders related to the ear, nose, throat, head, and neck. Also known as Otolaryngology,
+                    it
+                    covers a wide range of conditions, including hearing loss, sinus infections, tonsillitis, voice
+                    disorders, and allergies.</p>
+                  <p>ENT specialists, or otolaryngologists, perform surgeries like tonsillectomies, sinus surgeries, and
+                    cochlear implants. They also manage conditions such as vertigo, nasal polyps, and throat cancer.
+                    This
+                    field integrates both medical and surgical treatments, helping patients with issues affecting
+                    breathing, hearing, speech, and balance. ENT specialists play a crucial role in improving overall
+                    quality of life.</p>
+                  <p>
+                    <strong style="color: red;">Dr. Lakshmy V Raj</strong> — <strong style="color: red;">ENT Head & Neck
+                      Surgeon</strong>
+                  </p>
+                  <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+                  <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="https://shifaahospital.org/wp-content/uploads/2024/09/ent-surgery-about.jpg" alt=""
+                    class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="departments-tab-14">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>FAMILY MEDICINE</h3>
+                  <p class="fst-italic">Family Medicine is a comprehensive medical specialty devoted to providing
+                    continuous and holistic healthcare for individuals and families across all ages, genders, and
+                    diseases. It emphasizes disease prevention and health promotion while managing acute and chronic
+                    illnesses.</p>
+                  <p>Family physicians are trained to diagnose and treat a wide range of medical issues, often serving
+                    as
+                    the first point of contact in the healthcare system. They coordinate patient care, manage chronic
+                    conditions like diabetes and hypertension, and provide routine health screenings and immunizations.
+                    Their broad scope ensures personalized and long-term care for all family members.</p>
+                  <p>
+                    <strong style="color: red;">Dr. Afzal K Azad</strong> — <strong style="color: red;">Consultant -
+                      Family Medicine</strong>
+                  </p>
+                  <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+                  <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img
+                    src="https://media.istockphoto.com/id/692381776/photo/doctor-talking-to-a-family-at-the-hospital.jpg?s=612x612&w=0&k=20&c=cDwVx1sgH6JXQcD0N8ljSxU2389-O0NhufDa6FE9YbY="
+                    alt="" class="img-fluid" />
+                </div>
               </div>
             </div>
           </div>
-        </form>
-      </div>
-    </section>
-    <!-- /Appointment Section -->
-
-    <!-- Our Mission & Our Vision Section -->
-    <section id="mission-vision" class="mission-vision section">
-      <div class="container section-title text-center" data-aos="fade-up">
-        <h2 data-aos="fade-right">OUR MISSION & OUR VISION</h2>
-        <p data-aos="fade-right" class="text-danger fw-bold">"Dedicated to delivering excellence in healthcare through innovation, compassion, and expertise."</p>
-      </div>
-
-      <div class="container">
-        <div class="row row-cols-1 row-cols-lg-2 g-4">
-          <!-- Our Vision Card -->
-          <div class="col" data-aos="fade-right">
-            <div class="mission-vision-item">
-              <div class="content">
-                <h3><b>OUR MISSION</b></h3>
-                <ul style="text-align: left;">
-                  <li>To provide high-quality, patient-centered healthcare that meets international standards.</li>
-                  <li>To ensure affordable medical services, making healthcare accessible to all sections of society.</li>
-                  <li>To establish a strong training and development platform for healthcare professionals, empowering them to build successful careers within Kerala.</li>
-                  <li>To collaborate with charitable organizations and local initiatives to uplift the health and well-being of the community.</li>
-                  <li>To leverage advanced medical technology and compassionate care to enhance the patient experience and clinical outcomes.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- End Our Vision Card -->
-
-          <!-- Our Mission Card -->
-          <div class="col" data-aos="fade-right">
-            <div class="mission-vision-item">
-              <div class="content">
-                <h3><b>OUR VISION</b></h3>
-                <p>
-                  <i class="fa-solid fa-quote-left" style="color: rgb(229, 9, 19)"></i> To be the leading healthcare provider in Kerala, delivering world-class, affordable medical services while fostering community well-being and professional growth, ensuring that no individual needs to leave their homeland for quality care. <i class="fa-solid fa-quote-right" style="color: rgb(229, 9, 19)"></i>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- End Our Mission Card -->
         </div>
       </div>
-    </section>
-    <!-- /Our Mission & Our Vision Section -->
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-5 info">
-            <h3>TESTIMONIALS</h3>
-            <p data-aos="fade-right" class="text-danger fw-bold">"At Royal Health Care Kollam, we value the trust and satisfaction of our patients. Read heartfelt testimonials from individuals who have experienced our exceptional care, world-class facilities, and compassionate medical team. Their words reflect our commitment to providing the best healthcare services in a warm and supportive environment."</p>
+      <br />
+      <br />
+      <br />
+
+      <div class="row">
+        <div class="col-lg-9 mt-4 mt-lg-0">
+          <div class="tab-content">
+            <div class="tab-pane active show" id="departments-tab-7">
+              <div class="row">
+                <div class="col-lg-4 text-center order-1 order-lg-1">
+                  <img
+                    src="https://media.istockphoto.com/id/1388254153/photo/shot-of-a-baby-sitting-on-her-mothers-lap-while-being-examined-by-a-doctor.jpg?s=612x612&w=0&k=20&c=PBzQWrBVp8pIyYBH_ds8Bu8y4Y4j2jdL3Z2n8L1W0v4="
+                    alt="" class="img-fluid" />
+                </div>
+                <div class="col-lg-8 details order-2 order-lg-2">
+                  <h3>PEDIATRIC</h3>
+                  <p class="fst-italic">Pediatrics is a branch of medicine that focuses on the health and well-being of
+                    infants, children, and adolescents. Pediatricians diagnose and treat a wide range of illnesses, from
+                    minor health issues to serious diseases, ensuring proper growth and development.</p>
+                  <p>They provide preventive care, vaccinations, and guidance on nutrition, behavior, and overall child
+                    health. Pediatricians also address congenital conditions, infections, and developmental disorders.
+                    Their approach is child-centered, considering both medical and emotional needs. By working closely
+                    with parents and caregivers, pediatricians play a crucial role in promoting a healthy childhood and
+                    laying the foundation for a strong, disease-free future.</p>
+                  <p>
+                    <strong style="color: red;">Dr.Herosh Thampan</strong> — <strong style="color: red;">Consultant,
+                      Pediatrician</strong>
+                  </p>
+                  <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+                  <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="departments-tab-8">
+              <div class="row">
+                <div class="col-lg-4 text-center order-1 order-lg-1">
+                  <img src="https://health.osu.edu/-/media/health/images/stories/2023/10/osu-leading-the-way.jpg" alt=""
+                    class="img-fluid" />
+                </div>
+                <div class="col-lg-8 details order-2 order-lg-2">
+                  <h3>RADIOLOGY</h3>
+                  <p class="fst-italic">Radiology is a medical specialty that uses imaging techniques to diagnose and
+                    treat diseases within the body. It involves the use of technologies such as X-rays, CT scans, MRI
+                    scans, ultrasound, and nuclear medicine to create visual representations of internal organs,
+                    tissues,
+                    and structures.</p>
+                  <p>Radiologists analyze these images to detect conditions like fractures, tumors, infections, and
+                    cardiovascular diseases. The field also includes interventional radiology, which involves minimally
+                    invasive procedures using imaging guidance for treatments like biopsies, stent placements, and
+                    vascular repairs. Radiology plays a crucial role in modern healthcare by enabling early diagnosis,
+                    guiding treatment decisions, and improving patient outcomes.</p>
+                  <p>
+                    <strong style="color: red;">Dr. Abit Asok - Radiologist</strong>
+                  </p>
+                  <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+                  <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="departments-tab-9">
+              <div class="row">
+                <div class="col-lg-4 text-center order-1 order-lg-1">
+                  <img src="https://madeforthismoment.asahq.org/wp-content/uploads/2017/10/iStock-627196908.jpg" alt=""
+                    class="img-fluid" />
+                </div>
+                <div class="col-lg-8 details order-2 order-lg-2">
+                  <h3>ANASTHESIA</h3>
+                  <p class="fst-italic">Anesthesia is a medical practice that involves administering drugs to prevent
+                    pain
+                    during surgeries, procedures, or diagnostic tests. It can be classified into three main types:
+                    general
+                    anesthesia, which induces a state of unconsciousness; regional anesthesia, which numbs a specific
+                    part
+                    of the body; and local anesthesia, which numbs a small area.</p>
+                  <p>Anesthetics work by blocking nerve signals, allowing patients to undergo procedures without
+                    experiencing pain. Anesthesia is carefully managed by anesthesiologists to ensure patient safety and
+                    comfort, considering factors such as the type of procedure, the patient's health, and potential side
+                    effects.</p>
+                  <p>
+                    <strong style="color: red;">Dr.Rakhi R Pillai</strong> — <strong style="color: red;">Consultant,
+                      Anaesthesiologist</strong>
+                  </p>
+                  <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+                  <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="departments-tab-10">
+              <div class="row">
+                <div class="col-lg-4 text-center order-1 order-lg-1">
+                  <img
+                    src="https://bangalorehospitals.in/wp-content/uploads/2024/08/person-holding-anatomic-heart-model-educational-purpose-1024x683.webp"
+                    alt="" class="img-fluid" />
+                </div>
+                <div class="col-lg-8 details order-2 order-lg-2">
+                  <h3>CARDIOLOGY</h3>
+                  <p class="fst-italic">Cardiology is a branch of medicine focused on diagnosing, treating, and
+                    preventing
+                    heart-related conditions and diseases. It involves a wide range of conditions, from congenital heart
+                    defects to acquired diseases such as coronary artery disease, heart failure, arrhythmias, and
+                    valvular
+                    disorders.</p>
+                  <p>Cardiologists use various diagnostic tools like echocardiograms, ECGs, and stress tests to assess
+                    heart health. Treatment options can include lifestyle changes, medications, minimally invasive
+                    procedures, and surgeries such as coronary artery bypass grafting (CABG). Preventive cardiology aims
+                    to reduce risk factors like high blood pressure, high cholesterol, and smoking to maintain heart
+                    health and prevent cardiovascular events.</p>
+                  <p>
+                    <strong style="color: red;">COMING SOON</strong>
+                  </p>
+                  <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+                  <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="departments-tab-11">
+              <div class="row">
+                <div class="col-lg-4 text-center order-1 order-lg-1">
+                  <img src="https://renaissancepvtltd.com/wp-content/uploads/2021/11/neuro-medicine-img.jpg" alt=""
+                    class="img-fluid" />
+                </div>
+                <div class="col-lg-8 details order-2 order-lg-2">
+                  <h3>NEURO MEDICINE</h3>
+                  <p class="fst-italic">Neuro medicine, also known as neurology, is a branch of medicine that focuses on
+                    the diagnosis, treatment, and management of disorders related to the nervous system. This includes
+                    conditions affecting the brain, spinal cord, nerves, and muscles. Neuro medicine encompasses a wide
+                    range of neurological diseases such as stroke, epilepsy, Parkinson's disease, Alzheimer's, multiple
+                    sclerosis, and peripheral neuropathy.</p>
+                  <p>Neurologists, the specialists in this field, use advanced techniques like imaging,
+                    electrophysiological tests, and genetic screenings to understand and treat neurological conditions.
+                    Effective neuro medicine can significantly improve patients' quality of life, manage symptoms, and,
+                    in
+                    some cases, prevent further progression of the disease.</p>
+                  <p>
+                    <strong style="color: red;">COMING SOON</strong>
+                  </p>
+                  <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+                  <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="departments-tab-12">
+              <div class="row">
+                <div class="col-lg-4 text-center order-1 order-lg-1">
+                  <img src="https://www.brainandspineni.com/wp-content/uploads/neurosurgery-2205.jpg" alt=""
+                    class="img-fluid" />
+                </div>
+                <div class="col-lg-8 details order-2 order-lg-2">
+                  <h3>NEURO SURGERY</h3>
+                  <p class="fst-italic">Neurosurgery is a specialized branch of surgery that focuses on the diagnosis,
+                    treatment, and surgical intervention of disorders affecting the brain, spinal cord, and peripheral
+                    nervous system. It encompasses a wide range of conditions, including brain tumors, traumatic brain
+                    injuries, spinal cord injuries, epilepsy, and neurovascular disorders such as stroke.</p>
+                  <p>Neurosurgeons employ advanced techniques such as minimally invasive surgery, stereotactic surgery,
+                    and neuroendoscopy to treat these complex conditions. The field requires a deep understanding of the
+                    nervous system's intricate anatomy and function, as well as expertise in critical decision-making to
+                    optimize patient outcomes and recovery.</p>
+                  <p>
+                    <strong style="color: red;">COMING SOON</strong>
+                  </p>
+                  <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+                  <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="departments-tab-13">
+              <div class="row">
+                <div class="col-lg-4 text-center order-1 order-lg-1">
+                  <img
+                    src="https://opportunities.omf.org/sap/bc/ui5_ui5/sap/zoppor_search/Reg_images/50418109.JPG?date=Wed_Feb_05_2025"
+                    alt="" class="img-fluid" />
+                </div>
+                <div class="col-lg-8 details order-2 order-lg-2">
+                  <h3>OMF</h3>
+                  <p class="fst-italic">OMF (Oral and Maxillofacial Surgery) in hospitals focuses on diagnosing and
+                    treating conditions affecting the mouth, jaws, face, and neck. It covers a wide range of medical
+                    issues, including trauma, tumors, infections, congenital deformities, and cosmetic enhancements.</p>
+                  <p>OMF specialists perform surgeries such as jaw realignment, tooth extractions, and reconstructive
+                    procedures for facial injuries. The goal is to restore function, improve aesthetics, and alleviate
+                    pain. In hospitals, OMF professionals collaborate with other medical teams, providing comprehensive
+                    care, often in emergency or specialized settings. This multidisciplinary approach ensures effective
+                    management of complex conditions affecting both health and appearance.</p>
+                  <p>
+                    <strong style="color: red;">Dr.Mithun MS</strong> — <strong style="color: red;">Oral & Maxillofacial
+                      Surgeon</strong>
+                  </p>
+                  <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+                  <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+        <div class="col-lg-3">
+          <ul class="nav nav-tabs flex-column">
+            <li class="nav-item">
+              <a class="nav-link active show" data-bs-toggle="tab" href="#departments-tab-7">PEDIATRIC</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-8">RADIOLOGY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-9">ANASTHESIA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-10">CARDIOLOGY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-11">NEURO MEDICINE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-12">NEURO SURGERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-13">OMF</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br />
+      <br />
+    </div>
+  </section>
+  <!-- /Departments Section -->
 
-          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
-            <div class="swiper init-swiper">
-              <script type="application/json" class="swiper-config">
+  <!-- Doctors Section -->
+  <section id="doctors" class="doctors section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>DOCTORS</h2>
+      <p data-aos="fade-right" class="text-danger fw-bold">"Our experienced doctors provide expert care, after care and
+        guidance to all our valuable patients"</p>
+    </div>
+    <!-- End Section Title -->
+    <div class="container">
+      <div class="row gy-4">
+        <!-- Visible Doctors -->
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-member d-flex align-items-start">
+            <div class="pic">
+              <img src="static/img/lakshmy.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="member-info">
+              <h4>Dr.Lakshmy V Raj</h4>
+              <span class="mb-2">ENT Head & Neck Surgeon</span>
+              <span class="mb-2">MBBS, MS, DNB, MNAMS</span>
+              <!-- Time Slot -->
+              <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="team-member d-flex align-items-start">
+            <div class="pic">
+              <img src="static/img/mithun.jpeg" class="img-fluid" alt="" />
+            </div>
+            <div class="member-info">
+              <h4>Dr.Mithun MS</h4>
+              <span class="mb-2">Oral & Maxillofacial Surgeon</span>
+              <span class="mb-2">BDS & MDS</span>
+              <!-- Time Slot -->
+              <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="team-member d-flex align-items-start">
+            <div class="pic">
+              <img src="static/img/rakhi.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="member-info">
+              <h4>Dr.Rakhi R Pillai</h4>
+              <span class="mb-2">Consultant Anaesthesiologist</span>
+              <span class="mb-2">MBBS, DA, DNB(Anasthesia)</span>
+              <!-- Time Slot -->
+              <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="team-member d-flex align-items-start">
+            <div class="pic">
+              <img src="static/img/bijumon.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="member-info">
+              <h4>Dr.Bijumon K</h4>
+              <span class="mb-2">Consultant and Orthopaedic Surgeon</span>
+              <span class="mb-2">MBBS, D-ORTHO, DNB(ORTHO)</span>
+              <!-- Time Slot -->
+              <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <!-- Hidden Doctors Section -->
+      <div class="row gy-4 collapse" id="moreDoctors">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="team-member d-flex align-items-start">
+            <div class="pic">
+              <img src="static/img/shehnaz.JPG" class="img-fluid" alt="" />
+            </div>
+            <div class="member-info">
+              <h4>Dr.Shehnaz Abdul Rahim</h4>
+              <span class="mb-2">Emergency Medical Specialist</span>
+              <span class="mb-2">MBBS, MRCEMv</span>
+              <!-- Time Slot -->
+              <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="700">
+          <div class="team-member d-flex align-items-start">
+            <div class="pic">
+              <img src="static/img/herosh.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="member-info">
+              <h4>Dr.Herosh Thampan</h4>
+              <span class="mb-2">Consultant Pediatrician</span>
+              <span class="mb-2">MBBS, DCH</span>
+              <!-- Time Slot -->
+              <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="800">
+          <div class="team-member d-flex align-items-start">
+            <div class="pic">
+              <img src="static/img/rejina.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="member-info">
+              <h4>Dr. Rejina N</h4>
+              <span class="mb-2">Consultant & Gynaecologist</span>
+              <span class="mb-2">MBBS, DGO, DNB</span>
+              <!-- Time Slot -->
+              <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="900">
+          <div class="team-member d-flex align-items-start">
+            <div class="pic">
+              <img src="static/img/sasidharan.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="member-info">
+              <h4>Dr. Sasidhara Panicker</h4>
+              <span class="mb-2">Sr. Consultant & Surgeon</span>
+              <span class="mb-2">MBBS, MS, (General Surgery)</span>
+              <!-- Time Slot -->
+              <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="1000">
+          <div class="team-member d-flex align-items-start">
+            <div class="pic">
+              <img src="static/img/ramachandran.jpeg" class="img-fluid" alt="" />
+            </div>
+            <div class="member-info">
+              <h4>Dr. Ramachandran Nair</h4>
+              <span class="mb-2">Medical Advisor</span>
+              <span class="mb-2">BSC, MBBS, DCH</span>
+              <!-- Time Slot -->
+              <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="1100">
+          <div class="team-member d-flex align-items-start">
+            <div class="pic">
+              <img src="static/img/manikandan.jpeg" class="img-fluid" alt="" />
+            </div>
+            <div class="member-info">
+              <h4>Dr. D Manikantan</h4>
+              <span class="mb-2">Consultant General & Laparoscopic Surgeon</span>
+              <span class="mb-2">MBBS, MS, FIAGES</span>
+              <!-- Time Slot -->
+              <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="700">
+          <div class="team-member d-flex align-items-start">
+            <div class="pic">
+              <img src="static/img/abita.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="member-info">
+              <h4>Dr. Abit Asok</h4>
+              <span class="mb-2">Consultant Radiologist</span>
+              <span class="mb-2">MBBS, MD</span>
+              <!-- Time Slot -->
+              <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="800">
+          <div class="team-member d-flex align-items-start">
+            <div class="pic">
+              <img src="static/img/Dr.Afzal K Azad.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="member-info">
+              <h4>Dr. Afzal K Azad</h4>
+              <span class="mb-2">Family Physician</span>
+              <span class="mb-2">MBBS, DFM(NBE)</span>
+              <!-- Time Slot -->
+              <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="900">
+          <div class="team-member d-flex align-items-start">
+            <div class="pic">
+              <img src="static/img/Dr.Lekshmi Priya R.JPG" class="img-fluid" alt="" />
+            </div>
+            <div class="member-info">
+              <h4>Dr. Lekshmipriya R</h4>
+              <span class="mb-2">General Surgeon</span>
+              <span class="mb-2">MBBS, MS(General Surgeon)</span>
+              <!-- Time Slot -->
+              <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="1000">
+          <div class="team-member d-flex align-items-start">
+            <div class="pic">
+              <img src="static/img/Dr.Tuman Krishnan (2).jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="member-info">
+              <h4>Dr. Tuman Krishnnan</h4>
+              <span class="mb-2">Consultant Medicine and Diabetologist</span>
+              <span class="mb-2">MBBS, MD, FCCM, CCEBDM</span>
+
+              <!-- Time Slot -->
+              <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+
+              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Show More Button -->
+      <div class="text-center mt-4">
+        <a class="" type="button" data-bs-toggle="collapse" data-bs-target="#moreDoctors" aria-expanded="false"
+          aria-controls="moreDoctors"><b>Show More</b> <i class="fa-solid fa-angles-down"></i></a>
+      </div>
+    </div>
+  </section>
+  <!-- /Doctors Section -->
+
+  <!-- Services Section -->
+  <section id="services" class="services section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>SERVICES</h2>
+      <p data-aos="fade-right" class="text-danger fw-bold">At Royal Healthcare, located in the heart of Kollam, we are
+        dedicated to providing personalized and compassionate care tailored to the unique needs of each patient. Our
+        state-of-the-art multi-speciality hospital offers a comprehensive range of services designed to promote health
+        and well-being within our community.</p>
+    </div>
+    <!-- End Section Title -->
+
+    <div class="container">
+      <div class="row g-4">
+        <!-- Homecare Treatment -->
+        <div class="col-12 col-md-6 col-lg-2-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="fas fa-home"></i>
+            </div>
+            <h3>HOMECARE TREATMENT</h3>
+            <p>Comprehensive medical care provided at home, including nursing, physiotherapy, and doctor visits for
+              patient comfort and convenience.</p>
+          </div>
+        </div>
+
+        <!-- Palliative Care -->
+        <div class="col-12 col-md-6 col-lg-2-4" data-aos="fade-up" data-aos-delay="150">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="fas fa-hand-holding-heart"></i>
+            </div>
+            <h3>PALLIATIVE CARE</h3>
+            <p>Holistic support for patients with chronic or life-limiting illnesses, focusing on pain relief, symptom
+              control, and emotional well-being.</p>
+          </div>
+        </div>
+
+        <!-- 24 Hrs. ICU Ambulance Service -->
+        <div class="col-12 col-md-6 col-lg-2-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="fas fa-ambulance"></i>
+            </div>
+            <h3>24 HRS ICU AMBULANCE SERVICE</h3>
+            <p>Advanced life-support ambulances with ICU setup available 24/7 for critical patient transport, staffed by
+              trained professionals.</p>
+          </div>
+        </div>
+
+        <!-- Gym & Fitness -->
+        <div class="col-12 col-md-6 col-lg-2-4" data-aos="fade-up" data-aos-delay="250">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="fas fa-dumbbell"></i>
+            </div>
+            <h3>GYM & FITNESS</h3>
+            <p>Well-equipped gym and personalized fitness programs designed to promote wellness, recovery, and overall
+              health improvement.</p>
+          </div>
+        </div>
+
+        <!-- Mortuary -->
+        <div class="col-12 col-md-6 col-lg-2-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="fas fa-procedures"></i>
+            </div>
+            <h3>MORTUARY – 8 BODY</h3>
+            <p>Secure mortuary facility with capacity for 8 bodies, maintaining dignity and hygiene with refrigeration
+              and proper care procedures.</p>
+          </div>
+        </div>
+
+        <!-- Mobile Mortuary -->
+        <div class="col-12 col-md-6 col-lg-2-4" data-aos="fade-up" data-aos-delay="350">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="fas fa-truck"></i>
+            </div>
+            <h3>MOBILE MORTUARY</h3>
+            <p>Portable mortuary units to preserve deceased bodies hygienically during transportation and emergencies,
+              ensuring respectful handling.</p>
+          </div>
+        </div>
+
+        <!-- Medical Care -->
+        <div class="col-12 col-md-6 col-lg-2-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="fas fa-stethoscope"></i>
+            </div>
+            <h3>MEDICAL CARE</h3>
+            <p>Experienced physicians offer individualized services for preventive care, chronic condition management,
+              and overall health improvement with a focus on patient well-being.</p>
+          </div>
+        </div>
+
+        <!-- Emergency Care -->
+        <div class="col-12 col-md-6 col-lg-2-4" data-aos="fade-up" data-aos-delay="450">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="fas fa-hospital"></i>
+            </div>
+            <h3>EMERGENCY CARE</h3>
+            <p>24/7 emergency department with skilled personnel and advanced technology for rapid assessment,
+              stabilization, and treatment of urgent health issues and injuries.</p>
+          </div>
+        </div>
+
+        <!-- Fitness and Diet Services -->
+        <div class="col-12 col-md-6 col-lg-2-4" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="fas fa-apple-alt"></i>
+            </div>
+            <h3>FITNESS & DIET SERVICE</h3>
+            <p>Customized fitness and nutrition programs crafted by certified trainers and dietitians to promote
+              recovery, wellness, and rehabilitation for both patients and the public.</p>
+          </div>
+        </div>
+
+        <!-- Mental & Physical Well-being -->
+        <div class="col-12 col-md-6 col-lg-2-4" data-aos="fade-up" data-aos-delay="550">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3>MENTAL & PHYSICAL WELL-BEING</h3>
+            <p>Counseling and holistic care services that address emotional challenges and physical health, empowering
+              individuals to achieve balance and optimal well-being.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Services Section -->
+
+  <!-- Appointment Section -->
+  <section id="appointment" class="appointment section bg-light py-5">
+    <!-- Section Title -->
+    <div class="container section-title text-center" data-aos="fade-up">
+      <h2>MAKE AN APPOINTMENT</h2>
+      <p data-aos="fade-right" class="text-danger fw-bold">"Book your appointment now for personalized care and prompt
+        medical attention—fill out the form below to schedule your visit."</p>
+    </div>
+    <!-- End Section Title -->
+
+    <div class="container">
+      <!-- Django Form Submission URL -->
+      <form action="{% url 'make_appointment' %}" method="post" role="form" class="php-email-form">
+        {% csrf_token %}
+
+        {% if messages %}
+        {% for message in messages %}
+        <div class="alert alert-{{ message.tags }} mt-3">{{ message }}</div>
+        {% endfor %}
+        {% endif %}
+
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="row">
+              <!-- Personal Information -->
+              <div class="col-md-4">
+                <h5 class="mb-3 fw-bold text-center">Personal Information</h5>
+                <div class="form-group mb-3">
+                  <input type="text" name="name" id="name" class="form-control" placeholder="Patient / Visitor Name*"
+                    required />
+                </div>
+                <div class="form-group mb-3">
+                  <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone / Mobile *"
+                    required />
+                </div>
+                <div class="form-group mb-3">
+                  <input type="email" name="email" id="email" class="form-control" placeholder="Email Address *"
+                    required />
+                </div>
+              </div>
+
+              <!-- Appointment Schedule -->
+              <div class="col-md-4">
+                <h5 class="mb-3 fw-bold text-center">Appointment Schedule</h5>
+                <div class="form-group mb-3">
+                  <select name="department" id="department" class="form-select" required>
+                    <option value="">Select a Department</option>
+                    <option value="24H CASUALTY AND TRAUMA CARE">24H CASUALTY AND TRAUMA CARE</option>
+                    <option value="GENERAL MEDICINE">GENERAL MEDICINE</option>
+                    <option value="GENERAL SURGERY">GENERAL SURGERY</option>
+                    <option value="ORTHOPAEDICS">ORTHOPAEDICS</option>
+                    <option value="GYNAECOLOGY">GYNAECOLOGY</option>
+                    <option value="ENT">ENT</option>
+                    <option value="PEDIATRIC">PEDIATRIC</option>
+                    <option value="RADIOLOGY">RADIOLOGY</option>
+                    <option value="ANASTHESIA">ANASTHESIA</option>
+                    <option value="CARDIOLOGY">CARDIOLOGY</option>
+                    <option value="NEURO MEDICINE">NEURO MEDICINE</option>
+                    <option value="NEURO SURGERY">NEURO SURGERY</option>
+                    <option value="OMF">OMF</option>
+                  </select>
+                </div>
+                <div class="form-group mb-3">
+                  <input type="date" name="date" id="date" class="form-control" required />
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group mt-4 text-center">
+                  <button type="submit" class="btn btn-danger w-100">Submit Appointment</button>
+                </div>
+              </div>
+
+              <div class="loading" style="display: none;">Loading...</div>
+              <div class="error-message" style="display: none;">An error occurred. Please try again.</div>
+              <div class="sent-message" style="display: none;">Your appointment request has been sent successfully!
+              </div>
+
+              <!-- Contact Information -->
+              <div class="col-md-4 text-center">
+                <div class="d-flex justify-content-center align-items-center mb-4">
+                  <div class="me-3">
+                    <div class="d-flex align-items-center justify-content-center text-white rounded-circle"
+                      style="width: 40px; height: 40px; background-color: red;">
+                      <i class="bi bi-telephone-fill"></i>
+                    </div>
+                  </div>
+                  <div class="text-start">
+                    <h6 class="mb-1 fw-bold text-danger">Call Us</h6>
+                    <p class="mb-0">0487-2593555</p>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-center align-items-center mb-4">
+                  <div class="me-3">
+                    <div class="d-flex align-items-center justify-content-center text-white rounded-circle"
+                      style="width: 40px; height: 40px; background-color: red;">
+                      <i class="bi bi-telephone-fill"></i>
+                    </div>
+                  </div>
+                  <div class="text-start">
+                    <h6 class="mb-1 fw-bold text-danger">Call Us</h6>
+                    <p class="mb-0">0474-2592888</p>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-center align-items-center mb-4">
+                  <div class="me-3">
+                    <div class="d-flex align-items-center justify-content-center text-white rounded-circle"
+                      style="width: 40px; height: 40px; background-color: red;">
+                      <i class="bi bi-whatsapp"></i>
+                    </div>
+                  </div>
+                  <div class="text-start">
+                    <h6 class="mb-1 fw-bold text-danger">WhatsApp Us</h6>
+                    <p class="mb-0">+91 9072530302</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Contact Information -->
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- /Appointment Section -->
+
+  <!-- Our Mission & Our Vision Section -->
+  <section id="mission-vision" class="mission-vision section">
+    <div class="container section-title text-center" data-aos="fade-up">
+      <h2 data-aos="fade-right">OUR MISSION & OUR VISION</h2>
+      <p data-aos="fade-right" class="text-danger fw-bold">"Dedicated to delivering excellence in healthcare through
+        innovation, compassion, and expertise."</p>
+    </div>
+
+    <div class="container">
+      <div class="row row-cols-1 row-cols-lg-2 g-4">
+        <!-- Our Vision Card -->
+        <div class="col" data-aos="fade-right">
+          <div class="mission-vision-item">
+            <div class="content">
+              <h3><b>OUR MISSION</b></h3>
+              <ul style="text-align: left;">
+                <li>To provide high-quality, patient-centered healthcare that meets international standards.</li>
+                <li>To ensure affordable medical services, making healthcare accessible to all sections of society.</li>
+                <li>To establish a strong training and development platform for healthcare professionals, empowering
+                  them to build successful careers within Kerala.</li>
+                <li>To collaborate with charitable organizations and local initiatives to uplift the health and
+                  well-being of the community.</li>
+                <li>To leverage advanced medical technology and compassionate care to enhance the patient experience and
+                  clinical outcomes.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End Our Vision Card -->
+
+        <!-- Our Mission Card -->
+        <div class="col" data-aos="fade-right">
+          <div class="mission-vision-item">
+            <div class="content">
+              <h3><b>OUR VISION</b></h3>
+              <p>
+                <i class="fa-solid fa-quote-left" style="color: rgb(229, 9, 19)"></i> To be the leading healthcare
+                provider in Kerala, delivering world-class, affordable medical services while fostering community
+                well-being and professional growth, ensuring that no individual needs to leave their homeland for
+                quality care. <i class="fa-solid fa-quote-right" style="color: rgb(229, 9, 19)"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- End Our Mission Card -->
+      </div>
+    </div>
+  </section>
+  <!-- /Our Mission & Our Vision Section -->
+
+  <!-- Royal Group Section -->
+  <section id="royal-group" class="royal-group section py-5">
+    <div class="container">
+      <!-- Section Title -->
+      <div class="section-title text-center mb-4" data-aos="fade-up">
+        <h2 class="fw-bold" data-aos="fade-right">ROYAL GROUP</h2>
+      </div>
+
+      <!-- Content Row -->
+      <div class="row align-items-center">
+        <!-- Logo and Info Box -->
+        <div class="col-lg-5 mb-4 mb-lg-0">
+          <div class="main-logo-box bg-white p-4 rounded shadow text-center">
+            <img src="static/img/group.png" alt="Royal Group Logo" class="company-logo mb-3"
+              style="max-width: 100%; height: auto;">
+            <h4 class="fw-bold text-uppercase">The Royal Group</h4>
+            <p class="fw-semibold text-muted mb-0">Healthcare | Construction | Petroleum | Retail | Fitness</p>
+          </div>
+        </div>
+
+        <!-- Description and Firms List -->
+        <div class="col-lg-7">
+          <p class="fw-semibold fs-5">
+            The Royal Group is a multinational firm with interests in Construction, Healthcare, Retail, Fitness and
+            Petroleum.
+          </p>
+          <p class="fw-bold mt-3">Firms that are part of The Royal Group:</p>
+
+          <div class="row g-3">
+            <!-- Firm Cards -->
+            <div class="col-md-6">
+              <div class="firm-card bg-white p-3 rounded shadow text-center">
+                <img src="static/img/rk.jpg" alt="RK International" style="max-height: 80px;">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="firm-card bg-white p-3 rounded shadow text-center">
+                <img src="static/img/topway.jpeg" alt="Top Way LLC" style="max-height: 80px;">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="firm-card bg-white p-3 rounded shadow text-center">
+                <img src="static/img/fuels.png" alt="Royal Fuels" style="max-height: 80px;">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="firm-card bg-white p-3 rounded shadow text-center">
+                <img src="static/img/healthcare.png" alt="Royal HealthCare" style="max-height: 80px;">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="firm-card bg-white p-3 rounded shadow text-center">
+                <img src="static/img/market.png" alt="Royal Hypermarket" style="max-height: 80px;">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="firm-card bg-white p-3 rounded shadow text-center">
+                <img src="static/img/apex.jpeg" alt="Apex Gym" style="max-height: 80px;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 info">
+          <h3>TESTIMONIALS</h3>
+          <p data-aos="fade-right" class="text-danger fw-bold">"At Royal Health Care Kollam, we value the trust and
+            satisfaction of our patients. Read heartfelt testimonials from individuals who have experienced our
+            exceptional care, world-class facilities, and compassionate medical team. Their words reflect our commitment
+            to providing the best healthcare services in a warm and supportive environment."</p>
+        </div>
+
+        <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
                 {
                   "loop": true,
                   "speed": 600,
@@ -1028,214 +1355,227 @@
                   }
                 }
               </script>
-              <div class="swiper-wrapper">
-                {% for t in testimonials %}
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="d-flex">
-                        <img src="{{ t.image.url }}" class="testimonial-img flex-shrink-0" alt="{{ t.name }}" />
-                        <div>
-                          <h3>{{ t.name }}</h3>
-                          <h4>{{ t.role }}</h4>
-                          <div class="stars">
-                            {% for i in '12345'|slice:':t.rating'|make_list %}
-                              <i class="bi bi-star-fill"></i>
-                            {% endfor %}
-                          </div>
-                        </div>
+            <div class="swiper-wrapper">
+              {% for t in testimonials %}
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="d-flex">
+                    <img src="{{ t.image.url }}" class="testimonial-img flex-shrink-0" alt="{{ t.name }}" />
+                    <div>
+                      <h3>{{ t.name }}</h3>
+                      <h4>{{ t.role }}</h4>
+                      <div class="stars">
+                        {% for i in '12345'|slice:':t.rating'|make_list %}
+                        <i class="bi bi-star-fill"></i>
+                        {% endfor %}
                       </div>
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>{{ t.message }}</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
                     </div>
                   </div>
-                {% endfor %}
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>{{ t.message }}</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
               </div>
-
-              <div class="swiper-pagination"></div>
+              {% endfor %}
             </div>
+
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- /Testimonials Section -->
+    </div>
+  </section>
+  <!-- /Testimonials Section -->
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery section">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>GALLERY</h2>
-        <p data-aos="fade-right" class="text-danger fw-bold">"Explore Our Gallery : A Glimpse into Our World-Class Care"</p>
-      </div>
-      <!-- End Section Title -->
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>GALLERY</h2>
+      <p data-aos="fade-right" class="text-danger fw-bold">"Explore Our Gallery : A Glimpse into Our World-Class Care"
+      </p>
+    </div>
+    <!-- End Section Title -->
 
-      <div class="container-fluid">
-        <div class="row g-0">
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="static/img/gallery/gallery-1.jpg" class="glightbox" data-gallery="images-gallery"><img src="static/img/gallery/gallery-1.jpg" alt="" class="img-fluid" /></a>
-            </div>
+    <div class="container-fluid">
+      <div class="row g-0">
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="static/img/gallery/gallery-1.jpg" class="glightbox" data-gallery="images-gallery"><img
+                src="static/img/gallery/gallery-1.jpg" alt="" class="img-fluid" /></a>
           </div>
-          <!-- End Gallery Item -->
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="static/img/gallery/gallery-2.jpg" class="glightbox" data-gallery="images-gallery"><img src="static/img/gallery/gallery-2.jpg" alt="" class="img-fluid" /></a>
-            </div>
-          </div>
-          <!-- End Gallery Item -->
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="static/img/gallery/gallery-3.jpg" class="glightbox" data-gallery="images-gallery"><img src="static/img/gallery/gallery-3.jpg" alt="" class="img-fluid" /></a>
-            </div>
-          </div>
-          <!-- End Gallery Item -->
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="static/img/gallery/gallery-4.jpg" class="glightbox" data-gallery="images-gallery"><img src="static/img/gallery/gallery-4.jpg" alt="" class="img-fluid" /></a>
-            </div>
-          </div>
-          <!-- End Gallery Item -->
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="static/img/gallery/gallery-5.jpg" class="glightbox" data-gallery="images-gallery"><img src="static/img/gallery/gallery-5.jpg" alt="" class="img-fluid" /></a>
-            </div>
-          </div>
-          <!-- End Gallery Item -->
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="static/img/gallery/gallery-6.jpg" class="glightbox" data-gallery="images-gallery"><img src="static/img/gallery/gallery-6.jpg" alt="" class="img-fluid" /></a>
-            </div>
-          </div>
-          <!-- End Gallery Item -->
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="static/img/gallery/gallery-7.jpg" class="glightbox" data-gallery="images-gallery"><img src="static/img/gallery/gallery-7.jpg" alt="" class="img-fluid" /></a>
-            </div>
-          </div>
-          <!-- End Gallery Item -->
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="static/img/gallery/gallery-8.jpg" class="glightbox" data-gallery="images-gallery"><img src="static/img/gallery/gallery-8.jpg" alt="" class="img-fluid" /></a>
-            </div>
-          </div>
-          <!-- End Gallery Item -->
         </div>
-      </div>
-    </section>
-    <!-- /Gallery Section -->
+        <!-- End Gallery Item -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>CONTACT US</h2>
-        <p data-aos="fade-right" class="text-danger fw-bold">"Get in Touch with Us – We're Here to Assist You with Your Healthcare Needs"</p>
-      </div>
-      <!-- End Section Title -->
-
-      <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
-        <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.1931859873316!2d76.70310169999999!3d8.8615997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05e389de9c1819%3A0x93e57185babdec87!2sRoyal%20Healthcare!5e0!3m2!1sen!2sin!4v1734775340203!5m2!1sen!2sin" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <!-- End Google Maps -->
-
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-4">
-            <br />
-            <br />
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Location</h3>
-                <p>CHATHANNOOR -691572</p>
-              </div>
-            </div>
-            <!-- End Info Item -->
-            <br />
-            <br />
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Us</h3>
-                <p>+91 9072530302</p>
-              </div>
-            </div>
-            <!-- End Info Item -->
-            <br />
-            <br />
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Us</h3>
-                <p>customercare@royalhealthcarekollam.com</p>
-              </div>
-            </div>
-            <!-- End Info Item -->
-            <br />
-            <br />
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-whatsapp flex-shrink-0"></i>
-              <div>
-                <h3>Message Us</h3>
-                <p>+919188918748</p>
-              </div>
-            </div>
-            <!-- End Info Item -->
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="static/img/gallery/gallery-2.jpg" class="glightbox" data-gallery="images-gallery"><img
+                src="static/img/gallery/gallery-2.jpg" alt="" class="img-fluid" /></a>
           </div>
-
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form bg-light" style="padding: 50px;" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="" />
-                </div>
-
-                <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="" />
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="" />
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-              </div>
-            </form>
-          </div>
-          <!-- End Contact Form -->
         </div>
-      </div>
-    </section>
-    <!-- /Contact Section -->
-  </main>
+        <!-- End Gallery Item -->
 
-  <style>
-    @media (min-width: 992px) {
-      .col-lg-2-4 {
-        flex: 0 0 auto;
-        width: 20%;
-      }
-    }    
-  </style>
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="static/img/gallery/gallery-3.jpg" class="glightbox" data-gallery="images-gallery"><img
+                src="static/img/gallery/gallery-3.jpg" alt="" class="img-fluid" /></a>
+          </div>
+        </div>
+        <!-- End Gallery Item -->
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="static/img/gallery/gallery-4.jpg" class="glightbox" data-gallery="images-gallery"><img
+                src="static/img/gallery/gallery-4.jpg" alt="" class="img-fluid" /></a>
+          </div>
+        </div>
+        <!-- End Gallery Item -->
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="static/img/gallery/gallery-5.jpg" class="glightbox" data-gallery="images-gallery"><img
+                src="static/img/gallery/gallery-5.jpg" alt="" class="img-fluid" /></a>
+          </div>
+        </div>
+        <!-- End Gallery Item -->
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="static/img/gallery/gallery-6.jpg" class="glightbox" data-gallery="images-gallery"><img
+                src="static/img/gallery/gallery-6.jpg" alt="" class="img-fluid" /></a>
+          </div>
+        </div>
+        <!-- End Gallery Item -->
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="static/img/gallery/gallery-7.jpg" class="glightbox" data-gallery="images-gallery"><img
+                src="static/img/gallery/gallery-7.jpg" alt="" class="img-fluid" /></a>
+          </div>
+        </div>
+        <!-- End Gallery Item -->
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="static/img/gallery/gallery-8.jpg" class="glightbox" data-gallery="images-gallery"><img
+                src="static/img/gallery/gallery-8.jpg" alt="" class="img-fluid" /></a>
+          </div>
+        </div>
+        <!-- End Gallery Item -->
+      </div>
+    </div>
+  </section>
+  <!-- /Gallery Section -->
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>CONTACT US</h2>
+      <p data-aos="fade-right" class="text-danger fw-bold">"Get in Touch with Us – We're Here to Assist You with Your
+        Healthcare Needs"</p>
+    </div>
+    <!-- End Section Title -->
+
+    <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
+      <iframe style="border:0; width: 100%; height: 270px;"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.1931859873316!2d76.70310169999999!3d8.8615997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05e389de9c1819%3A0x93e57185babdec87!2sRoyal%20Healthcare!5e0!3m2!1sen!2sin!4v1734775340203!5m2!1sen!2sin"
+        frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- End Google Maps -->
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4">
+          <br />
+          <br />
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <i class="bi bi-geo-alt flex-shrink-0"></i>
+            <div>
+              <h3>Location</h3>
+              <p>CHATHANNOOR -691572</p>
+            </div>
+          </div>
+          <!-- End Info Item -->
+          <br />
+          <br />
+
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <i class="bi bi-telephone flex-shrink-0"></i>
+            <div>
+              <h3>Call Us</h3>
+              <p>+91 9072530302</p>
+            </div>
+          </div>
+          <!-- End Info Item -->
+          <br />
+          <br />
+
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <i class="bi bi-envelope flex-shrink-0"></i>
+            <div>
+              <h3>Email Us</h3>
+              <p>customercare@royalhealthcarekollam.com</p>
+            </div>
+          </div>
+          <!-- End Info Item -->
+          <br />
+          <br />
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <i class="bi bi-whatsapp flex-shrink-0"></i>
+            <div>
+              <h3>Message Us</h3>
+              <p>+919188918748</p>
+            </div>
+          </div>
+          <!-- End Info Item -->
+        </div>
+
+        <div class="col-lg-8">
+          <form action="forms/contact.php" method="post" class="php-email-form bg-light" style="padding: 50px;"
+            data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required="" />
+              </div>
+
+              <div class="col-md-6">
+                <input type="email" class="form-control" name="email" placeholder="Your Email" required="" />
+              </div>
+
+              <div class="col-md-12">
+                <input type="text" class="form-control" name="subject" placeholder="Subject" required="" />
+              </div>
+
+              <div class="col-md-12">
+                <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+              </div>
+
+              <div class="col-md-12 text-center">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                <button type="submit">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- End Contact Form -->
+      </div>
+    </div>
+  </section>
+  <!-- /Contact Section -->
+</main>
+
+<style>
+  @media (min-width: 992px) {
+    .col-lg-2-4 {
+      flex: 0 0 auto;
+      width: 20%;
+    }
+  }
+</style>
 {% endblock %}

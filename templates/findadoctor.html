@@ -1,244 +1,267 @@
 {% extends 'base.html' %}Find a Doctor | Royal Health Care{% block content %}
-  <!-- Background Image Section -->
-  <section id="background-section" class="d-flex align-items-center justify-content-center" style="background-image: url('https://images.unsplash.com/photo-1674702727317-d29b2788dc4a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVkaWNhbCUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D'); background-size: cover; background-position: center center; height: 30vh; max-width: 100%; color: #fff; filter: grayscale(0.5);">
-    <div class="container text-center">
-      <h1 class="lead" style="font-weight: bold; font-size: 38px; color: rgb(255, 255, 255); text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)">Find A Doctor</h1>
-      <p class="lead" style="font-weight: bold; font-size: 14px; color: rgb(255, 255, 255); text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)">
-        Home <i class="fa-solid fa-angles-right"></i> Find A Doctor
-      </p>
-    </div>
-  </section>
-  <!-- /Background Image Section -->
-  <!-- Doctors Section -->
-  <section id="doctors" class="doctors section">
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-      <h2>DOCTORS</h2>
-      <p data-aos="fade-right" class="text-danger fw-bold">"Our experienced doctors provide expert care, after care and guidance to all our valuable patients"</p>
-    </div>
-    <!-- End Section Title -->
-    <div class="container">
-      <div class="row gy-4">
-        <!-- Visible Doctors -->
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="team-member d-flex align-items-start">
-            <div class="pic">
-              <img src="static/img/lakshmy.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="member-info">
-              <h4>Dr.Lakshmy V Raj</h4>
-              <span>ENT Head & Neck Surgeon</span>
-              <p>MBBS, MS, DNB, MNAMS</p>
-              <br />
-              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-            </div>
+<!-- Background Image Section -->
+<section id="background-section" class="d-flex align-items-center justify-content-center"
+  style="background-image: url('https://images.unsplash.com/photo-1674702727317-d29b2788dc4a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVkaWNhbCUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D'); background-size: cover; background-position: center center; height: 30vh; max-width: 100%; color: #fff; filter: grayscale(0.5);">
+  <div class="container text-center">
+    <h1 class="lead"
+      style="font-weight: bold; font-size: 38px; color: rgb(255, 255, 255); text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)">
+      Find A Doctor</h1>
+    <p class="lead"
+      style="font-weight: bold; font-size: 14px; color: rgb(255, 255, 255); text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)">
+      Home <i class="fa-solid fa-angles-right"></i> Find A Doctor
+    </p>
+  </div>
+</section>
+<!-- /Background Image Section -->
+<!-- Doctors Section -->
+<section id="doctors" class="doctors section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>DOCTORS</h2>
+    <p data-aos="fade-right" class="text-danger fw-bold">"Our experienced doctors provide expert care, after care and
+      guidance to all our valuable patients"</p>
+  </div>
+  <!-- End Section Title -->
+  <div class="container">
+    <div class="row gy-4">
+      <!-- Visible Doctors -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="team-member d-flex align-items-start">
+          <div class="pic">
+            <img src="static/img/lakshmy.jpg" class="img-fluid" alt="" />
           </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="team-member d-flex align-items-start">
-            <div class="pic">
-              <img src="static/img/mithun.jpEg" class="img-fluid" alt="" />
-            </div>
-            <div class="member-info">
-              <h4>Dr.Mithun MS</h4>
-              <span>Oral & Maxillofacial Surgeon</span>
-              <p>BDS & MDS</p>
-              <br />
-              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="team-member d-flex align-items-start">
-            <div class="pic">
-              <img src="static/img/rakhi.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="member-info">
-              <h4>Dr.Rakhi R Pillai</h4>
-              <span>Consultant Anaesthesiologist</span>
-              <p>MBBS, DA, DNB(Anasthesia)</p>
-              <br />
-              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-          <div class="team-member d-flex align-items-start">
-            <div class="pic">
-              <img src="static/img/bijumon.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="member-info">
-              <h4>Dr.Bijumon K</h4>
-              <span>Consultant, Orthopaedic Surgeon</span>
-              <p>MBBS, D-ORTHO, DNB(ORTHO)</p>
-              <br />
-              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br />
-      <!-- Hidden Doctors Section -->
-      <div class="row gy-4 collapse" id="moreDoctors">
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
-          <div class="team-member d-flex align-items-start">
-            <div class="pic">
-              <img src="static/img/shehnaz.JPG" class="img-fluid" alt="" />
-            </div>
-            <div class="member-info">
-              <h4>Dr.Shehnaz Abdul Rahim</h4>
-              <span>Emergency Medical Specialist</span>
-              <p>MBBS, MRCEM</p>
-              <br />
-              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="700">
-          <div class="team-member d-flex align-items-start">
-            <div class="pic">
-              <img src="static/img/herosh.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="member-info">
-              <h4>Dr.Herosh Thampan</h4>
-              <span>Consultant Pediatrician</span>
-              <p>MBBS, DCH</p>
-              <br />
-              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="800">
-          <div class="team-member d-flex align-items-start">
-            <div class="pic">
-              <img src="static/img/rejina.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="member-info">
-              <h4>Dr. Rejina N</h4>
-              <span>Consultant & Gynaecologist</span>
-              <p>MBBS, DGO, DNB</p>
-              <br />
-              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="900">
-          <div class="team-member d-flex align-items-start">
-            <div class="pic">
-              <img src="static/img/sasidharan.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="member-info">
-              <h4>Dr. Sasidhara Panicker</h4>
-              <span>Sr. Consultant & Surgeon</span>
-              <p>MBBS, MS, (General Surgery)</p>
-              <br />
-              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="1000">
-          <div class="team-member d-flex align-items-start">
-            <div class="pic">
-              <img src="static/img/ramachandran.jpeg" class="img-fluid" alt="" />
-            </div>
-            <div class="member-info">
-              <h4>Dr. Ramachandran Nair</h4>
-              <span>Medical Advisor</span>
-              <p>BSC, MBBS, DCH</p>
-              <br />
-              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="1100">
-          <div class="team-member d-flex align-items-start">
-            <div class="pic">
-              <img src="static/img/manikandan.jpeg" class="img-fluid" alt="" />
-            </div>
-            <div class="member-info">
-              <h4>Dr. D Manikantan</h4>
-              <span>Consultant General & Laparoscopic Surgeon</span>
-              <p>MBBS, MS, FIAGES</p>
-              <br />
-              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="700">
-          <div class="team-member d-flex align-items-start">
-            <div class="pic">
-              <img src="static/img/abita.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="member-info">
-              <h4>Dr. Abit Asok</h4>
-              <span>Consultant Radiologist</span>
-              <p>MBBS, MD</p>
-              <br />
-              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="800">
-          <div class="team-member d-flex align-items-start">
-            <div class="pic">
-              <img src="static/img/Dr.Afzal K Azad.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="member-info">
-              <h4>Dr. Afzal K Azad</h4>
-              <span>Family Physician</span>
-              <p>MBBS, DFM(NBE)</p>
-              <br />
-              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="900">
-          <div class="team-member d-flex align-items-start">
-            <div class="pic">
-              <img src="static/img/Dr.Lekshmi Priya R.JPG" class="img-fluid" alt="" />
-            </div>
-            <div class="member-info">
-              <h4>Dr. Lekshmipriya R</h4>
-              <span>General Surgeon</span>
-              <p>MBBS, MS(General Surgeon)</p>
-              <br />
-              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="1000">
-          <div class="team-member d-flex align-items-start">
-            <div class="pic">
-              <img src="static/img/Dr.Tuman Krishnan (2).jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="member-info">
-              <h4>Dr. Tuman Krishnnan</h4>
-              <span>Consultant Medicine and Diabetologist</span>
-              <p>MBBS, MD, FCCM, CCEBDM</p>
-              <br />
-              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-            </div>
+          <div class="member-info">
+            <h4>Dr.Lakshmy V Raj</h4>
+            <span class="mb-2">ENT Head & Neck Surgeon</span>
+            <span class="mb-2">MBBS, MS, DNB, MNAMS</span>
+            <!-- Time Slot -->
+            <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+            <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
           </div>
         </div>
       </div>
 
-      <!-- Show More Button -->
-      <div class="text-center mt-4">
-        <a class="" type="button" data-bs-toggle="collapse" data-bs-target="#moreDoctors" aria-expanded="false" aria-controls="moreDoctors"><b>Show More</b> <i class="fa-solid fa-angles-down"></i></a>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="team-member d-flex align-items-start">
+          <div class="pic">
+            <img src="static/img/mithun.jpeg" class="img-fluid" alt="" />
+          </div>
+          <div class="member-info">
+            <h4>Dr.Mithun MS</h4>
+            <span class="mb-2">Oral & Maxillofacial Surgeon</span>
+            <span class="mb-2">BDS & MDS</span>
+            <!-- Time Slot -->
+            <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+            <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="team-member d-flex align-items-start">
+          <div class="pic">
+            <img src="static/img/rakhi.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="member-info">
+            <h4>Dr.Rakhi R Pillai</h4>
+            <span class="mb-2">Consultant Anaesthesiologist</span>
+            <span class="mb-2">MBBS, DA, DNB(Anasthesia)</span>
+            <!-- Time Slot -->
+            <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+            <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member d-flex align-items-start">
+          <div class="pic">
+            <img src="static/img/bijumon.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="member-info">
+            <h4>Dr.Bijumon K</h4>
+            <span class="mb-2">Consultant and Orthopaedic Surgeon</span>
+            <span class="mb-2">MBBS, D-ORTHO, DNB(ORTHO)</span>
+            <!-- Time Slot -->
+            <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+            <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
-  <!-- /Doctors Section -->
+    <br />
+    <!-- Hidden Doctors Section -->
+    <div class="row gy-4 collapse" id="moreDoctors">
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="team-member d-flex align-items-start">
+          <div class="pic">
+            <img src="static/img/shehnaz.JPG" class="img-fluid" alt="" />
+          </div>
+          <div class="member-info">
+            <h4>Dr.Shehnaz Abdul Rahim</h4>
+            <span class="mb-2">Emergency Medical Specialist</span>
+            <span class="mb-2">MBBS, MRCEMv</span>
+            <!-- Time Slot -->
+            <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+            <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="700">
+        <div class="team-member d-flex align-items-start">
+          <div class="pic">
+            <img src="static/img/herosh.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="member-info">
+            <h4>Dr.Herosh Thampan</h4>
+            <span class="mb-2">Consultant Pediatrician</span>
+            <span class="mb-2">MBBS, DCH</span>
+            <!-- Time Slot -->
+            <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+            <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="800">
+        <div class="team-member d-flex align-items-start">
+          <div class="pic">
+            <img src="static/img/rejina.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="member-info">
+            <h4>Dr. Rejina N</h4>
+            <span class="mb-2">Consultant & Gynaecologist</span>
+            <span class="mb-2">MBBS, DGO, DNB</span>
+            <!-- Time Slot -->
+            <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+            <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="900">
+        <div class="team-member d-flex align-items-start">
+          <div class="pic">
+            <img src="static/img/sasidharan.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="member-info">
+            <h4>Dr. Sasidhara Panicker</h4>
+            <span class="mb-2">Sr. Consultant & Surgeon</span>
+            <span class="mb-2">MBBS, MS, (General Surgery)</span>
+            <!-- Time Slot -->
+            <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+            <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="1000">
+        <div class="team-member d-flex align-items-start">
+          <div class="pic">
+            <img src="static/img/ramachandran.jpeg" class="img-fluid" alt="" />
+          </div>
+          <div class="member-info">
+            <h4>Dr. Ramachandran Nair</h4>
+            <span class="mb-2">Medical Advisor</span>
+            <span class="mb-2">BSC, MBBS, DCH</span>
+            <!-- Time Slot -->
+            <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+            <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="1100">
+        <div class="team-member d-flex align-items-start">
+          <div class="pic">
+            <img src="static/img/manikandan.jpeg" class="img-fluid" alt="" />
+          </div>
+          <div class="member-info">
+            <h4>Dr. D Manikantan</h4>
+            <span class="mb-2">Consultant General & Laparoscopic Surgeon</span>
+            <span class="mb-2">MBBS, MS, FIAGES</span>
+            <!-- Time Slot -->
+            <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+            <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="700">
+        <div class="team-member d-flex align-items-start">
+          <div class="pic">
+            <img src="static/img/abita.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="member-info">
+            <h4>Dr. Abit Asok</h4>
+            <span class="mb-2">Consultant Radiologist</span>
+            <span class="mb-2">MBBS, MD</span>
+            <!-- Time Slot -->
+            <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+            <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="800">
+        <div class="team-member d-flex align-items-start">
+          <div class="pic">
+            <img src="static/img/Dr.Afzal K Azad.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="member-info">
+            <h4>Dr. Afzal K Azad</h4>
+            <span class="mb-2">Family Physician</span>
+            <span class="mb-2">MBBS, DFM(NBE)</span>
+            <!-- Time Slot -->
+            <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+            <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="900">
+        <div class="team-member d-flex align-items-start">
+          <div class="pic">
+            <img src="static/img/Dr.Lekshmi Priya R.JPG" class="img-fluid" alt="" />
+          </div>
+          <div class="member-info">
+            <h4>Dr. Lekshmipriya R</h4>
+            <span class="mb-2">General Surgeon</span>
+            <span class="mb-2">MBBS, MS(General Surgeon)</span>
+            <!-- Time Slot -->
+            <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+            <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="1000">
+        <div class="team-member d-flex align-items-start">
+          <div class="pic">
+            <img src="static/img/Dr.Tuman Krishnan (2).jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="member-info">
+            <h4>Dr. Tuman Krishnnan</h4>
+            <span class="mb-2">Consultant Medicine and Diabetologist</span>
+            <span class="mb-2">MBBS, MD, FCCM, CCEBDM</span>
+
+            <!-- Time Slot -->
+            <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+
+            <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Show More Button -->
+    <div class="text-center mt-4">
+      <a class="" type="button" data-bs-toggle="collapse" data-bs-target="#moreDoctors" aria-expanded="false"
+        aria-controls="moreDoctors"><b>Show More</b> <i class="fa-solid fa-angles-down"></i></a>
+    </div>
+  </div>
+</section>
+<!-- /Doctors Section -->
 {% endblock %}

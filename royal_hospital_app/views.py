@@ -3,6 +3,9 @@ from django.core.mail import send_mail
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.conf import settings
+from django.http import HttpResponse
+from django.core.mail import EmailMessage
+from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
 
@@ -37,6 +40,47 @@ def managements(request):
 
 def careers(request):
     return render(request, 'careers.html')
+
+def appointment(request):
+    return render(request, 'appointment.html')
+
+def career_application(request):
+    if request.method == 'POST':
+        full_name = request.POST.get('full_name')
+        email = request.POST.get('email')
+        phone = request.POST.get('phone_number')
+        position = request.POST.get('position')
+        cover_letter = request.POST.get('cover_letter')
+        resume = request.FILES.get('resume')
+
+        subject = f'New Career Application: {full_name} for {position}'
+        body = f"""
+Full Name: {full_name}
+Email: {email}
+Phone: {phone}
+Position Applied: {position}
+
+Cover Letter:
+{cover_letter}
+        """
+
+        mail = EmailMessage(
+            subject,
+            body,
+            email,  # sender
+            ['hr@royalhealthcarekollam.com'],  # receiver
+        )
+
+        if resume:
+            mail.attach(resume.name, resume.read(), resume.content_type)
+
+        try:
+            mail.send()
+            return HttpResponse('Success')
+        except Exception as e:
+            return HttpResponse(f'Error sending email: {e}')
+
+    return HttpResponse('Invalid request')
 
 def intpatient(request):
     return render(request, 'intpatient.html')
