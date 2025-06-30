@@ -47,6 +47,9 @@
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-14">FAMILY MEDICINE</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-15">PALLIATIVE CARE</a>
+          </li>
         </ul>
       </div>
       <div class="col-lg-9 mt-4 mt-lg-0">
@@ -238,6 +241,141 @@
               </div>
             </div>
           </div>
+          <div class="tab-pane" id="departments-tab-15">
+            <div class="row">
+              <div class="col-lg-8 details order-2 order-lg-1">
+                <h3>PALLIATIVE CARE</h3>
+                <p class="fst-italic">Royal Healthcare offers dedicated palliative care services with five fully
+                  equipped beds and a compassionate team of supporting staff committed to meeting the unique needs of
+                  each patient. Our facility is designed to provide comfort, dignity, and continuous care for
+                  individuals facing life-limiting illnesses.</p>
+                <p>We understand the importance of emotional, physical, and medical support during this sensitive time
+                  and ensure round-the-clock attention tailored to each patient’s condition. To support families and
+                  patients, we offer comprehensive monthly care packages that cover all essential services. Royal
+                  Healthcare aims to create a peaceful and supportive environment for patients and their loved ones.
+                </p>
+                <p>
+                  <!-- <strong style="color: red;">Dr. Afzal K Azad</strong> — <strong style="color: red;">Consultant -
+                    Family Medicine</strong> -->
+                </p>
+                <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+                <a data-aos="fade-right" class="cta-btn mx-1" href="#" data-toggle="modal"
+                  data-target="#palliativeModal">Make an Appointment</a>
+              </div>
+              <div class="col-lg-4 text-center order-1 order-lg-2">
+                <img
+                  src="https://media.istockphoto.com/id/692381776/photo/doctor-talking-to-a-family-at-the-hospital.jpg?s=612x612&w=0&k=20&c=cDwVx1sgH6JXQcD0N8ljSxU2389-O0NhufDa6FE9YbY="
+                  alt="" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+          <!-- Palliative Care Modal -->
+          <div id="palliativeModal" class="modal fade" tabindex="-1" role="dialog"
+            aria-labelledby="palliativeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+              <div class="modal-content p-4">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="palliativeModalLabel">Palliative Care Booking Form</h5>
+                  <button type="button" class="close btn" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <h6>Patient Information</h6>
+                    <div class="form-row">
+                      <div class="form-group col-md-6"><input type="text" class="form-control" placeholder="Full Name"
+                          required></div>
+                      <div class="form-group col-md-3"><input type="number" class="form-control" placeholder="Age"
+                          required></div>
+                      <div class="form-group col-md-3">
+                        <select class="form-control">
+                          <option disabled selected>Gender</option>
+                          <option>Male</option>
+                          <option>Female</option>
+                          <option>Other</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-6"><input type="text" class="form-control"
+                          placeholder="Contact Number" required></div>
+                      <div class="form-group col-md-6"><input type="email" class="form-control"
+                          placeholder="Email Address"></div>
+                      <div class="form-group col-md-12"><textarea class="form-control" placeholder="Address"
+                          rows="2"></textarea></div>
+                    </div>
+
+                    <h6>Primary Contact Person</h6>
+                    <div class="form-row">
+                      <div class="form-group col-md-6"><input type="text" class="form-control" placeholder="Name"></div>
+                      <div class="form-group col-md-6"><input type="text" class="form-control"
+                          placeholder="Relationship to Patient"></div>
+                      <div class="form-group col-md-6"><input type="text" class="form-control"
+                          placeholder="Contact Number"></div>
+                      <div class="form-group col-md-6"><input type="email" class="form-control"
+                          placeholder="Email Address"></div>
+                    </div>
+
+                    <h6>Medical Details</h6>
+                    <div class="form-group"><textarea class="form-control" placeholder="Primary Diagnosis"></textarea>
+                    </div>
+                    <div class="form-group"><textarea class="form-control"
+                        placeholder="Current Medical Condition"></textarea></div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6"><input type="text" class="form-control"
+                          placeholder="Attending Doctor (if any)"></div>
+                      <div class="form-group col-md-6"><input type="date" class="form-control"
+                          placeholder="Preferred Start Date"></div>
+                    </div>
+                    <label>Preferred Visit Frequency:</label><br>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="visitFrequency" id="daily" value="Daily"><label
+                        class="form-check-label" for="daily">Daily</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="visitFrequency" id="weekly"
+                        value="Weekly"><label class="form-check-label" for="weekly">Weekly</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="visitFrequency" id="doctorRec"
+                        value="Doctor's Recommendation"><label class="form-check-label" for="doctorRec">As per
+                        Doctor</label>
+                    </div>
+
+                    <h6 class="mt-3">Service Requirements</h6>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="painManagement"><label
+                        class="form-check-label" for="painManagement">Pain Management</label><br>
+                      <input type="checkbox" class="form-check-input" id="emotionalSupport"><label
+                        class="form-check-label" for="emotionalSupport">Emotional / Psychological Support</label><br>
+                      <input type="checkbox" class="form-check-input" id="nursingCare"><label class="form-check-label"
+                        for="nursingCare">Nursing Care</label><br>
+                      <input type="checkbox" class="form-check-input" id="physiotherapy"><label class="form-check-label"
+                        for="physiotherapy">Physiotherapy Support</label><br>
+                      <input type="checkbox" class="form-check-input" id="homeVisits"><label class="form-check-label"
+                        for="homeVisits">Home Visits</label><br>
+                      <input type="checkbox" class="form-check-input" id="spiritualCare"><label class="form-check-label"
+                        for="spiritualCare">Spiritual Care (if required)</label><br>
+                      <input type="checkbox" class="form-check-input" id="other"><label class="form-check-label"
+                        for="other">Other</label><br>
+                      <input type="text" class="form-control mt-2" placeholder="Other (Please specify)">
+                    </div>
+
+                    <div class="form-group mt-3">
+                      <textarea class="form-control" rows="3"
+                        placeholder="Additional Information or Instructions"></textarea>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-primary">Submit Request</button>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -426,6 +564,179 @@
               </div>
             </div>
           </div>
+          <div class="tab-pane" id="departments-tab-16">
+            <div class="row">
+              <div class="col-lg-4 text-center order-1 order-lg-1">
+                <img
+                  src="https://opportunities.omf.org/sap/bc/ui5_ui5/sap/zoppor_search/Reg_images/50418109.JPG?date=Wed_Feb_05_2025"
+                  alt="" class="img-fluid" />
+              </div>
+              <div class="col-lg-8 details order-2 order-lg-2">
+                <h3>HOMECARE</h3>
+                <p class="fst-italic">At Royal Healthcare, we provide round-the-clock medical support with 24/7
+                  availability of ambulance services, experienced doctors, and trained nursing staff who are ready to
+                  attend to your healthcare needs in the comfort of your home.</p>
+                <p>Whether it’s an emergency, routine check-up, post-surgical care, elderly support, or chronic illness
+                  management, our dedicated team ensures timely and compassionate care. We understand that accessing
+                  quality medical care at home can offer greater comfort and convenience, especially for those with
+                  mobility challenges. Our goal is to deliver personalized, professional, and efficient healthcare
+                  services directly to your doorstep whenever you need us.</p>
+                <p>
+                  <!-- <strong style="color: red;">Dr.Mithun MS</strong> — <strong style="color: red;">Oral & Maxillofacial
+                    Surgeon</strong> -->
+                </p>
+                <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+                <a class="cta-btn mx-1" href="#" data-bs-toggle="modal" data-bs-target="#homeCareModal">Book Appointment</a>
+              </div>
+            </div>
+          </div>
+          <!-- Home Care Visit Booking Modal -->
+          <div class="modal fade" id="homeCareModal" tabindex="-1" aria-labelledby="homeCareModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content p-3">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="homeCareModalLabel">🚑 Home Care Visit Booking Form</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p class="text-muted">Request home care visits by our hospital team with ambulance support.</p>
+                  <form>
+                    <h6>Patient Information</h6>
+                    <div class="row g-3">
+                      <div class="col-md-6"><input type="text" class="form-control" placeholder="Full Name" required>
+                      </div>
+                      <div class="col-md-3"><input type="number" class="form-control" placeholder="Age" required></div>
+                      <div class="col-md-3">
+                        <select class="form-select" required>
+                          <option selected disabled>Gender</option>
+                          <option>Male</option>
+                          <option>Female</option>
+                          <option>Other</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6"><input type="text" class="form-control" placeholder="Contact Number"
+                          required></div>
+                      <div class="col-md-6"><input type="email" class="form-control" placeholder="Email Address"></div>
+                      <div class="col-md-12"><textarea class="form-control" placeholder="Home Address (Visit Location)"
+                          rows="2"></textarea></div>
+                    </div>
+
+                    <h6 class="mt-4">Primary Contact Person</h6>
+                    <div class="row g-3">
+                      <div class="col-md-6"><input type="text" class="form-control" placeholder="Name"></div>
+                      <div class="col-md-6"><input type="text" class="form-control"
+                          placeholder="Relationship to Patient"></div>
+                      <div class="col-md-6"><input type="text" class="form-control" placeholder="Contact Number"></div>
+                      <div class="col-md-6"><input type="email" class="form-control" placeholder="Email Address"></div>
+                    </div>
+
+                    <h6 class="mt-4">Visit Details</h6>
+                    <div class="mb-3"><textarea class="form-control" placeholder="Reason for Home Care Visit"
+                        rows="2"></textarea></div>
+                    <div class="mb-3"><input type="text" class="form-control"
+                        placeholder="Doctor’s Recommendation (if available)"></div>
+                    <div class="row g-3">
+                      <div class="col-md-6"><input type="date" class="form-control"></div>
+                      <div class="col-md-6"><input type="time" class="form-control"></div>
+                    </div>
+
+                    <label class="mt-3">Ambulance Required?</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="ambulanceRequired" id="ambulanceYes">
+                      <label class="form-check-label" for="ambulanceYes">Yes</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="ambulanceRequired" id="ambulanceNo">
+                      <label class="form-check-label" for="ambulanceNo">No</label>
+                    </div>
+
+                    <label class="mt-3">Type of Ambulance (if known or advised):</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="ambulanceType" id="bls">
+                      <label class="form-check-label" for="bls">Basic Life Support (BLS)</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="ambulanceType" id="als">
+                      <label class="form-check-label" for="als">Advanced Life Support (ALS)</label>
+                    </div>
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="radio" name="ambulanceType" id="notSure">
+                      <label class="form-check-label" for="notSure">Not Sure</label>
+                    </div>
+
+                    <h6>Required Services During Visit</h6>
+                    <div class="row g-2">
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="consultation">
+                          <label class="form-check-label" for="consultation">Doctor Consultation at Home</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="nursing">
+                          <label class="form-check-label" for="nursing">Nursing Care at Home</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="medication">
+                          <label class="form-check-label" for="medication">Medication Administration</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="dressing">
+                          <label class="form-check-label" for="dressing">Wound Dressing</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="physiotherapy">
+                          <label class="form-check-label" for="physiotherapy">Physiotherapy</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="sample">
+                          <label class="form-check-label" for="sample">Sample Collection (Lab Tests)</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="otherService">
+                          <label class="form-check-label" for="otherService">Other</label>
+                        </div>
+                        <input type="text" class="form-control mt-2" placeholder="Please specify other service">
+                      </div>
+                    </div>
+
+                    <div class="mt-3 mb-3">
+                      <textarea class="form-control" rows="3"
+                        placeholder="Any special instructions or additional requests"></textarea>
+                    </div>
+
+                    <h6>Consent</h6>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="consent1" required>
+                      <label class="form-check-label" for="consent1">
+                        I hereby consent to the collection and use of the above information for the purpose of arranging
+                        home care visits and ambulance services.
+                      </label>
+                    </div>
+                    <div class="form-check mb-4">
+                      <input class="form-check-input" type="checkbox" id="consent2" required>
+                      <label class="form-check-label" for="consent2">
+                        I understand that all information will be kept strictly confidential.
+                      </label>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-primary">Submit Request</button>
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </form>
+
+                  <div class="mt-4">
+                    <p class="mb-1"><strong>📞 For urgent bookings:</strong> [Hospital Contact Number]</p>
+                    <p><strong>📧 Email:</strong> [Hospital Email]</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
       <div class="col-lg-3">
@@ -450,6 +761,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-13">OMF</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-16">HOMECARE</a>
           </li>
         </ul>
       </div>

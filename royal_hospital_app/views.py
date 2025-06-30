@@ -118,3 +118,9 @@ def make_appointment(request):
         return redirect('index')  # Reloads the same page
     return render(request, 'index.html')  # Replace with your actual template name
 
+def royalgroup(request):
+    return render(request, 'royalgroup.html')
+
+def insurance(request):
+    return render(request, 'insurance.html')
+

@@ -1,3 +1,171 @@
-{% extends 'base.html' %}Insurance | Royal Health Care{% block content %}
+{% extends 'base.html' %}
+{% block title %}Insurance | Royal Health Care{% endblock %}
+{% block content %}
+<!-- Background Image Section -->
+<section id="background-section" class="d-flex align-items-center justify-content-center"
+    style="background-image: url('https://images.unsplash.com/photo-1505751172876-fa1923c5c528?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3RldGhvc2NvcGV8ZW58MHx8MHx8fDA%3D'); background-size: cover; background-position: center center; height: 30vh; max-width: 100%; color: #fff; filter: grayscale(0.5);">
+    <div class="container text-center">
+        <h1 class="lead"
+            style="font-weight: bold; font-size: 38px; color: rgb(255, 255, 255); text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)">
+            Insurance</h1>
+        <p class="lead"
+            style="font-weight: bold; font-size: 14px; color: rgb(255, 255, 255); text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)">
+            Home <i class="fa-solid fa-angles-right"></i> Insurance
+        </p>
+    </div>
+</section>
+<!-- /Background Image Section -->
 
+<!-- Insurance Cards Section -->
+<section class="insurance-section py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Card 1 -->
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card insurance-card h-100">
+                    <div class="card-img-container">
+                        <img src="https://thqhkottarakkara.com/uploads/scheme/4.jpg" class="card-img-top"
+                            alt="Health Insurance">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card insurance-card h-100">
+                    <div class="card-img-container">
+                        <img src="https://yt3.googleusercontent.com/rUWPJAjTrYmNiJjX2D4whywLrdgJUoSxnkk-QglB2zBFgMK2Z2hRGEr-XCrlAYaGxQfh3l1_cg0=s900-c-k-c0x00ffffff-no-rj"
+                            class="card-img-top" alt="Life Insurance">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card insurance-card h-100">
+                    <div class="card-img-container">
+                        <img src="" class="card-img-top" alt="Travel Insurance">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="card insurance-card h-100">
+                    <div class="card-img-container">
+                        <img src="" class="card-img-top" alt="Property Insurance">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="card insurance-card h-100">
+                    <div class="card-img-container">
+                        <img src="" class="card-img-top" alt="Motor Insurance">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <!-- Card 1 -->
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card insurance-card h-100">
+                    <div class="card-img-container">
+                        <img src="" class="card-img-top" alt="Health Insurance">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card insurance-card h-100">
+                    <div class="card-img-container">
+                        <img src="" class="card-img-top" alt="Life Insurance">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card insurance-card h-100">
+                    <div class="card-img-container">
+                        <img src="" class="card-img-top" alt="Travel Insurance">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="card insurance-card h-100">
+                    <div class="card-img-container">
+                        <img src="" class="card-img-top" alt="Property Insurance">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="card insurance-card h-100">
+                    <div class="card-img-container">
+                        <img src="" class="card-img-top" alt="Motor Insurance">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Insurance Cards Section -->
+
+<style>
+    .insurance-card {
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .insurance-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-img-container {
+        height: 150px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    .insurance-card:hover .card-img-top {
+        transform: scale(1.05);
+    }
+
+    .card-body {
+        padding: 1.5rem;
+        background: #fff;
+    }
+
+    .card-title {
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 0.75rem;
+    }
+
+    .card-text {
+        color: #7f8c8d;
+        font-size: 0.9rem;
+    }
+</style>
 {% endblock %}
