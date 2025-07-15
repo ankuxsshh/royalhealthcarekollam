@@ -484,7 +484,8 @@
                     Family Medicine</strong> -->
                   </p>
                   <p class="mb-3"> 9:00 AM – 5:00 PM</p>
-                  <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
+                  <a data-aos="fade-right" class="cta-btn mx-1" href="#" data-toggle="modal"
+                    data-target="#palliativeModal">Make an Appointment</a>
                 </div>
                 <div class="col-lg-4 text-center order-1 order-lg-2">
                   <img
@@ -493,6 +494,114 @@
                 </div>
               </div>
             </div>
+            <!-- Palliative Care Modal -->
+            <div id="palliativeModal" class="modal fade" tabindex="-1" role="dialog"
+              aria-labelledby="palliativeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content p-4">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="palliativeModalLabel">Palliative Care Booking Form</h5>
+                    <button type="button" class="close btn" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <h6>Patient Information</h6>
+                      <div class="form-row">
+                        <div class="form-group col-md-6"><input type="text" class="form-control" placeholder="Full Name"
+                            required></div>
+                        <div class="form-group col-md-3"><input type="number" class="form-control" placeholder="Age"
+                            required></div>
+                        <div class="form-group col-md-3">
+                          <select class="form-control">
+                            <option disabled selected>Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-6"><input type="text" class="form-control"
+                            placeholder="Contact Number" required></div>
+                        <div class="form-group col-md-6"><input type="email" class="form-control"
+                            placeholder="Email Address"></div>
+                        <div class="form-group col-md-12"><textarea class="form-control" placeholder="Address"
+                            rows="2"></textarea></div>
+                      </div>
+
+                      <h6>Primary Contact Person</h6>
+                      <div class="form-row">
+                        <div class="form-group col-md-6"><input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group col-md-6"><input type="text" class="form-control"
+                            placeholder="Relationship to Patient"></div>
+                        <div class="form-group col-md-6"><input type="text" class="form-control"
+                            placeholder="Contact Number"></div>
+                        <div class="form-group col-md-6"><input type="email" class="form-control"
+                            placeholder="Email Address"></div>
+                      </div>
+
+                      <h6>Medical Details</h6>
+                      <div class="form-group"><textarea class="form-control" placeholder="Primary Diagnosis"></textarea>
+                      </div>
+                      <div class="form-group"><textarea class="form-control"
+                          placeholder="Current Medical Condition"></textarea></div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6"><input type="text" class="form-control"
+                            placeholder="Attending Doctor (if any)"></div>
+                        <div class="form-group col-md-6"><input type="date" class="form-control"
+                            placeholder="Preferred Start Date"></div>
+                      </div>
+                      <label>Preferred Visit Frequency:</label><br>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="visitFrequency" id="daily"
+                          value="Daily"><label class="form-check-label" for="daily">Daily</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="visitFrequency" id="weekly"
+                          value="Weekly"><label class="form-check-label" for="weekly">Weekly</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="visitFrequency" id="doctorRec"
+                          value="Doctor's Recommendation"><label class="form-check-label" for="doctorRec">As per
+                          Doctor</label>
+                      </div>
+
+                      <h6 class="mt-3">Service Requirements</h6>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="painManagement"><label
+                          class="form-check-label" for="painManagement">Pain Management</label><br>
+                        <input type="checkbox" class="form-check-input" id="emotionalSupport"><label
+                          class="form-check-label" for="emotionalSupport">Emotional / Psychological Support</label><br>
+                        <input type="checkbox" class="form-check-input" id="nursingCare"><label class="form-check-label"
+                          for="nursingCare">Nursing Care</label><br>
+                        <input type="checkbox" class="form-check-input" id="physiotherapy"><label
+                          class="form-check-label" for="physiotherapy">Physiotherapy Support</label><br>
+                        <input type="checkbox" class="form-check-input" id="homeVisits"><label class="form-check-label"
+                          for="homeVisits">Home Visits</label><br>
+                        <input type="checkbox" class="form-check-input" id="spiritualCare"><label
+                          class="form-check-label" for="spiritualCare">Spiritual Care (if required)</label><br>
+                        <input type="checkbox" class="form-check-input" id="other"><label class="form-check-label"
+                          for="other">Other</label><br>
+                        <input type="text" class="form-control mt-2" placeholder="Other (Please specify)">
+                      </div>
+
+                      <div class="form-group mt-3">
+                        <textarea class="form-control" rows="3"
+                          placeholder="Additional Information or Instructions"></textarea>
+                      </div>
+
+                      <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Submit Request</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -552,10 +661,157 @@
                     <strong style="color: red;">Dr. Abit Asok - Radiologist</strong>
                   </p>
                   <p class="mb-3"> 9:00 AM – 5:00 PM</p>
-                  <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
+                  <a data-aos="fade-right" class="cta-btn mx-1" href="#" data-bs-toggle="modal"
+                    data-bs-target="#radiologyModal">Make an Appointment</a>
+
                 </div>
               </div>
             </div>
+            <!-- Radiology Booking Modal -->
+            <div id="radiologyModal" class="modal fade" tabindex="-1" role="dialog"
+              aria-labelledby="radiologyModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content p-4">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="radiologyModalLabel">Online Radiology Booking Form</h5>
+                    <button type="button" class="close btn" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+
+                  <div class="modal-body">
+                    <form>
+                      <!-- 1. Patient Information -->
+                      <h6>👤 Patient Information</h6>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <input type="text" class="form-control" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group col-md-3">
+                          <input type="date" class="form-control" placeholder="Date of Birth" required>
+                        </div>
+                        <div class="form-group col-md-3">
+                          <select class="form-control" required>
+                            <option disabled selected>Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <input type="text" class="form-control" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <input type="email" class="form-control" placeholder="Email Address">
+                        </div>
+                        <div class="form-group col-md-12">
+                          <textarea class="form-control" placeholder="Address" rows="2"></textarea>
+                        </div>
+                      </div>
+
+                      <!-- 2. Appointment Request -->
+                      <h6>📅 Appointment Request</h6>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <input type="date" class="form-control" placeholder="Preferred Date" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label>Preferred Time Slot:</label><br>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="timeSlot" id="morning" value="Morning">
+                            <label class="form-check-label" for="morning">Morning</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="timeSlot" id="afternoon"
+                              value="Afternoon">
+                            <label class="form-check-label" for="afternoon">Afternoon</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="timeSlot" id="evening" value="Evening">
+                            <label class="form-check-label" for="evening">Evening</label>
+                          </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label>Is this an urgent/emergency case?</label><br>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="emergency" value="Yes">
+                            <label class="form-check-label">Yes</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="emergency" value="No">
+                            <label class="form-check-label">No</label>
+                          </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label>Have you visited our hospital before?</label><br>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="visitedBefore" value="Yes">
+                            <label class="form-check-label">Yes</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="visitedBefore" value="No">
+                            <label class="form-check-label">No</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- 3. Imaging Type Requested -->
+                      <h6>🔍 Imaging Type Requested</h6>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="xray">
+                        <label class="form-check-label" for="xray">X-Ray</label><br>
+
+                        <input type="checkbox" class="form-check-input" id="ctscan">
+                        <label class="form-check-label" for="ctscan">CT Scan</label><br>
+
+                        <input type="checkbox" class="form-check-input" id="ultrasound">
+                        <label class="form-check-label" for="ultrasound">Ultrasound</label><br>
+
+                        <input type="checkbox" class="form-check-input" id="mammogram">
+                        <label class="form-check-label" for="mammogram">Mammogram</label><br>
+
+                        <input type="checkbox" class="form-check-input" id="otherImaging">
+                        <label class="form-check-label" for="otherImaging">Other</label>
+                        <input type="text" class="form-control mt-2" placeholder="Other (Please specify)">
+                      </div>
+
+                      <!-- 4. Referral Information -->
+                      <h6 class="mt-3">📑 Referral Information</h6>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label>Do you have a referral from a doctor?</label><br>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="hasReferral" value="Yes">
+                            <label class="form-check-label">Yes</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="hasReferral" value="No">
+                            <label class="form-check-label">No</label>
+                          </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <input type="text" class="form-control" placeholder="Referring Doctor's Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <input type="text" class="form-control" placeholder="Hospital / Clinic Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label>Upload Referral (PDF/JPG/PNG):</label>
+                          <input type="file" class="form-control-file">
+                        </div>
+                      </div>
+
+                      <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Submit Request</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="tab-pane" id="departments-tab-9">
               <div class="row">
                 <div class="col-lg-4 text-center order-1 order-lg-1">
@@ -711,10 +967,164 @@
                     Surgeon</strong> -->
                   </p>
                   <p class="mb-3"> 9:00 AM – 5:00 PM</p>
-                  <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
+                  <a class="cta-btn mx-1" href="#" data-bs-toggle="modal" data-bs-target="#radiologyModal">Book
+                    Appointment</a>
+
                 </div>
               </div>
             </div>
+            <!-- Home Care Visit Booking Modal -->
+            <div class="modal fade" id="homeCareModal" tabindex="-1" aria-labelledby="homeCareModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content p-3">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="homeCareModalLabel">🚑 Home Care Visit Booking Form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="text-muted">Request home care visits by our hospital team with ambulance support.</p>
+                    <form>
+                      <h6>Patient Information</h6>
+                      <div class="row g-3">
+                        <div class="col-md-6"><input type="text" class="form-control" placeholder="Full Name" required>
+                        </div>
+                        <div class="col-md-3"><input type="number" class="form-control" placeholder="Age" required>
+                        </div>
+                        <div class="col-md-3">
+                          <select class="form-select" required>
+                            <option selected disabled>Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                          </select>
+                        </div>
+                        <div class="col-md-6"><input type="text" class="form-control" placeholder="Contact Number"
+                            required></div>
+                        <div class="col-md-6"><input type="email" class="form-control" placeholder="Email Address">
+                        </div>
+                        <div class="col-md-12"><textarea class="form-control"
+                            placeholder="Home Address (Visit Location)" rows="2"></textarea></div>
+                      </div>
+
+                      <h6 class="mt-4">Primary Contact Person</h6>
+                      <div class="row g-3">
+                        <div class="col-md-6"><input type="text" class="form-control" placeholder="Name"></div>
+                        <div class="col-md-6"><input type="text" class="form-control"
+                            placeholder="Relationship to Patient"></div>
+                        <div class="col-md-6"><input type="text" class="form-control" placeholder="Contact Number">
+                        </div>
+                        <div class="col-md-6"><input type="email" class="form-control" placeholder="Email Address">
+                        </div>
+                      </div>
+
+                      <h6 class="mt-4">Visit Details</h6>
+                      <div class="mb-3"><textarea class="form-control" placeholder="Reason for Home Care Visit"
+                          rows="2"></textarea></div>
+                      <div class="mb-3"><input type="text" class="form-control"
+                          placeholder="Doctor’s Recommendation (if available)"></div>
+                      <div class="row g-3">
+                        <div class="col-md-6"><input type="date" class="form-control"></div>
+                        <div class="col-md-6"><input type="time" class="form-control"></div>
+                      </div>
+
+                      <label class="mt-3">Ambulance Required?</label>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="ambulanceRequired" id="ambulanceYes">
+                        <label class="form-check-label" for="ambulanceYes">Yes</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="ambulanceRequired" id="ambulanceNo">
+                        <label class="form-check-label" for="ambulanceNo">No</label>
+                      </div>
+
+                      <label class="mt-3">Type of Ambulance (if known or advised):</label>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="ambulanceType" id="bls">
+                        <label class="form-check-label" for="bls">Basic Life Support (BLS)</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="ambulanceType" id="als">
+                        <label class="form-check-label" for="als">Advanced Life Support (ALS)</label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="ambulanceType" id="notSure">
+                        <label class="form-check-label" for="notSure">Not Sure</label>
+                      </div>
+
+                      <h6>Required Services During Visit</h6>
+                      <div class="row g-2">
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="consultation">
+                            <label class="form-check-label" for="consultation">Doctor Consultation at Home</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="nursing">
+                            <label class="form-check-label" for="nursing">Nursing Care at Home</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="medication">
+                            <label class="form-check-label" for="medication">Medication Administration</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="dressing">
+                            <label class="form-check-label" for="dressing">Wound Dressing</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="physiotherapy">
+                            <label class="form-check-label" for="physiotherapy">Physiotherapy</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="sample">
+                            <label class="form-check-label" for="sample">Sample Collection (Lab Tests)</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="otherService">
+                            <label class="form-check-label" for="otherService">Other</label>
+                          </div>
+                          <input type="text" class="form-control mt-2" placeholder="Please specify other service">
+                        </div>
+                      </div>
+
+                      <div class="mt-3 mb-3">
+                        <textarea class="form-control" rows="3"
+                          placeholder="Any special instructions or additional requests"></textarea>
+                      </div>
+
+                      <h6>Consent</h6>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="consent1" required>
+                        <label class="form-check-label" for="consent1">
+                          I hereby consent to the collection and use of the above information for the purpose of
+                          arranging
+                          home care visits and ambulance services.
+                        </label>
+                      </div>
+                      <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" id="consent2" required>
+                        <label class="form-check-label" for="consent2">
+                          I understand that all information will be kept strictly confidential.
+                        </label>
+                      </div>
+
+                      <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Submit Request</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </form>
+
+                    <div class="mt-4">
+                      <p class="mb-1"><strong>📞 For urgent bookings:</strong> [Hospital Contact Number]</p>
+                      <p><strong>📧 Email:</strong> [Hospital Email]</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
         <div class="col-lg-3">
@@ -1325,6 +1735,11 @@
       <!-- Section Title -->
       <div class="section-title text-center mb-4" data-aos="fade-up">
         <h2 class="fw-bold" data-aos="fade-right">ROYAL GROUP</h2>
+        <p class="text-muted" data-aos="fade-left">The Royal Group is a multinational firm with interests in
+          Construction, Retail, Fitness, and Petroleum.</p>
+        <p class="text-muted" data-aos="fade-left">Founded in 1990 by our esteemed Chairman Mr. Radhakrishnan Narayanan
+          with the start of 2 Construction companies in the Sultanate of Oman - the group’s firms now include a Fuel
+          Station, a hospital, a Supermarket, and a Gym with a nursing school on the way.</p>
       </div>
 
       <!-- Content Row -->
@@ -1342,7 +1757,8 @@
         <!-- Description and Firms List -->
         <div class="col-lg-7">
           <p class="fw-semibold fs-5">
-            The Royal Group is a multinational firm with interests in Construction, Healthcare, Retail, Fitness and
+            The Royal Group is a multinational firm with interests in Construction, Healthcare, Retail, Fitness
+            and
             Petroleum.
           </p>
           <p class="fw-bold mt-3">Firms that are part of The Royal Group:</p>
@@ -1352,38 +1768,46 @@
             <div class="col-md-6">
               <div class="firm-card bg-white p-3 rounded shadow text-center">
                 <img src="static/img/rk.jpg" alt="RK International" style="max-height: 80px;">
+                <p class="mt-2 fw-semibold text-muted mb-0 ml-4">RK International</p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="firm-card bg-white p-3 rounded shadow text-center">
                 <img src="static/img/topway.jpeg" alt="Top Way LLC" style="max-height: 80px;">
+                <p class="mt-2 fw-semibold text-muted mb-0 ml-4">Top Way LLC</p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="firm-card bg-white p-3 rounded shadow text-center">
                 <img src="static/img/fuels.png" alt="Royal Fuels" style="max-height: 80px;">
+                <p class="mt-2 fw-semibold text-muted mb-0 ml-4">Royal Fuels</p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="firm-card bg-white p-3 rounded shadow text-center">
-                <img src="static/img/healthcare.png" alt="Royal HealthCare" style="max-height: 80px;">
+                <img src="static/img/healthcare.png" alt="Royal HealthCare" style="max-height: 50px;">
+                <p class="mt-2 fw-semibold text-muted mb-0 ml-4"">Royal HealthCare</p>
+                        </div>
+                    </div>
+                    <div class=" col-md-6">
+                <div class="firm-card bg-white p-3 rounded shadow text-center">
+                  <img src="static/img/market.png" alt="Royal Hypermarket" style="max-height: 80px;">
+                  <p class="mt-2 fw-semibold text-muted mb-0 ml-4">Royal Hypermarket</p>
+                </div>
               </div>
-            </div>
-            <div class="col-md-6">
-              <div class="firm-card bg-white p-3 rounded shadow text-center">
-                <img src="static/img/market.png" alt="Royal Hypermarket" style="max-height: 80px;">
+              <div class="col-md-6">
+                <div class="firm-card bg-white p-3 rounded shadow text-center">
+                  <img src="static/img/apex.jpeg" alt="Apex Gym" style="max-height: 80px;">
+                  <p class="mt-2 fw-semibold text-muted mb-0 ml-4">Apex Gym</p>
+                </div>
               </div>
-            </div>
-            <div class="col-md-6">
-              <div class="firm-card bg-white p-3 rounded shadow text-center">
-                <img src="static/img/apex.jpeg" alt="Apex Gym" style="max-height: 80px;">
-              </div>
+
             </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
+
 
 
   <!-- Testimonials Section -->

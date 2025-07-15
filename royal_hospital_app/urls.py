@@ -18,4 +18,7 @@ urlpatterns = [
     path('make-appointment/', views.make_appointment, name='make_appointment'),
     path('royalgroup', views.royalgroup, name='royalgroup'),
     path('insurance', views.insurance, name='insurance'),
+    path('palliative', views.palliative, name='palliative'),
+    path('homecare', views.homecare, name='homecare'),
+    path('internationalpatients', views.internationalpatients, name='internationalpatients'),
 ]

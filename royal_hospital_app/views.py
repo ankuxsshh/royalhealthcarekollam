@@ -124,3 +124,12 @@ def royalgroup(request):
 def insurance(request):
     return render(request, 'insurance.html')
 
+def palliative(request):
+    return render(request, 'palliative.html')
+
+def homecare(request):
+    return render(request, 'homecare.html')
+
+def internationalpatients(request):
+    return render(request, 'internationalpatients.html')
+

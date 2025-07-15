@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% block title %}Palliative Care | Royal Health Care{% endblock %}
+{% block content %}
+
+<!-- Background Section -->
+<section id="background-section" class="d-flex align-items-center justify-content-center"
+    style="background-image: url('https://images.unsplash.com/photo-1505751172876-fa1923c5c528?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3RldGhvc2NvcGV8ZW58MHx8MHx8fDA%3D'); background-size: cover; background-position: center center; height: 30vh; max-width: 100%; color: #fff; filter: grayscale(0.5);">
+    <div class="container text-center">
+        <h1 class="lead"
+            style="font-weight: bold; font-size: 38px; color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+            Palliative Care</h1>
+        <p class="lead"
+            style="font-weight: bold; font-size: 14px; color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+            Home <i class="fa-solid fa-angles-right"></i> Palliative Care
+        </p>
+    </div>
+</section>
+
+<!-- Palliative Care Booking Form Section -->
+<section class="container my-5 p-4 rounded bg-light">
+    <h2 class="mb-4 text-center">Palliative Care Booking Form</h2>
+    <p class="text-muted mb-4 text-center">“Royal Healthcare has the facilities to provide 5 beds and supporting staff
+        to patients with palliative care needs. A package can be provided on a monthly basis for the patients needs.”
+    </p>
+    <form method="post">
+        {% csrf_token %}
+
+        <!-- Patient Information -->
+        <h5>Patient Information</h5>
+        <div class="form-row">
+            <div class="form-group col-md-6"><input type="text" class="form-control" placeholder="Full Name" required>
+            </div>
+            <div class="form-group col-md-3"><input type="number" class="form-control" placeholder="Age" required></div>
+            <div class="form-group col-md-3">
+                <select class="form-control" required>
+                    <option disabled selected>Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group col-md-6"><input type="text" class="form-control" placeholder="Contact Number"
+                    required></div>
+            <div class="form-group col-md-6"><input type="email" class="form-control" placeholder="Email Address"></div>
+            <div class="form-group col-md-12"><textarea class="form-control" placeholder="Address" rows="2"></textarea>
+            </div>
+        </div>
+
+        <!-- Primary Contact Person -->
+        <h5 class="mt-4">Primary Contact Person</h5>
+        <div class="form-row">
+            <div class="form-group col-md-6"><input type="text" class="form-control" placeholder="Name"></div>
+            <div class="form-group col-md-6"><input type="text" class="form-control"
+                    placeholder="Relationship to Patient"></div>
+            <div class="form-group col-md-6"><input type="text" class="form-control" placeholder="Contact Number"></div>
+            <div class="form-group col-md-6"><input type="email" class="form-control" placeholder="Email Address"></div>
+        </div>
+
+        <!-- Medical Details -->
+        <h5 class="mt-4">Medical Details</h5>
+        <div class="form-group"><textarea class="form-control" placeholder="Primary Diagnosis"></textarea></div>
+        <div class="form-group"><textarea class="form-control" placeholder="Current Medical Condition"></textarea></div>
+        <div class="form-row">
+            <div class="form-group col-md-6"><input type="text" class="form-control"
+                    placeholder="Attending Doctor (if any)"></div>
+            <div class="form-group col-md-6"><input type="date" class="form-control" placeholder="Preferred Start Date">
+            </div>
+        </div>
+
+        <label>Preferred Visit Frequency:</label>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="visitFrequency" id="daily" value="Daily">
+            <label class="form-check-label" for="daily">Daily</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="visitFrequency" id="weekly" value="Weekly">
+            <label class="form-check-label" for="weekly">Weekly</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="visitFrequency" id="doctorRec"
+                value="Doctor's Recommendation">
+            <label class="form-check-label" for="doctorRec">As per Doctor</label>
+        </div>
+
+        <!-- Service Requirements -->
+        <h5 class="mt-4">Service Requirements</h5>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="painManagement">
+            <label class="form-check-label" for="painManagement">Pain Management</label><br>
+
+            <input type="checkbox" class="form-check-input" id="emotionalSupport">
+            <label class="form-check-label" for="emotionalSupport">Emotional / Psychological Support</label><br>
+
+            <input type="checkbox" class="form-check-input" id="nursingCare">
+            <label class="form-check-label" for="nursingCare">Nursing Care</label><br>
+
+            <input type="checkbox" class="form-check-input" id="physiotherapy">
+            <label class="form-check-label" for="physiotherapy">Physiotherapy Support</label><br>
+
+            <input type="checkbox" class="form-check-input" id="homeVisits">
+            <label class="form-check-label" for="homeVisits">Home Visits</label><br>
+
+            <input type="checkbox" class="form-check-input" id="spiritualCare">
+            <label class="form-check-label" for="spiritualCare">Spiritual Care (if required)</label><br>
+
+            <input type="checkbox" class="form-check-input" id="other">
+            <label class="form-check-label" for="other">Other</label>
+            <input type="text" class="form-control mt-2" placeholder="Other (Please specify)">
+        </div>
+
+        <!-- Additional Info -->
+        <div class="form-group mt-3">
+            <textarea class="form-control" rows="3" placeholder="Additional Information or Instructions"></textarea>
+        </div>
+
+        <!-- Submit -->
+        <div class="text-center">
+            <button type="submit" class="btn btn-danger px-4">Submit Request</button>
+        </div>
+    </form>
+</section>
+
+{% endblock %}

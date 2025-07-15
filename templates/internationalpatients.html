@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% block title %}International Booking | Royal Health Care{% endblock %}
+{% block content %}
+
+<!-- Background Section -->
+<section id="background-section" class="d-flex align-items-center justify-content-center"
+    style="background-image: url('https://images.unsplash.com/photo-1505751172876-fa1923c5c528?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3RldGhvc2NvcGV8ZW58MHx8MHx8fDA%3D'); background-size: cover; background-position: center center; height: 30vh; max-width: 100%; color: #fff; filter: grayscale(0.5);">
+    <div class="container text-center">
+        <h1 class="lead"
+            style="font-weight: bold; font-size: 38px; color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+            International Booking</h1>
+        <p class="lead"
+            style="font-weight: bold; font-size: 14px; color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+            Home <i class="fa-solid fa-angles-right"></i> International Booking
+        </p>
+    </div>
+</section>
+
+<!-- Booking Form Section -->
+<section class="container my-5">
+    <h2 class="mb-4 text-center">International Booking Form</h2>
+    <p class="text-muted mb-4 text-center">Fill in the form below to request an international booking with Royal Health Care.</p>
+    <div class="row justify-content-center">
+        <div class="col-md-8 shadow-lg p-4 rounded bg-white border">
+            <form method="post" action="#">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="name"><strong>Full Name</strong></label>
+                    <input type="text" class="form-control" id="name" placeholder="Your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email"><strong>Email Address</strong></label>
+                    <input type="email" class="form-control" id="email" placeholder="example@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone"><strong>International Phone Number</strong></label>
+                    <input type="tel" class="form-control" id="phone" placeholder="+1 234 567 8901" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="department"><strong>Select Department</strong></label>
+                    <select class="form-control" id="department" required>
+                        <option disabled selected>-- Choose Department --</option>
+                        <option>24H Casualty and Trauma Care</option>
+                        <option>General Medicine</option>
+                        <option>General Surgery</option>
+                        <option>Orthopaedics</option>
+                        <option>Gynaecology</option>
+                        <option>ENT</option>
+                        <option>Family Medicine</option>
+                        <option>Palliative Care</option>
+                        <option>Pediatric</option>
+                        <option>Radiology</option>
+                        <option>Anesthesia</option>
+                        <option>Cardiology</option>
+                        <option>Neuro Medicine</option>
+                        <option>Neuro Surgery</option>
+                        <option>OMF</option>
+                        <option>Homecare</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments"><strong>Additional Comments / Concerns</strong></label>
+                    <textarea class="form-control" id="comments" rows="4" placeholder="Mention your concerns or any information you'd like to share."></textarea>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-danger px-4 py-2">Submit Booking Request</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
