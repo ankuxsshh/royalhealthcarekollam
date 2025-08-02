@@ -26,7 +26,7 @@
 
     <!-- Floating Widget -->
     <div class="floating-widget">
-      <a href="#find-doctor" class="action-btn">
+      <a href="findadoctor" class="action-btn">
         <i class="fa-solid fa-user-doctor"></i>
         <span>Find a Doctor</span>
       </a>
@@ -34,9 +34,9 @@
         <i class="bi bi-calendar-check"></i>
         <span>Book an Appointment</span>
       </a>
-      <a href="#health-checkup" class="action-btn">
-        <i class="fa-solid fa-stethoscope"></i>
-        <span>Book a Health Checkup</span>
+      <a href="healthcheckup" class="action-btn">
+    <i class="fa-solid fa-stethoscope"></i>
+    <span>Book a Health Checkup</span>
       </a>
     </div>
   </section>
@@ -193,7 +193,7 @@
         <div class="col-lg-9 content" data-aos="fade-up" data-aos-delay="200">
           <h3 data-aos="fade-right">CHIEF EXECUTIVE OFFICER'S STATEMENT</h3>
           <p class="fst-italic" data-aos="fade-right">
-            <i class="fa-solid fa-quote-left" style="color: rgb(229, 9, 19)"></i> At Royal Healthcare, Chattannoor, our
+            <i class="fa-solid fa-quote-left" style="color: rgb(229, 9, 19)"></i> At Royal Healthcare, Chathannoor, our
             mission is clear—to redefine healthcare in Kerala by providing world-class medical services at an affordable
             cost while fostering a culture of growth, innovation, and community service.
           </p>
@@ -339,8 +339,6 @@
                   <p>
                     <strong style="color: red;">Dr. Sasidhara Panicker - General Surgeon</strong>
                     <br />
-                    <strong style="color: red;">Dr. Lekshmipriya R - General Surgeon</strong>
-                    <br />
                     <strong style="color: red;">Dr. Manikantan D - General Surgeon</strong>
                   </p>
                   <p class="mb-3"> 9:00 AM – 5:00 PM</p>
@@ -430,7 +428,8 @@
                     <strong style="color: red;">Dr. Lakshmy V Raj</strong> — <strong style="color: red;">ENT Head & Neck
                       Surgeon</strong>
                   </p>
-                  <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+                  <p class="mb-3"> 9:00 AM – 1:00 PM</p>
+                  <p class="mb-3"> 3:00 PM – 5:00 PM</p>
                   <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
                 </div>
                 <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -634,7 +633,8 @@
                     <strong style="color: red;">Dr.Herosh Thampan</strong> — <strong style="color: red;">Consultant,
                       Pediatrician</strong>
                   </p>
-                  <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+                  <p class="mb-3"> 9:00 AM – 1:00 PM</p>
+                  <p class="mb-3"> 7:00 PM – 8:00 PM</p>
                   <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
                 </div>
               </div>
@@ -660,7 +660,7 @@
                   <p>
                     <strong style="color: red;">Dr. Abit Asok - Radiologist</strong>
                   </p>
-                  <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+                  <p class="mb-3"> 8:00 AM – 1:00 PM</p>
                   <a data-aos="fade-right" class="cta-btn mx-1" href="#" data-bs-toggle="modal"
                     data-bs-target="#radiologyModal">Make an Appointment</a>
 
@@ -835,7 +835,8 @@
                     <strong style="color: red;">Dr.Rakhi R Pillai</strong> — <strong style="color: red;">Consultant,
                       Anaesthesiologist</strong>
                   </p>
-                  <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+                  <p class="mb-3"> 9:00 AM – 1:00 PM</p>
+                  <p class="mb-3"> 4:00 PM – 6:00 PM</p>
                   <a data-aos="fade-right" class="cta-btn mx-1" href="appointment">Make an Appointment</a>
                 </div>
               </div>
@@ -967,7 +968,7 @@
                     Surgeon</strong> -->
                   </p>
                   <p class="mb-3"> 9:00 AM – 5:00 PM</p>
-                  <a class="cta-btn mx-1" href="#" data-bs-toggle="modal" data-bs-target="#radiologyModal">Book
+                  <a class="cta-btn mx-1" href="#" data-bs-toggle="modal" data-bs-target="#homeCareModal">Book
                     Appointment</a>
 
                 </div>
@@ -987,9 +988,14 @@
                     <form>
                       <h6>Patient Information</h6>
                       <div class="row g-3">
-                        <div class="col-md-6"><input type="text" class="form-control" placeholder="Full Name" required>
+                        <div class="col-md-6">
+                          <input type="text" class="form-control" placeholder="Full Name" required>
                         </div>
-                        <div class="col-md-3"><input type="number" class="form-control" placeholder="Age" required>
+                        <div class="col-md-3">
+                          <input type="date" class="form-control" placeholder="Date of Birth">
+                        </div>
+                        <div class="col-md-3">
+                          <input type="number" class="form-control" placeholder="Age" required>
                         </div>
                         <div class="col-md-3">
                           <select class="form-select" required>
@@ -999,33 +1005,48 @@
                             <option>Other</option>
                           </select>
                         </div>
-                        <div class="col-md-6"><input type="text" class="form-control" placeholder="Contact Number"
-                            required></div>
-                        <div class="col-md-6"><input type="email" class="form-control" placeholder="Email Address">
+                        <div class="col-md-6">
+                          <input type="text" class="form-control" placeholder="Contact Number" required>
                         </div>
-                        <div class="col-md-12"><textarea class="form-control"
-                            placeholder="Home Address (Visit Location)" rows="2"></textarea></div>
+                        <div class="col-md-6">
+                          <input type="email" class="form-control" placeholder="Email Address">
+                        </div>
+                        <div class="col-md-12">
+                          <textarea class="form-control" placeholder="Home Address (Visit Location)"
+                            rows="2"></textarea>
+                        </div>
                       </div>
 
                       <h6 class="mt-4">Primary Contact Person</h6>
                       <div class="row g-3">
-                        <div class="col-md-6"><input type="text" class="form-control" placeholder="Name"></div>
-                        <div class="col-md-6"><input type="text" class="form-control"
-                            placeholder="Relationship to Patient"></div>
-                        <div class="col-md-6"><input type="text" class="form-control" placeholder="Contact Number">
+                        <div class="col-md-6">
+                          <input type="text" class="form-control" placeholder="Name">
                         </div>
-                        <div class="col-md-6"><input type="email" class="form-control" placeholder="Email Address">
+                        <div class="col-md-6">
+                          <input type="text" class="form-control" placeholder="Relationship to Patient">
+                        </div>
+                        <div class="col-md-6">
+                          <input type="text" class="form-control" placeholder="Contact Number">
+                        </div>
+                        <div class="col-md-6">
+                          <input type="email" class="form-control" placeholder="Email Address">
                         </div>
                       </div>
 
                       <h6 class="mt-4">Visit Details</h6>
-                      <div class="mb-3"><textarea class="form-control" placeholder="Reason for Home Care Visit"
-                          rows="2"></textarea></div>
-                      <div class="mb-3"><input type="text" class="form-control"
-                          placeholder="Doctor’s Recommendation (if available)"></div>
+                      <div class="mb-3">
+                        <textarea class="form-control" placeholder="Reason for Home Care Visit" rows="2"></textarea>
+                      </div>
+                      <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Doctor's Recommendation (if available)">
+                      </div>
                       <div class="row g-3">
-                        <div class="col-md-6"><input type="date" class="form-control"></div>
-                        <div class="col-md-6"><input type="time" class="form-control"></div>
+                        <div class="col-md-6">
+                          <input type="date" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                          <input type="time" class="form-control">
+                        </div>
                       </div>
 
                       <label class="mt-3">Ambulance Required?</label>
@@ -1052,34 +1073,38 @@
                         <label class="form-check-label" for="notSure">Not Sure</label>
                       </div>
 
-                      <h6>Required Services During Visit</h6>
+                      <h6>Services Needed</h6>
                       <div class="row g-2">
                         <div class="col-md-6">
                           <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="consultation">
-                            <label class="form-check-label" for="consultation">Doctor Consultation at Home</label>
+                            <input class="form-check-input" type="checkbox" id="elderlyCare">
+                            <label class="form-check-label" for="elderlyCare">Elderly Care / Companionship</label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="nursing">
-                            <label class="form-check-label" for="nursing">Nursing Care at Home</label>
+                            <input class="form-check-input" type="checkbox" id="palliativeCare">
+                            <label class="form-check-label" for="palliativeCare">Palliative Care</label>
                           </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="medication">
-                            <label class="form-check-label" for="medication">Medication Administration</label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="dressing">
-                            <label class="form-check-label" for="dressing">Wound Dressing</label>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="physiotherapy">
                             <label class="form-check-label" for="physiotherapy">Physiotherapy</label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="sample">
-                            <label class="form-check-label" for="sample">Sample Collection (Lab Tests)</label>
+                            <input class="form-check-input" type="checkbox" id="postSurgery">
+                            <label class="form-check-label" for="postSurgery">Post-Surgery Care</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="medManagement">
+                            <label class="form-check-label" for="medManagement">Medication Management</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="doctorVisit">
+                            <label class="form-check-label" for="doctorVisit">Doctor Home Visit</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="labSample">
+                            <label class="form-check-label" for="labSample">Lab Sample Collection at Home</label>
                           </div>
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="otherService">
@@ -1099,8 +1124,7 @@
                         <input class="form-check-input" type="checkbox" id="consent1" required>
                         <label class="form-check-label" for="consent1">
                           I hereby consent to the collection and use of the above information for the purpose of
-                          arranging
-                          home care visits and ambulance services.
+                          arranging home care visits and ambulance services.
                         </label>
                       </div>
                       <div class="form-check mb-4">
@@ -1181,10 +1205,11 @@
             </div>
             <div class="member-info">
               <h4>Dr.Lakshmy V Raj</h4>
-              <span class="mb-2">ENT Head & Neck Surgeon</span>
+              <span class="mb-2">Consultant ENT Head & Neck Surgeon</span>
               <span class="mb-2">MBBS, MS, DNB, MNAMS</span>
               <!-- Time Slot -->
-              <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+              <p class="mb-3"> 9:00 AM – 1:00 PM</p>
+              <p class="mb-3"> 3:00 PM – 5:00 PM</p>
               <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
             </div>
           </div>
@@ -1229,10 +1254,11 @@
             </div>
             <div class="member-info">
               <h4>Dr.Bijumon K</h4>
-              <span class="mb-2">Consultant and Orthopaedic Surgeon</span>
+              <span class="mb-2">Orthopedic and Joint Replacement Surgeon</span>
               <span class="mb-2">MBBS, D-ORTHO, DNB(ORTHO)</span>
               <!-- Time Slot -->
-              <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+              <p class="mb-3"> 9:00 AM – 1:00 PM</p>
+              <p class="mb-3"> 4:00 PM – 6:00 PM</p>
               <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
             </div>
           </div>
@@ -1249,7 +1275,7 @@
             <div class="member-info">
               <h4>Dr.Shehnaz Abdul Rahim</h4>
               <span class="mb-2">Emergency Medical Specialist</span>
-              <span class="mb-2">MBBS, MRCEMv</span>
+              <span class="mb-2">MBBS, MRCEM</span>
               <!-- Time Slot -->
               <p class="mb-3"> 9:00 AM – 5:00 PM</p>
               <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
@@ -1267,7 +1293,8 @@
               <span class="mb-2">Consultant Pediatrician</span>
               <span class="mb-2">MBBS, DCH</span>
               <!-- Time Slot -->
-              <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+              <p class="mb-3"> 9:00 AM – 1:00 PM</p>
+              <p class="mb-3"> 7:00 AM – 8:00 PM</p>
               <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
             </div>
           </div>
@@ -1280,10 +1307,10 @@
             </div>
             <div class="member-info">
               <h4>Dr. Rejina N</h4>
-              <span class="mb-2">Consultant & Gynaecologist</span>
+              <span class="mb-2">Consultant Gynecologist & Laparoscopic Surgeon</span>
               <span class="mb-2">MBBS, DGO, DNB</span>
               <!-- Time Slot -->
-              <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+              <p class="mb-3"> 9:00 AM – 3:00 PM</p>
               <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
             </div>
           </div>
@@ -1299,7 +1326,7 @@
               <span class="mb-2">Sr. Consultant & Surgeon</span>
               <span class="mb-2">MBBS, MS, (General Surgery)</span>
               <!-- Time Slot -->
-              <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+              <p class="mb-3"> 4:30 PM – 6:00 PM</p>
               <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
             </div>
           </div>
@@ -1331,7 +1358,7 @@
               <span class="mb-2">Consultant General & Laparoscopic Surgeon</span>
               <span class="mb-2">MBBS, MS, FIAGES</span>
               <!-- Time Slot -->
-              <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+              <p class="mb-3"> 9:00 AM – 2:00 PM</p>
               <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
             </div>
           </div>
@@ -1360,30 +1387,15 @@
             </div>
             <div class="member-info">
               <h4>Dr. Afzal K Azad</h4>
-              <span class="mb-2">Family Physician</span>
+              <span class="mb-2">Consultant Family Physician</span>
               <span class="mb-2">MBBS, DFM(NBE)</span>
               <!-- Time Slot -->
-              <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+              <p class="mb-3"> 9:00 AM – 4:00 PM</p>
               <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="900">
-          <div class="team-member d-flex align-items-start">
-            <div class="pic">
-              <img src="static/img/Dr.Lekshmi Priya R.JPG" class="img-fluid" alt="" />
-            </div>
-            <div class="member-info">
-              <h4>Dr. Lekshmipriya R</h4>
-              <span class="mb-2">General Surgeon</span>
-              <span class="mb-2">MBBS, MS(General Surgeon)</span>
-              <!-- Time Slot -->
-              <p class="mb-3"> 9:00 AM – 5:00 PM</p>
-              <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
-            </div>
-          </div>
-        </div>
 
         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="1000">
           <div class="team-member d-flex align-items-start">
@@ -1391,12 +1403,12 @@
               <img src="static/img/Dr.Tuman Krishnan (2).jpg" class="img-fluid" alt="" />
             </div>
             <div class="member-info">
-              <h4>Dr. Tuman Krishnnan</h4>
+              <h4>Dr. Tuman Krishnan</h4>
               <span class="mb-2">Consultant Medicine and Diabetologist</span>
               <span class="mb-2">MBBS, MD, FCCM, CCEBDM</span>
 
               <!-- Time Slot -->
-              <p class="mb-3"> 9:00 AM – 5:00 PM</p>
+              <p class="mb-3"> 9:00 AM – 4:00 PM</p>
 
               <a data-aos="fade-right" class="cta-btn mx-1" href="#appointment">Make an Appointment</a>
             </div>
@@ -1769,6 +1781,7 @@
               <div class="firm-card bg-white p-3 rounded shadow text-center">
                 <img src="static/img/rk.jpg" alt="RK International" style="max-height: 80px;">
                 <p class="mt-2 fw-semibold text-muted mb-0 ml-4">RK International</p>
+                <p class="text-muted mb-0">Fuel Station | Roadworks | Schools | Civil Works</p>
               </div>
             </div>
             <div class="col-md-6">
@@ -1787,25 +1800,26 @@
               <div class="firm-card bg-white p-3 rounded shadow text-center">
                 <img src="static/img/healthcare.png" alt="Royal HealthCare" style="max-height: 50px;">
                 <p class="mt-2 fw-semibold text-muted mb-0 ml-4"">Royal HealthCare</p>
-                        </div>
-                    </div>
-                    <div class=" col-md-6">
-                <div class="firm-card bg-white p-3 rounded shadow text-center">
-                  <img src="static/img/market.png" alt="Royal Hypermarket" style="max-height: 80px;">
-                  <p class="mt-2 fw-semibold text-muted mb-0 ml-4">Royal Hypermarket</p>
-                </div>
+                            <p class=" text-muted mb-0">“Healing with Heart, Caring with Excellence”</p>
               </div>
-              <div class="col-md-6">
-                <div class="firm-card bg-white p-3 rounded shadow text-center">
-                  <img src="static/img/apex.jpeg" alt="Apex Gym" style="max-height: 80px;">
-                  <p class="mt-2 fw-semibold text-muted mb-0 ml-4">Apex Gym</p>
-                </div>
-              </div>
-
             </div>
+            <div class="col-md-6">
+              <div class="firm-card bg-white p-3 rounded shadow text-center">
+                <img src="static/img/market.png" alt="Royal Hypermarket" style="max-height: 80px;">
+                <p class="mt-2 fw-semibold text-muted mb-0 ml-4">Royal Hypermarket</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="firm-card bg-white p-3 rounded shadow text-center">
+                <img src="static/img/apex.jpeg" alt="Apex Gym" style="max-height: 80px;">
+                <p class="mt-2 fw-semibold text-muted mb-0 ml-4">Apex Gym</p>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
+    </div>
   </section>
 
 

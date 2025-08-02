@@ -14,6 +14,14 @@ def index(request):
     testimonials = Testimonial.objects.order_by('-created_at')
     return render(request, 'index.html', {'testimonials': testimonials})
 
+def healthcheckup(request):
+    return render(request, 'healthcheckup.html')
+
+def internship(request):
+    years = range(2023, 2030)
+    return render(request, 'internship.html', {'years': years})
+
+
 def about(request):
     return render(request, 'about.html')
 

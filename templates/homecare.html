@@ -17,8 +17,8 @@
         <div class="bg-white p-5 rounded shadow-sm">
             <h2 class="mb-4 text-center text-danger fw-semibold">🚑 Home Care Visit Booking</h2>
             <p class="text-muted text-center mb-5">
-                “We have a availability of a 24/7 ambulance , doctors and nursing staff to come to your homes and take
-                care of your medical needs”</p>
+                "We have a availability of a 24/7 ambulance, doctors and nursing staff to come to your homes and take
+                care of your medical needs"</p>
 
             <form>
                 <!-- Patient Information -->
@@ -26,6 +26,9 @@
                 <div class="row g-3 mb-4">
                     <div class="col-md-6">
                         <input type="text" class="form-control" placeholder="Full Name" required>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="date" class="form-control" placeholder="Date of Birth">
                     </div>
                     <div class="col-md-3">
                         <input type="number" class="form-control" placeholder="Age" required>
@@ -74,7 +77,7 @@
                         required></textarea>
                 </div>
                 <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Doctor’s Recommendation (if any)">
+                    <input type="text" class="form-control" placeholder="Doctor's Recommendation (if any)">
                 </div>
                 <div class="row g-3 mb-4">
                     <div class="col-md-6">
@@ -112,34 +115,38 @@
                 </div>
 
                 <!-- Required Services -->
-                <h5 class="mb-3 text-secondary">Required Services</h5>
+                <h5 class="mb-3 text-secondary">Services Needed</h5>
                 <div class="row g-2 mb-4">
                     <div class="col-md-6">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="consultation">
-                            <label class="form-check-label" for="consultation">Doctor Consultation at Home</label>
+                            <input class="form-check-input" type="checkbox" id="elderlyCare">
+                            <label class="form-check-label" for="elderlyCare">Elderly Care / Companionship</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="nursing">
-                            <label class="form-check-label" for="nursing">Nursing Care at Home</label>
+                            <input class="form-check-input" type="checkbox" id="palliativeCare">
+                            <label class="form-check-label" for="palliativeCare">Palliative Care</label>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="medication">
-                            <label class="form-check-label" for="medication">Medication Administration</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="dressing">
-                            <label class="form-check-label" for="dressing">Wound Dressing</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="physiotherapy">
                             <label class="form-check-label" for="physiotherapy">Physiotherapy</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="sample">
-                            <label class="form-check-label" for="sample">Sample Collection (Lab Tests)</label>
+                            <input class="form-check-input" type="checkbox" id="postSurgery">
+                            <label class="form-check-label" for="postSurgery">Post-Surgery Care</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="medManagement">
+                            <label class="form-check-label" for="medManagement">Medication Management</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="doctorVisit">
+                            <label class="form-check-label" for="doctorVisit">Doctor Home Visit</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="labSample">
+                            <label class="form-check-label" for="labSample">Lab Sample Collection at Home</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="otherService">
@@ -178,6 +185,5 @@
         </div>
     </div>
 </section>
-
 
 {% endblock %}

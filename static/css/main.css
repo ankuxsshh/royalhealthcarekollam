@@ -1961,6 +1961,8 @@ section,
   justify-content: center;
   align-items: center;
   transition: transform 0.2s ease;
+  flex-wrap: nowrap;
+  flex-direction: column;
 }
 
 .firm-card:hover {

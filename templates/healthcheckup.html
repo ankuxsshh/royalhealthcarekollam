@@ -1,0 +1,402 @@
+{% extends 'base.html' %}
+
+{% block title %}Health Checkup Form | Royal Health Care{% endblock %}
+
+{% block content %}
+<!-- Background Image Section -->
+<section id="background-section" class="d-flex align-items-center justify-content-center"
+    style="background-image: url('https://images.unsplash.com/photo-1674702727317-d29b2788dc4a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVkaWNhbCUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D'); background-size: cover; background-position: center center; height: 30vh; max-width: 100%; color: #fff; filter: grayscale(0.5);">
+    <div class="container text-center">
+        <h1 class="lead"
+            style="font-weight: bold; font-size: 38px; color: rgb(255, 255, 255); text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)">
+            Health Checkup Form</h1>
+        <p class="lead"
+            style="font-weight: bold; font-size: 14px; color: rgb(255, 255, 255); text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)">
+            Home <i class="fa-solid fa-angles-right"></i> Health Checkup Form
+        </p>
+    </div>
+</section>
+<!-- /Background Image Section -->
+
+<!-- Palliative Care Form Section -->
+<section id="palliative-care-form" class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="form-header text-center mb-5">
+                    <h2 class="text-danger"><i class="fas fa-hands-helping me-2"></i>Palliative Care Booking Form</h2>
+                </div>
+
+                <form id="palliativeCareForm" class="p-4">
+                    <!-- Patient Information Section -->
+                    <div class="form-section mb-5">
+                        <h4 class="border-bottom pb-2 mb-4"><i class="fas fa-user-injured me-2"></i>Patient Information</h4>
+                        
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="fullName" class="form-label">Full Name*</label>
+                                <input type="text" class="form-control" id="fullName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="primaryDiagnosis" class="form-label">Primary Diagnosis*</label>
+                                <input type="text" class="form-control" id="primaryDiagnosis" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="allergiesConditions" class="form-label">Any known allergies or conditions</label>
+                                <textarea class="form-control" id="allergiesConditions" rows="2"></textarea>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Mobility status*</label>
+                                <div class="d-flex gap-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="mobilityStatus" id="independent" value="independent" required>
+                                        <label class="form-check-label" for="independent">Independent</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="mobilityStatus" id="assisted" value="assisted">
+                                        <label class="form-check-label" for="assisted">Assisted</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="mobilityStatus" id="bedridden" value="bedridden">
+                                        <label class="form-check-label" for="bedridden">Bedridden</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="currentMedications" class="form-label">Current Medications (if any)</label>
+                                <textarea class="form-control" id="currentMedications" rows="2"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Family Member/Guardian Section -->
+                    <div class="form-section mb-5">
+                        <h4 class="border-bottom pb-2 mb-4"><i class="fas fa-users me-2"></i>Family Member / Guardian Details</h4>
+                        
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="guardianName" class="form-label">Name*</label>
+                                <input type="text" class="form-control" id="guardianName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="relationship" class="form-label">Relationship to Patient*</label>
+                                <input type="text" class="form-control" id="relationship" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="guardianPhone" class="form-label">Phone Number*</label>
+                                <input type="tel" class="form-control" id="guardianPhone" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="guardianEmail" class="form-label">Email Address*</label>
+                                <input type="email" class="form-control" id="guardianEmail" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="guardianAddress" class="form-label">Address*</label>
+                                <textarea class="form-control" id="guardianAddress" rows="2" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="emergencyContact">
+                                    <label class="form-check-label" for="emergencyContact">Will this person be the emergency contact?</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Admission Details Section -->
+                    <div class="form-section mb-5">
+                        <h4 class="border-bottom pb-2 mb-4"><i class="fas fa-calendar-check me-2"></i>Admission Details</h4>
+                        
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="admissionDate" class="form-label">Admission Date*</label>
+                                <input type="date" class="form-control" id="admissionDate" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Is this an urgent case?*</label>
+                                <div class="d-flex gap-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="urgentCase" id="urgentYes" value="yes" required>
+                                        <label class="form-check-label" for="urgentYes">Yes</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="urgentCase" id="urgentNo" value="no">
+                                        <label class="form-check-label" for="urgentNo">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Room Preference Section -->
+                    <div class="form-section mb-5">
+                        <h4 class="border-bottom pb-2 mb-4"><i class="fas fa-bed me-2"></i>Preferred Room Type (if available)</h4>
+                        
+                        <div class="d-flex gap-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="roomType" id="privateRoom" value="private">
+                                <label class="form-check-label" for="privateRoom">Private</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="roomType" id="sharedRoom" value="shared">
+                                <label class="form-check-label" for="sharedRoom">Shared</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="roomType" id="anyRoom" value="any" checked>
+                                <label class="form-check-label" for="anyRoom">Any</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Care Needs Section -->
+                    <div class="form-section mb-5">
+                        <h4 class="border-bottom pb-2 mb-4"><i class="fas fa-hands-holding-medical me-2"></i>Care Needs & Support Required</h4>
+                        
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="painManagement">
+                                    <label class="form-check-label" for="painManagement">Pain Management</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="redHatCare">
+                                    <label class="form-check-label" for="redHatCare">Red Hat Care</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="readingSupport">
+                                    <label class="form-check-label" for="readingSupport">Reading/Marrison Support</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="otherNeeds">
+                                    <label class="form-check-label" for="otherNeeds">Other Needs</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Information Section -->
+                    <div class="form-section mb-5">
+                        <h4 class="border-bottom pb-2 mb-4"><i class="fas fa-info-circle me-2"></i>Additional Information</h4>
+                        
+                        <div class="mb-3">
+                            <label for="additionalInfo" class="form-label">Please provide any other relevant information we should know.</label>
+                            <textarea class="form-control" id="additionalInfo" rows="4"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Consent Section -->
+                    <div class="form-section mb-5">
+                        <h4 class="border-bottom pb-2 mb-4"><i class="fas fa-file-signature me-2"></i>Consent</h4>
+                        
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="consent1" required>
+                                <label class="form-check-label" for="consent1">I consent to the collection and processing of my personal data for the purpose of providing palliative care services.</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="consent2" required>
+                                <label class="form-check-label" for="consent2">I understand that Royal Healthcare will handle my information in accordance with their privacy policy and healthcare regulations.</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-danger btn-lg px-5 py-3">
+                            <i class="fas fa-paper-plane me-2"></i>Submit Request
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Form Section Styling */
+    .form-section {
+        background-color: white;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    }
+    
+    .form-header h2 {
+        color: rgb(229, 9, 19);
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    
+    .form-header p {
+        color: #6c757d;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    /* Form Control Styling */
+    .form-control, .form-select {
+        padding: 0.75rem 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid #ced4da;
+        transition: all 0.3s;
+    }
+    
+    .form-control:focus, .form-select:focus {
+        border-color: #86b7fe;
+        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    }
+    
+    /* Radio and Checkbox Styling */
+    .form-check-input {
+        width: 1.2em;
+        height: 1.2em;
+        margin-top: 0.15em;
+    }
+    
+    .form-check-label {
+        margin-left: 0.5em;
+    }
+    
+    /* Button Styling */
+    .btn-primary {
+        background-color: rgb(229, 9, 19);
+        border: none;
+        font-weight: 500;
+        transition: all 0.3s;
+    }
+    
+    .btn-primary:hover {
+        background-color: rgb(229, 9, 19);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        .form-header h2 {
+            font-size: 1.5rem;
+        }
+        
+        .form-header p {
+            font-size: 1rem;
+        }
+        
+        .btn-lg {
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('palliativeCareForm');
+        
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Validate required fields
+            const requiredFields = form.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    field.classList.add('is-invalid');
+                    isValid = false;
+                } else {
+                    field.classList.remove('is-invalid');
+                }
+            });
+            
+            // Validate checkboxes
+            const requiredCheckboxes = form.querySelectorAll('[required][type="checkbox"]');
+            requiredCheckboxes.forEach(checkbox => {
+                if (!checkbox.checked) {
+                    checkbox.classList.add('is-invalid');
+                    isValid = false;
+                } else {
+                    checkbox.classList.remove('is-invalid');
+                }
+            });
+            
+            if (!isValid) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Form data collection
+            const formData = {
+                patient: {
+                    fullName: document.getElementById('fullName').value,
+                    primaryDiagnosis: document.getElementById('primaryDiagnosis').value,
+                    allergiesConditions: document.getElementById('allergiesConditions').value,
+                    mobilityStatus: document.querySelector('input[name="mobilityStatus"]:checked')?.value,
+                    currentMedications: document.getElementById('currentMedications').value
+                },
+                guardian: {
+                    name: document.getElementById('guardianName').value,
+                    relationship: document.getElementById('relationship').value,
+                    phone: document.getElementById('guardianPhone').value,
+                    email: document.getElementById('guardianEmail').value,
+                    address: document.getElementById('guardianAddress').value,
+                    isEmergencyContact: document.getElementById('emergencyContact').checked
+                },
+                admission: {
+                    date: document.getElementById('admissionDate').value,
+                    isUrgent: document.querySelector('input[name="urgentCase"]:checked')?.value
+                },
+                roomPreference: document.querySelector('input[name="roomType"]:checked')?.value,
+                careNeeds: {
+                    painManagement: document.getElementById('painManagement').checked,
+                    redHatCare: document.getElementById('redHatCare').checked,
+                    readingSupport: document.getElementById('readingSupport').checked,
+                    otherNeeds: document.getElementById('otherNeeds').checked
+                },
+                additionalInfo: document.getElementById('additionalInfo').value,
+                consents: {
+                    consent1: document.getElementById('consent1').checked,
+                    consent2: document.getElementById('consent2').checked
+                }
+            };
+            
+            // Here you would typically send the form data to a server
+            console.log('Form submitted:', formData);
+            
+            // Show success message
+            alert("Thank you for your palliative care request. We'll contact you shortly to discuss the next steps.");
+            
+            // Reset form
+            form.reset();
+            
+            // In a real application, you would add AJAX code here to submit the form
+            /*
+            fetch('/api/palliative-care', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert("Request submitted successfully!");
+                form.reset();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert("There was an error submitting your request. Please try again.");
+            });
+            */
+        });
+        
+        // Add today's date as min date for admission date
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById("admissionDate").min = today;
+    });
+</script>
+
+{% endblock %}
