@@ -22,8 +22,14 @@
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <h2>CAREER OPPORTUNITIES</h2>
-    <p data-aos="fade-right" class="text-danger fw-bold">"Become a Part of Our Healthcare Family – Your Career Starts
-      Here"</p>
+    <p data-aos="fade-right" class="text-danger fw-bold">
+      "Become a Part of Our Healthcare Family – Your Career Starts Here"
+    </p>
+    <p class="text-muted">
+      📧 Please send your applications directly to 
+      <a href="mailto:hr@royalhealthcarekollam.com" class="fw-bold text-danger">hr@royalhealthcarekollam.com</a> 
+      or fill in the form below.
+    </p>
   </div>
   <!-- End Section Title -->
 
@@ -39,7 +45,7 @@
       <div class="col-lg-6">
         <!-- Career Application Form (Right Column) -->
         <form action="{% url 'career_application' %}" method="post" enctype="multipart/form-data"
-          class="php-email-form bg-light" style="padding: 50px;" data-aos="fade-up" data-aos-delay="200">
+          class="php-email-form bg-light rounded" style="padding: 40px;" data-aos="fade-up" data-aos-delay="200">
 
           {% csrf_token %}
 
@@ -72,17 +78,18 @@
             </div>
 
             <div class="col-md-12">
-              <label for="resume">Upload Resume (PDF only):</label>
+              <label for="resume" class="fw-bold">Upload Resume (PDF only):</label>
               <input type="file" class="form-control" name="resume" accept=".pdf" required />
             </div>
 
             <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your application has been submitted. Thank you for applying!</div>
-
-              <!-- Updated Button with class for style.css -->
-              <button class="submit-button" type="submit">Submit Application</button>
+              <p class="small text-muted mb-2">
+                Your application will be sent to 
+                <strong class="text-danger">hr@royalhealthcarekollam.com</strong>
+              </p>
+              <button class="submit-button btn btn-danger px-4 py-2 mt-2" type="submit">
+                Submit Application
+              </button>
             </div>
           </div>
         </form>
@@ -92,58 +99,6 @@
   </div>
 </section>
 <!-- /Careers Section -->
-
-<div class="container-fluid mb-5">
-  <div class="d-flex justify-content-center align-items-center flex-wrap">
-    <!-- Step 1: Applies -->
-    <div class="step">
-      <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Applies" />
-      <div>
-        <strong>APPLIES</strong>
-      </div>
-    </div>
-
-    <div class="arrow">➡️</div>
-
-    <!-- Step 2: Phone Interview -->
-    <div class="step">
-      <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone Call" />
-      <div>
-        <strong>PHONE CALL<br />INTERVIEW</strong>
-      </div>
-    </div>
-
-    <div class="arrow">➡️</div>
-
-    <!-- Step 3: In-person Interview -->
-    <div class="step">
-      <img src="https://cdn-icons-png.flaticon.com/512/3300/3300120.png" alt="In Person Interview" />
-      <div>
-        <strong>IN PERSON<br />INTERVIEW</strong>
-      </div>
-    </div>
-
-    <div class="arrow">➡️</div>
-
-    <!-- Step 4: Job Offer -->
-    <div class="step">
-      <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="Job Offer" />
-      <div>
-        <strong>JOB OFFER</strong>
-      </div>
-    </div>
-
-    <div class="arrow">➡️</div>
-
-    <!-- Step 5: Join Date -->
-    <div class="step">
-      <img src="https://cdn-icons-png.flaticon.com/512/747/747310.png" alt="Join Date" />
-      <div>
-        <strong>JOIN DATE</strong>
-      </div>
-    </div>
-  </div>
-</div>
 
 <style>
   .step {
@@ -155,12 +110,6 @@
     width: 30px;
     height: 30px;
     margin-bottom: 10px;
-  }
-
-  .arrow {
-    font-size: 20px;
-    line-height: 80px;
-    margin: 0 50px;
   }
 </style>
 {% endblock %}
